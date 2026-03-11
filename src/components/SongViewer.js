@@ -1,0 +1,122 @@
+import React, { Component } from "react";
+
+export default class SongViewer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      view: "score", // "score" (P) o "lyrics" (L)
+    };
+
+    this.setView = this.setView.bind(this);
+  }
+
+  componentDidUpdate(prevProps) {
+    // Si cambiamos de canción, reseteamos la vista por defecto
+    if (
+      prevProps.song &&
+      this.props.song &&
+      prevProps.song.id !== this.props.song.id
+    ) {
+      this.setState({
+        view: this.getDefaultView(this.props.song),
+      });
+    }
+  }
+
+  getDefaultView(song) {
+    if (!song) return "score";
+    if (song.hasScore) return "score";
+    if (song.hasLyrics) return "lyrics";
+    return "score";
+  }
+
+  setView(view) {
+    this.setState({ view });
+  }
+
+  render() {
+    const { song, folder } = this.props;
+
+    if (!song || (!song.group && !song.title)) {
+      return (
+        <section id="song-viewer" className="container-fluid">
+          <h3>
+            Selecciona una canción en el menú
+          </h3>
+        </section>
+      );
+    }
+
+    const hasScore = song.hasScore !== false;
+    const hasLyrics = song.hasLyrics === true;
+
+    const scoreFile =
+      song.customScoreFile ||
+      (hasScore ? `${song.group} - ${song.title} - P.pdf` : null);
+    const lyricsFile =
+      song.customLyricsFile ||
+      (hasLyrics ? `${song.group} - ${song.title} - L.pdf` : null);
+
+    const currentFile =
+      this.state.view === "lyrics" ? lyricsFile || scoreFile : scoreFile || lyricsFile;
+
+    const basePath = `${process.env.PUBLIC_URL || ""}/${folder}`;
+    const pdfUrl = currentFile ? `${basePath}${currentFile}` : null;
+
+    const description = song.descriptionEs;
+
+    return (
+      <section id="song-viewer" className="container-fluid">
+        <h3>{song.name}</h3>
+        {description && <p>{description}</p>}
+
+        <div className="song-viewer-toggle">
+          <button
+            type="button"
+            className={`btn btn-default ${
+              this.state.view === "lyrics" ? "active" : ""
+            }`}
+            onClick={() => this.setView("lyrics")}
+            disabled={!hasLyrics && !lyricsFile}
+          >
+            Letra
+          </button>
+          <button
+            type="button"
+            className={`btn btn-default ${
+              this.state.view === "score" ? "active" : ""
+            }`}
+            onClick={() => this.setView("score")}
+            disabled={!hasScore && !scoreFile}
+          >
+            Partitura
+          </button>
+        </div>
+
+        {!pdfUrl ? (
+          <p>
+            No hay PDF disponible para esta canción.
+          </p>
+        ) : (
+          <div className="song-viewer-frame">
+            <object
+              data={pdfUrl}
+              type="application/pdf"
+              width="100%"
+              height="600px"
+            >
+              <p>
+                Tu navegador no puede mostrar el PDF. Puedes abrirlo en una nueva pestaña:{" "}
+                <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
+                  Abrir PDF
+                </a>
+              </p>
+            </object>
+          </div>
+        )}
+      </section>
+    );
+  }
+}
+

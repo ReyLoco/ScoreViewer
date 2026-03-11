@@ -1,0 +1,558 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7fb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#navbar ul {
+  margin: 0px 50px;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#navbar li a {
+  padding: 2px 10px;
+}
+
+p {
+  letter-spacing: 0.5pt;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  margin: 2px;
+}
+
+.white-text {
+  color: rgba(255, 255, 255, 255);
+}
+
+section {
+  padding: 0px;
+}
+
+.section-header {
+  align-items: center;
+  background-image: linear-gradient(rgb(18, 38, 94), rgba(0, 0, 0, 9));
+}
+
+.section-header #titulo {
+  font-family: "Handlee", cursive;
+  letter-spacing: 1pt;
+}
+
+.section-header #slogan {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section-header a {
+  font-family: "Patrick Hand", cursive;
+  letter-spacing: 0.5pt;
+}
+
+#button-lang {
+  width: 95px;
+  float: right;
+  margin: 10px 10px;
+  background-color: transparent;
+}
+
+#btn-eng,
+#btn-esp {
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+#footer {
+  display: grid;
+  color: rgb(141, 226, 247);
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+#main-content,
+#contact-form {
+  padding: 40px 20px;
+}
+
+#main-image {
+  display: block;
+  margin: 40px auto;
+}
+
+#contact-form button {
+  padding: 5px;
+  width: 100px;
+}
+
+/*********** GALERIAS DE IMAGENES ****************************/
+$black: rgb(65, 65, 65);
+$radius: 10px;
+$transition: all 0.25s ease-in-out;
+
+.gallery-container {
+  padding-top: 0.9375rem;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.2rem;
+  margin-bottom: 1.875rem;
+}
+
+.gallery-thumbnail {
+  background-color: rgb(4, 4, 133);
+  max-width: 100%;
+  height: auto;
+  border-radius: $radius;
+}
+
+// Estas lineas permiten que haya un icono oculto que se acciona al pasar el ratón y permite abrir la galeria modal
+.card-icon-open {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem !important;
+  color: rgb(4, 4, 133);
+  cursor: pointer;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: $transition;
+
+  &:focus,
+  &:hover {
+    color: white;
+  }
+}
+
+.gallery-thumbnail:focus~.card-icon-open,
+.gallery-thumbnail:hover~.card-icon-open,
+.gallery-thumbnail~.card-icon-open:focus,
+.gallery-thumbnail~.card-icon-open:hover {
+  opacity: 1;
+}
+
+// css para el diálogo (overlay) modal
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(184, 183, 183, 0.75);
+}
+
+.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  padding: 15px;
+  background-color: white;
+  overflow: auto;
+  border-radius: $radius;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  font-size: 1.5rem;
+  color: $black;
+  transition: $transition;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+  }
+}
+
+.card-arrow-left {
+  position: absolute;
+  font-size: 3rem;
+  left: 20px;
+}
+
+.card-arrow-right {
+  position: absolute;
+  font-size: 3rem;
+  right: 20px;
+}
+
+/*********** FORMULARIO DE CONTACTO ****************************/
+
+#contact {
+  display: grid;
+  width: 100%;
+  grid-template: "lb-from_name" 30px "input-from_name" 40px "lb-replay_to" 30px "input-replay_to" 40px "lb-msg" 40px "tx-msg" 200px "btn-msg" 40px;
+  gap: 10px;
+  justify-items: center;
+  font-size: 1.8em;
+}
+
+#contact label {
+  margin-top: 10px;
+}
+
+#lb-from_name {
+  grid-area: lb-from_name;
+}
+
+#input-from_name {
+  grid-area: input-from_name;
+  width: 400px;
+}
+
+#lb-replay_to {
+  grid-area: lb-replay_to;
+}
+
+#input-replay_to {
+  grid-area: input-replay_to;
+  width: 400px;
+}
+
+#lb-msg {
+  margin-top: 1.3rem;
+  grid-area: lb-msg;
+}
+
+#tx-msg {
+  grid-area: tx-msg;
+  width: 400px;
+}
+
+#btn-msg {
+  grid-area: btn-msg;
+}
+
+/* end COMMON CSS ***************************************************/
+
+/* ====== LISTADO (Song list) ======================================= */
+
+.section-listado {
+  padding: 1.5rem 0.5rem 2rem;
+  text-align: left;
+}
+
+.section-listado h2 {
+  margin-bottom: 1.5rem;
+}
+
+.listado-letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.listado-letter-btn {
+  border-radius: 999px;
+  border: 1px solid #999;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.listado-letter-btn:hover {
+  background-color: #e0f7ff;
+  transform: translateY(-1px);
+}
+
+.listado-letter-btn.active {
+  background-color: #123e7a;
+  color: #fff;
+  border-color: #123e7a;
+}
+
+.listado-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 1.5rem;
+  align-items: flex-start;
+}
+
+.listado-group {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 0.75rem 0.75rem 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.listado-group-btn {
+  width: 100%;
+  border-radius: 999px;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #123e7a, #1b79b0);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.listado-group-btn.open {
+  filter: brightness(1.1);
+}
+
+.listado-songs {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.listado-song-btn {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  padding: 0.25rem 0.3rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.listado-song-btn:hover {
+  background-color: rgba(18, 62, 122, 0.08);
+}
+
+/* ====== Header menu =============================================== */
+
+.header-menu {
+  margin-top: 1rem;
+}
+
+.header-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.header-menu-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.header-menu-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+/* ====== Main two-column layout ==================================== */
+
+.main-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem 2rem 3rem;
+}
+
+.main-sidebar {
+  align-self: flex-start;
+}
+
+.main-content-area {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem 2rem;
+  box-shadow: 0 4px 14px rgba(15, 35, 95, 0.08);
+}
+
+#song-viewer h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+#song-viewer p {
+  font-size: 0.95rem;
+}
+
+.song-viewer-toggle {
+  margin-bottom: 0.75rem;
+}
+
+.selected-song .listado-song-btn {
+  background-color: rgba(18, 62, 122, 0.12);
+  font-weight: 600;
+}
+
+/* Responsive: stack sidebar/content on small screens */
+@media (max-width: 800px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.75rem 2rem;
+  }
+
+  .main-sidebar {
+    order: 2;
+  }
+
+  .main-content-area {
+    order: 1;
+  }
+}
+
+
+/* BIG SIZE If the screen size is 800px or more *********************/
+@media (min-width: 801px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .section-header #titulo {
+    font-size: 5rem;
+  }
+
+  p,
+  .section-header #slogan,
+  .section-header a {
+    font-size: 1.5rem;
+  }
+}
+
+/* end media  BIG SIZE ********************************************/
+
+/* MEDIUM SIZE If the screen size is beetween 400px and 800px *******/
+@media (min-width: 400px) and (max-width: 800px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .section-header #titulo {
+    font-size: 3rem;
+  }
+
+  #logo {
+    margin: 2px;
+    width: 25%;
+    height: 25%;
+  }
+
+  #navbar li {
+    margin: 0 10px;
+  }
+
+  p,
+  .section-header #slogan,
+  .section-header a {
+    font-size: 1.9rem;
+  }
+}
+
+/* end media  MEDIUM SIZE *****************************************/
+
+/* SMALL SIZE If the screen size is 400px or less *******************/
+@media (max-width: 399px) {
+  body {
+    font-size: 0.8rem;
+    padding: 1.1rem;
+  }
+
+  .section-header #titulo {
+    font-size: 1.8rem;
+  }
+
+  #logo {
+    margin: 2px;
+    width: 20%;
+    height: 20%;
+  }
+
+  #navbar {
+    padding: 0.5rem;
+  }
+
+  #navbar li {
+    margin: 0 10px;
+  }
+
+  #navbar li a {
+    padding: 1px 0px;
+    margin-left: -15px;
+  }
+
+  #button-lang {
+    width: 70px;
+    margin: 7px 7px;
+  }
+
+  #button-lang img {
+    width: 80%;
+    height: 80%;
+  }
+
+  #main-content,
+  #contact-form {
+    padding: 15px;
+  }
+
+  p,
+  .section-header #slogan,
+  .section-header a {
+    font-size: 1.5rem;
+  }
+
+  .modal-overlay {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* end media  SMALL SIZE ******************************************/
