@@ -3,7 +3,8 @@ export const SONGS_FOLDER = "pdfs/";
 export const APP_TITLE = "ScoreViewer";
 
 export const APP_E_SLOGAN = "A simple viewer for music scores and song sheets";
-export const APP_S_SLOGAN = "Un visor sencillo de partituras y letras de canciones";
+export const APP_S_SLOGAN =
+  "Un visor sencillo de partituras y letras de canciones";
 
 export const E_INTRODUCTION_TEXT = [
   "Welcome to ScoreViewer.",
@@ -17,10 +18,7 @@ export const S_INTRODUCTION_TEXT = [
   "Usa el menú para seleccionar una canción. El PDF se mostrará directamente en la página y también podrás abrirlo en una nueva pestaña."
 ];
 
-// Lista de canciones generada automáticamente a partir de los PDFs
-// en `public/pdfs` mediante `scripts/generateSongs.js`.
-// Cada vez que ejecutes `npm start` o `npm run build`
-// se regenerará `songs.generated.json`.
-// Puedes editar ese JSON a mano si quieres añadir descripciones, etc.
-// eslint-disable-next-line import/no-anonymous-default-export, @typescript-eslint/no-var-requires
-export const SONGS = require("./songs.generated.json");
+// URL de la API para obtener la lista de canciones
+// En desarrollo usaremos el backend Node local por defecto
+export const SONGS_API_URL =
+  process.env.REACT_APP_SONGS_API_URL || "http://localhost:4000/api/songs";

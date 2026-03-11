@@ -17,10 +17,13 @@ export default class App extends Component {
     super(props);
 
     this.state = {
+      songs: [],
       actualId: 0,
-      actualSongObj: Constants.SONGS[0],
+      actualSongObj: null,
       // Filtro del listado: "all" | "score" | "lyrics"
       listFilter: "all",
+      loadingSongs: true,
+      loadError: null,
     };
 
     this.clickHandler = this.clickHandler.bind(this);
@@ -28,12 +31,39 @@ export default class App extends Component {
     this.goHome = this.goHome.bind(this);
   } // end Constructor
 
+  componentDidMount() {
+    fetch(Constants.SONGS_API_URL)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Error HTTP ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((songs) => {
+        this.setState({
+          songs,
+          loadingSongs: false,
+          actualId: 0,
+          actualSongObj: songs[0] || null,
+        });
+      })
+      .catch((err) => {
+        console.error("Error cargando canciones:", err);
+        this.setState({
+          loadingSongs: false,
+          loadError: "No se pudo cargar el listado de canciones.",
+        });
+      });
+  }
+
   // Function to change page, updating the selected song
   clickHandler(id) {
+    const { songs } = this.state;
+
     if (id > 0) {
       this.setState({
         actualId: id,
-        actualSongObj: Constants.SONGS.find((s) => s.id === id),
+        actualSongObj: songs.find((s) => s.id === id),
       });
     } else {
       this.setState({
@@ -49,15 +79,24 @@ export default class App extends Component {
   }
 
   goHome() {
+    const { songs } = this.state;
+
     this.setState({
       actualId: 0,
-      actualSongObj: Constants.SONGS[0],
+      actualSongObj: songs[0] || null,
       listFilter: "all",
     });
   }
 
   render() {
-    const { listFilter, actualId, actualSongObj } = this.state;
+    const {
+      songs,
+      listFilter,
+      actualId,
+      actualSongObj,
+      loadingSongs,
+      loadError,
+    } = this.state;
 
     return (
       <div className="App container-fluid text-center">
@@ -76,30 +115,35 @@ export default class App extends Component {
         </section>
 
         <section className="main-layout">
-          <aside className="main-sidebar">
-            <Listado
-              songs={Constants.SONGS}
-              filter={listFilter}
-              clickHandler={this.clickHandler}
-              selectedSongId={actualId}
-            />
-          </aside>
+          {loadingSongs ? (
+            <p>Cargando canciones...</p>
+          ) : loadError ? (
+            <p>{loadError}</p>
+          ) : (
+            <>
+              <aside className="main-sidebar">
+                <Listado
+                  songs={songs}
+                  filter={listFilter}
+                  clickHandler={this.clickHandler}
+                  selectedSongId={actualId}
+                />
+              </aside>
 
-          <main className="main-content-area">
-            {/* En esta sección pintamos según el valor de actualId */}
-            {actualId === 0 ? (
-              <Introduction
-                introductionText={
-                  Constants.S_INTRODUCTION_TEXT
-                }
-              />
-            ) : (
-              <SongViewer
-                song={actualSongObj}
-                folder={Constants.SONGS_FOLDER}
-              />
-            )}
-          </main>
+              <main className="main-content-area">
+                {actualId === 0 ? (
+                  <Introduction
+                    introductionText={Constants.S_INTRODUCTION_TEXT}
+                  />
+                ) : (
+                  <SongViewer
+                    song={actualSongObj}
+                    folder={Constants.SONGS_FOLDER}
+                  />
+                )}
+              </main>
+            </>
+          )}
         </section>
 
         <section className="section-footer">
