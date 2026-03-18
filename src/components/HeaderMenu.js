@@ -4,6 +4,7 @@ export default function HeaderMenu({
   onSelectInicio,
   onSelectCanciones,
   onSelectLetras,
+  onSelectAdmin,
 }) {
   const handleClick = (cb, targetId) => {
     if (cb) cb();
@@ -43,6 +44,15 @@ export default function HeaderMenu({
             onClick={() => handleClick(onSelectLetras, "listado")}
           >
             <i className="fa fa-file-text-o" aria-hidden="true" /> Letras
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            className="header-menu-btn"
+            onClick={() => handleClick(onSelectAdmin, "main-content")}
+          >
+            <i className="fa fa-cog" aria-hidden="true" /> Admin
           </button>
         </li>
       </ul>

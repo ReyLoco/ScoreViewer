@@ -22,3 +22,16 @@ export const S_INTRODUCTION_TEXT = [
 // En desarrollo usaremos el backend Node local por defecto
 export const SONGS_API_URL =
   process.env.REACT_APP_SONGS_API_URL || "http://localhost:4000/api/songs";
+
+export const API_BASE_URL =
+  process.env.REACT_APP_API_BASE_URL || "http://localhost:4000";
+
+export const API_UPLOAD_URL = `${API_BASE_URL}/api/upload`;
+
+export function apiFileUrl(fileName) {
+  return `${API_BASE_URL}/api/files/${encodeURIComponent(fileName)}`;
+}
+
+// Base para servir PDFs desde el backend (server/index.js expone /pdfs)
+export const PDF_BASE_URL =
+  process.env.REACT_APP_PDF_BASE_URL || `${API_BASE_URL}/pdfs/`;

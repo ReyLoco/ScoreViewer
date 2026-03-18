@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as Constants from "../Constants";
 
 export default class SongViewer extends Component {
   constructor(props) {
@@ -51,18 +52,18 @@ export default class SongViewer extends Component {
     const hasScore = song.hasScore !== false;
     const hasLyrics = song.hasLyrics === true;
 
-    const scoreFile =
-      song.customScoreFile ||
-      (hasScore ? `${song.group} - ${song.title} - P.pdf` : null);
-    const lyricsFile =
-      song.customLyricsFile ||
-      (hasLyrics ? `${song.group} - ${song.title} - L.pdf` : null);
+    const scoreFile = song.customScoreFile || null;
+    const lyricsFile = song.customLyricsFile || null;
 
     const currentFile =
       this.state.view === "lyrics" ? lyricsFile || scoreFile : scoreFile || lyricsFile;
 
-    const basePath = `${process.env.PUBLIC_URL || ""}/${folder}`;
-    const pdfUrl = currentFile ? `${basePath}${currentFile}` : null;
+    // En este proyecto los PDFs se sirven desde el backend (GET /pdfs/<file>)
+    // Así no dependemos de que existan en el build estático.
+    const basePath =
+      Constants.PDF_BASE_URL || `${process.env.PUBLIC_URL || ""}/${folder}`;
+    // encodeURI mantiene los "/" de subcarpetas y codifica espacios, acentos, etc.
+    const pdfUrl = currentFile ? `${basePath}${encodeURI(currentFile)}` : null;
 
     const description = song.descriptionEs;
 

@@ -9,8 +9,10 @@ const { generateSongs, fileRegex } = require("../scripts/songsGenerator");
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// Carpeta donde se guardan los PDFs
-const pdfDir = path.join(__dirname, "..", "public", "pdfs");
+// Carpeta donde se guardan los PDFs (y opcionalmente otros originales como .odt)
+// En producción recomendamos algo como: /srv/scoreviewer/partituras
+const pdfDir =
+  process.env.PDF_DIR || path.join(__dirname, "..", "public", "pdfs");
 
 if (!fs.existsSync(pdfDir)) {
   fs.mkdirSync(pdfDir, { recursive: true });
@@ -27,6 +29,10 @@ app.use(
 );
 
 app.use(express.json());
+
+// Servimos PDFs desde la API para que el frontend pueda mostrarlos aunque no estén en public/
+// Ejemplo: GET /pdfs/ACDC%20-%20Back%20In%20Black%20-%20P.pdf
+app.use("/pdfs", express.static(pdfDir));
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -89,10 +95,20 @@ function buildPdfName(group, title, type) {
 
 function ensureInsidePdfDir(fileName) {
   const decoded = decodeURIComponent(fileName);
-  if (decoded.includes("..")) {
+  if (decoded.includes("..") || path.isAbsolute(decoded)) {
     throw new Error("Nombre de archivo no válido");
   }
-  return path.join(pdfDir, decoded);
+
+  const target = path.resolve(pdfDir, decoded);
+  const base = path.resolve(pdfDir);
+  if (target === base) {
+    throw new Error("Nombre de archivo no válido");
+  }
+  if (!target.startsWith(base + path.sep)) {
+    throw new Error("Nombre de archivo no válido");
+  }
+
+  return target;
 }
 
 app.get("/api/health", (req, res) => {
@@ -144,8 +160,10 @@ app.put("/api/files/:fileName", (req, res) => {
       return res.status(404).json({ error: "Archivo no encontrado" });
     }
 
+    // Nota: por simplicidad, el rename mueve el archivo al directorio raíz de pdfDir.
+    // Si en el futuro quieres mantener subcarpetas (General/Propias), añadimos un parámetro "folder".
     const newName = buildPdfName(newGroup, newTitle, newType);
-    const newPath = path.join(pdfDir, newName);
+    const newPath = path.resolve(pdfDir, newName);
 
     fs.renameSync(currentPath, newPath);
 

@@ -10,6 +10,7 @@ import Listado from "./components/Listado";
 import Introduction from "./components/Introduction";
 import Footer from "./components/Footer";
 import SongViewer from "./components/SongViewer";
+import AdminPanel from "./components/AdminPanel";
 
 
 export default class App extends Component {
@@ -29,10 +30,18 @@ export default class App extends Component {
     this.clickHandler = this.clickHandler.bind(this);
     this.setListFilter = this.setListFilter.bind(this);
     this.goHome = this.goHome.bind(this);
+    this.goAdmin = this.goAdmin.bind(this);
+    this.loadSongs = this.loadSongs.bind(this);
   } // end Constructor
 
   componentDidMount() {
-    fetch(Constants.SONGS_API_URL)
+    this.loadSongs();
+  }
+
+  loadSongs() {
+    this.setState({ loadingSongs: true, loadError: null });
+
+    return fetch(Constants.SONGS_API_URL)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Error HTTP ${res.status}`);
@@ -40,11 +49,14 @@ export default class App extends Component {
         return res.json();
       })
       .then((songs) => {
-        this.setState({
-          songs,
-          loadingSongs: false,
-          actualId: 0,
-          actualSongObj: songs[0] || null,
+        this.setState((prev) => {
+          const keepAdmin = prev.actualId === -1;
+          return {
+            songs,
+            loadingSongs: false,
+            actualId: keepAdmin ? -1 : 0,
+            actualSongObj: keepAdmin ? null : songs[0] || null,
+          };
         });
       })
       .catch((err) => {
@@ -88,6 +100,13 @@ export default class App extends Component {
     });
   }
 
+  goAdmin() {
+    this.setState({
+      actualId: -1,
+      actualSongObj: null,
+    });
+  }
+
   render() {
     const {
       songs,
@@ -111,6 +130,7 @@ export default class App extends Component {
             onSelectInicio={this.goHome}
             onSelectCanciones={() => this.setListFilter("score")}
             onSelectLetras={() => this.setListFilter("lyrics")}
+            onSelectAdmin={this.goAdmin}
           />
         </section>
 
@@ -131,7 +151,15 @@ export default class App extends Component {
               </aside>
 
               <main className="main-content-area">
-                {actualId === 0 ? (
+                {actualId === -1 ? (
+                  <AdminPanel
+                    songs={songs}
+                    onSongsChanged={(nextSongs) =>
+                      this.setState({ songs: nextSongs })
+                    }
+                    onReload={this.loadSongs}
+                  />
+                ) : actualId === 0 ? (
                   <Introduction
                     introductionText={Constants.S_INTRODUCTION_TEXT}
                   />

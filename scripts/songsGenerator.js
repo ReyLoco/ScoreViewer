@@ -4,25 +4,52 @@ const path = require("path");
 // Patrón: Grupo - Título - P/L.pdf
 const fileRegex = /^(?<group>.+?) - (?<title>.+?) - (?<type>P|L)\.pdf$/i;
 
+function listPdfRelativePathsRecursive(rootDir) {
+  const out = [];
+
+  function walk(currentDir) {
+    const entries = fs.readdirSync(currentDir, { withFileTypes: true });
+    for (const ent of entries) {
+      const full = path.join(currentDir, ent.name);
+
+      if (ent.isDirectory()) {
+        walk(full);
+        continue;
+      }
+
+      if (!ent.isFile()) continue;
+      if (!ent.name.toLowerCase().endsWith(".pdf")) continue;
+
+      out.push(path.relative(rootDir, full));
+    }
+  }
+
+  walk(rootDir);
+
+  // Normalizamos a separador "/" para que funcione igual en Windows/Linux
+  return out
+    .map((p) => p.split(path.sep).join("/"))
+    .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }));
+}
+
 function generateSongs(pdfDir) {
   if (!fs.existsSync(pdfDir)) {
     return [];
   }
 
-  const files = fs
-    .readdirSync(pdfDir)
-    .filter((f) => f.toLowerCase().endsWith(".pdf"));
+  const files = listPdfRelativePathsRecursive(pdfDir);
 
   const map = new Map();
 
   for (const file of files) {
-    const match = file.match(fileRegex);
+    const baseName = path.posix.basename(file);
+    const match = baseName.match(fileRegex);
     if (!match || !match.groups) {
       const key = file;
       if (!map.has(key)) {
         map.set(key, {
           group: null,
-          title: file.replace(/\.pdf$/i, ""),
+          title: baseName.replace(/\.pdf$/i, ""),
           hasScore: false,
           hasLyrics: false,
           customScoreFile: null,
