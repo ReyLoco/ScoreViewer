@@ -1,0 +1,69 @@
+# Frontend
+server {
+    listen 80;
+    server_name scoreviewer.luismasso.es;
+
+    root /var/www/scoreviewer;
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}
+
+# API
+server {
+    listen 80;
+    server_name api.luismasso.es;
+
+    # Ajustar al tamano maximo esperado de PDF
+    client_max_body_size 25m;
+
+    # Endpoints publicos
+    location /api/health {
+        proxy_pass http://127.0.0.1:4000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /api/songs {
+        proxy_pass http://127.0.0.1:4000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /pdfs/ {
+        proxy_pass http://127.0.0.1:4000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Endpoints de administracion (doble capa)
+    # 1) Basic Auth en Nginx
+    # 2) X-Admin-Token en backend
+    location = /api/upload {
+        auth_basic "Restricted Admin";
+        auth_basic_user_file /etc/nginx/.htpasswd-scoreviewer-admin;
+        proxy_pass http://127.0.0.1:4000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location ~ ^/api/files/ {
+        auth_basic "Restricted Admin";
+        auth_basic_user_file /etc/nginx/.htpasswd-scoreviewer-admin;
+        proxy_pass http://127.0.0.1:4000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

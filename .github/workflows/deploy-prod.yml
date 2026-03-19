@@ -1,0 +1,63 @@
+name: Deploy frontend to Prod
+
+on:
+  push:
+    branches:
+      - prod
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        env:
+          REACT_APP_SONGS_API_URL: ${{ secrets.REACT_APP_SW_SONGS_API_URL }}
+          REACT_APP_API_BASE_URL: ${{ secrets.REACT_APP_SW_API_BASE_URL }}
+          REACT_APP_PDF_BASE_URL: ${{ secrets.REACT_APP_SW_PDF_BASE_URL }}
+        run: npm run build
+
+      - name: Install rsync + ssh client
+        run: sudo apt-get update && sudo apt-get install -y rsync openssh-client
+
+      - name: Configure SSH
+        env:
+          SSH_HOST: ${{ secrets.SSH_SW_HOST }}
+          SSH_PORT: ${{ secrets.SSH_SW_PORT }}
+          SSH_KEY: ${{ secrets.SSH_KEY_SW }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy build/ to server
+        env:
+          SSH_HOST: ${{ secrets.SSH_SW_HOST }}
+          SSH_PORT: ${{ secrets.SSH_SW_PORT }}
+          SSH_USER: ${{ secrets.SSH_SW_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH_SW }}
+        run: |
+          test -d build
+          rsync -az --delete \
+            -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ed25519" \
+            build/ \
+            "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH%/}/"
+

@@ -8,6 +8,7 @@ const { generateSongs, fileRegex } = require("../scripts/songsGenerator");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN || "";
 
 // Carpeta donde se guardan los PDFs (y opcionalmente otros originales como .odt)
 // En producción recomendamos algo como: /srv/scoreviewer/partituras
@@ -30,13 +31,37 @@ app.use(
 
 app.use(express.json());
 
+function requireAdmin(req, res, next) {
+  if (!ADMIN_TOKEN) {
+    return res.status(500).json({
+      error: "ADMIN_TOKEN no está configurado en el servidor",
+    });
+  }
+
+  const provided = req.header("X-Admin-Token");
+  if (!provided || provided !== ADMIN_TOKEN) {
+    return res.status(401).json({ error: "No autorizado" });
+  }
+
+  return next();
+}
+
 // Servimos PDFs desde la API para que el frontend pueda mostrarlos aunque no estén en public/
 // Ejemplo: GET /pdfs/ACDC%20-%20Back%20In%20Black%20-%20P.pdf
 app.use("/pdfs", express.static(pdfDir));
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, pdfDir);
+    try {
+      const folder = sanitizeFolder(req.body?.folder);
+      const destDir = folder ? path.join(pdfDir, folder) : pdfDir;
+      if (!fs.existsSync(destDir)) {
+        fs.mkdirSync(destDir, { recursive: true });
+      }
+      cb(null, destDir);
+    } catch (err) {
+      cb(err);
+    }
   },
   filename: (req, file, cb) => {
     const originalName = file.originalname;
@@ -93,6 +118,20 @@ function buildPdfName(group, title, type) {
   return `${safeGroup} - ${safeTitle} - ${safeType}.pdf`;
 }
 
+function sanitizeFolder(folder) {
+  if (folder == null) return "";
+  const trimmed = String(folder).trim();
+  if (!trimmed) return "";
+  if (trimmed.includes("..") || trimmed.includes("/") || trimmed.includes("\\")) {
+    throw new Error("Carpeta no válida");
+  }
+  // Permitimos únicamente carpetas simples (p.ej. "General", "Propias")
+  if (!/^[\w .-]+$/.test(trimmed)) {
+    throw new Error("Carpeta no válida");
+  }
+  return trimmed;
+}
+
 function ensureInsidePdfDir(fileName) {
   const decoded = decodeURIComponent(fileName);
   if (decoded.includes("..") || path.isAbsolute(decoded)) {
@@ -125,16 +164,17 @@ app.get("/api/songs", (req, res) => {
   }
 });
 
-app.post("/api/upload", upload.single("file"), (req, res) => {
+app.post("/api/upload", requireAdmin, upload.single("file"), (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ error: "No se ha recibido ningún archivo" });
     }
 
+    const folder = sanitizeFolder(req.body?.folder);
     const songs = generateSongs(pdfDir);
     res.status(201).json({
       message: "Archivo subido correctamente",
-      fileName: req.file.filename,
+      fileName: folder ? `${folder}/${req.file.filename}` : req.file.filename,
       songs,
     });
   } catch (err) {
@@ -143,10 +183,10 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   }
 });
 
-app.put("/api/files/:fileName", (req, res) => {
+app.put("/api/files/:fileName", requireAdmin, (req, res) => {
   try {
     const { fileName } = req.params;
-    const { newGroup, newTitle, newType } = req.body || {};
+    const { newGroup, newTitle, newType, newFolder } = req.body || {};
 
     if (!newGroup || !newTitle || !newType) {
       return res.status(400).json({
@@ -160,10 +200,23 @@ app.put("/api/files/:fileName", (req, res) => {
       return res.status(404).json({ error: "Archivo no encontrado" });
     }
 
-    // Nota: por simplicidad, el rename mueve el archivo al directorio raíz de pdfDir.
-    // Si en el futuro quieres mantener subcarpetas (General/Propias), añadimos un parámetro "folder".
     const newName = buildPdfName(newGroup, newTitle, newType);
-    const newPath = path.resolve(pdfDir, newName);
+    const decodedOld = decodeURIComponent(fileName);
+    const oldDir = path.dirname(decodedOld);
+    const oldDirIsRoot = oldDir === "." || oldDir === path.sep;
+    const targetFolder = sanitizeFolder(newFolder);
+    const targetDirRel = targetFolder
+      ? targetFolder
+      : oldDirIsRoot
+        ? ""
+        : oldDir;
+
+    const newRel = targetDirRel ? path.join(targetDirRel, newName) : newName;
+    const newPath = ensureInsidePdfDir(encodeURIComponent(newRel));
+    const newDirAbs = path.dirname(newPath);
+    if (!fs.existsSync(newDirAbs)) {
+      fs.mkdirSync(newDirAbs, { recursive: true });
+    }
 
     fs.renameSync(currentPath, newPath);
 
@@ -171,7 +224,7 @@ app.put("/api/files/:fileName", (req, res) => {
     res.json({
       message: "Archivo renombrado correctamente",
       oldFileName: decodeURIComponent(fileName),
-      newFileName: newName,
+      newFileName: newRel.replace(/\\/g, "/"),
       songs,
     });
   } catch (err) {
@@ -180,7 +233,7 @@ app.put("/api/files/:fileName", (req, res) => {
   }
 });
 
-app.delete("/api/files/:fileName", (req, res) => {
+app.delete("/api/files/:fileName", requireAdmin, (req, res) => {
   try {
     const { fileName } = req.params;
     const targetPath = ensureInsidePdfDir(fileName);
@@ -201,6 +254,13 @@ app.delete("/api/files/:fileName", (req, res) => {
     console.error("Error al eliminar archivo:", err);
     res.status(500).json({ error: "Error al eliminar el archivo" });
   }
+});
+
+// Errores de multer (upload) y validación en destination/filename
+app.use((err, req, res, next) => {
+  if (!err) return next();
+  const msg = err.message || "Error procesando la petición";
+  res.status(400).json({ error: msg });
 });
 
 app.listen(PORT, () => {

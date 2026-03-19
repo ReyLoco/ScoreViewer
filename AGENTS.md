@@ -36,7 +36,8 @@
 
 - **Panel Admin en la app**  
   - Existe un panel `Admin` en el frontend para subir/renombrar/borrar PDFs usando la API.
-  - Nota: el `PUT` (rename) actualmente renombra y coloca el archivo en la **raíz** de `PDF_DIR` (pendiente soportar “mantener subcarpeta”).
+  - La subida permite elegir carpeta lógica (`General` o `Propias`), que corresponde a subcarpetas reales dentro de `PDF_DIR`.
+  - El endpoint `PUT /api/files/:fileName` ahora **mantiene la subcarpeta original** del archivo (o permite moverlo a otra carpeta si se indica), en lugar de moverlo siempre a la raíz de `PDF_DIR`.
 
 - **Estado de datos en el repo local**
   - En `public/pdfs` se han dejado **solo 10 PDFs** para pruebas locales (se eliminaron el resto).
@@ -53,39 +54,50 @@
     - Sábado 23:00 → sync Propias
     - Log: `/var/log/rclone-scoreviewer.log`
 
+- **Estado de despliegue / automatización**
+  - Usuario de despliegue creado en el servidor: `deploy`, con permisos sobre `/var/www/scoreviewer`.
+  - Clave SSH específica para GitHub Actions configurada para el usuario `deploy` (acceso solo por clave pública).
+  - Subdominios creados:
+    - `scoreviewer.luismasso.es` (frontend estático).
+    - `api.luismasso.es` (API Node + PDFs vía Nginx reverse proxy, pendiente de configurar).
+  - Workflow de GitHub Actions creado: `.github/workflows/deploy-prod.yml`.
+    - Se ejecuta en cada `push` a la rama `prod`.
+    - Construye el frontend (`npm ci && npm run build`) usando variables `REACT_APP_SW_*`.
+    - Despliega el contenido de `build/` a `/var/www/scoreviewer` vía SSH/rsync usando los secretos `*_SW`.
+
 ### 2. Próximos pasos recomendados
 
-1. **Desplegar backend en el servidor Linux**
-   - Copiar el repo (o solo `server/` + `scripts/`) al servidor (p. ej. `/var/www/scoreviewer`).
-   - Instalar dependencias en `server/` con `npm install`.
-   - Ejecutar el backend como servicio (`pm2` o `systemd`) con:
-     - `PDF_DIR=/srv/scoreviewer/partituras`
-     - `PORT=4000` (o el que se configure)
-     - `ALLOWED_ORIGIN=<dominio_frontend>` para CORS en producción.
+1. **Dejar backend Node funcionando como servicio en el servidor Linux**
+  - Copiar/actualizar `server/` y `scripts/` al servidor (p. ej. `/var/www/scoreviewer-api`).
+  - Instalar dependencias en `server/` con `npm install` (o `npm ci`).
+  - Crear servicio `systemd` (o configuración `pm2`) para el backend con:
+    - `PDF_DIR=/srv/scoreviewer/partituras`
+    - `PORT=4000` (o el que se configure)
+    - `ALLOWED_ORIGIN=https://scoreviewer.luismasso.es` para CORS en producción.
+  - Verificar que `http://127.0.0.1:4000/api/health` responde correctamente en el servidor.
 
-2. **Configurar Nginx (reverse proxy)**
-   - Exponer públicamente:
-     - `/api/*` → backend Node
-     - `/pdfs/*` → backend Node (PDFs)
-   - Configurar HTTPS (Let’s Encrypt) si hay dominio.
+2. **Configurar Nginx para frontend y API con HTTPS**
+  - `scoreviewer.luismasso.es`:
+    - Servir estáticos desde `/var/www/scoreviewer` (contenido desplegado por GitHub Actions).
+    - Configurar `try_files $uri /index.html;` para soportar routing de React.
+  - `api.luismasso.es`:
+    - Proxy inverso de `/api/*` y `/pdfs/*` hacia `http://127.0.0.1:4000`.
+    - Establecer `client_max_body_size` adecuado para subida de PDFs.
+  - Solicitar y configurar certificados HTTPS con Let’s Encrypt (`certbot --nginx -d scoreviewer.luismasso.es -d api.luismasso.es`).
 
-3. **Configurar frontend para producción**
-   - En build (Netlify o GitHub Actions) definir:
-     - `REACT_APP_SONGS_API_URL=https://<dominio_api>/api/songs`
-     - `REACT_APP_API_BASE_URL=https://<dominio_api>`
-     - (si se quiere) `REACT_APP_PDF_BASE_URL=https://<dominio_api>/pdfs/`
+3. **Ajustar variables de entorno de build (ya preparadas en Secrets)**
+  - Confirmar en GitHub Actions que los secretos están correctamente configurados:
+    - `REACT_APP_SW_SONGS_API_URL=https://api.luismasso.es/api/songs`
+    - `REACT_APP_SW_API_BASE_URL=https://api.luismasso.es`
+    - `REACT_APP_SW_PDF_BASE_URL=https://api.luismasso.es/pdfs/`
+  - Verificar que un `push` a `prod` ejecuta correctamente el workflow `deploy-prod.yml` y que el contenido de `build/` llega a `/var/www/scoreviewer`.
 
-4. **Mejoras en AdminPanel / endpoints (pendiente)**
-   - Soportar renombrado manteniendo subcarpeta (`General/` vs `Propias/`) (añadir parámetro `folder` o deducir del path).
-   - Proteger endpoints de administración (token simple / allowlist / basic auth).
+4. **Proteger endpoints de administración**
+  - Añadir una capa de autenticación sencilla para `POST /api/upload`, `PUT /api/files/:fileName` y `DELETE /api/files/:fileName`:
+    - Opción simple: token de cabecera (por ejemplo `X-Admin-Token`) comprobado en el backend.
+    - Alternativa: HTTP Basic Auth a nivel de Nginx solo para rutas `/api/upload` y `/api/files/*`.
 
-5. **Configurar un workflow de despliegue desde GitHub (si se desea sustituir Netlify)**
-   - Crear `.github/workflows/deploy.yml` que:
-     - Haga `npm install` y `npm run build` del frontend.  
-     - Copie el contenido de `build/` al directorio público del servidor mediante `rsync` o `scp`.  
-     - Opcionalmente sincronice/actualice `server/` y reinicie el servicio del backend.
-
-6. **Seguridad básica y hardening**
+5. **Seguridad básica y hardening**
    - Restringir `CORS` en `server/index.js` solo a los orígenes reales de producción.  
    - Revisar que los endpoints de upload/update/delete estén protegidos (autenticación simple, token, IP allowlist, etc.) antes de exponerlos públicamente.  
    - Validar bien los nombres de archivo y parámetros para evitar problemas de path traversal o inyección.

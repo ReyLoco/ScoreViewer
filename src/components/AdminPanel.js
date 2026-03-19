@@ -26,7 +26,9 @@ function guessFilesFromSong(song) {
 }
 
 export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
+  const [adminToken, setAdminToken] = useState("");
   const [uploadFile, setUploadFile] = useState(null);
+  const [uploadFolder, setUploadFolder] = useState("General");
   const [uploadGroup, setUploadGroup] = useState("");
   const [uploadTitle, setUploadTitle] = useState("");
   const [uploadType, setUploadType] = useState("P");
@@ -64,9 +66,16 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
       setMessage({ type: "error", text: "Selecciona un PDF para subir." });
       return;
     }
+    if (!adminToken.trim()) {
+      setMessage({ type: "error", text: "Indica el token de administración." });
+      return;
+    }
 
     const fd = new FormData();
     fd.append("file", uploadFile);
+    if (uploadFolder) {
+      fd.append("folder", uploadFolder);
+    }
 
     if (uploadGroup.trim() && uploadTitle.trim()) {
       fd.append("group", uploadGroup.trim());
@@ -78,6 +87,7 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
     try {
       const res = await fetch(Constants.API_UPLOAD_URL, {
         method: "POST",
+        headers: { "X-Admin-Token": adminToken.trim() },
         body: fd,
       });
 
@@ -119,12 +129,19 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
       });
       return;
     }
+    if (!adminToken.trim()) {
+      setMessage({ type: "error", text: "Indica el token de administración." });
+      return;
+    }
 
     setBusy(true);
     try {
       const res = await fetch(Constants.apiFileUrl(selectedFile), {
         method: "PUT",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-Admin-Token": adminToken.trim(),
+        },
         body: JSON.stringify({
           newGroup: newGroup.trim(),
           newTitle: newTitle.trim(),
@@ -160,6 +177,10 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
       setMessage({ type: "error", text: "Selecciona un archivo a eliminar." });
       return;
     }
+    if (!adminToken.trim()) {
+      setMessage({ type: "error", text: "Indica el token de administración." });
+      return;
+    }
 
     // eslint-disable-next-line no-alert
     const ok = window.confirm(`¿Seguro que quieres eliminar "${selectedFile}"?`);
@@ -169,6 +190,7 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
     try {
       const res = await fetch(Constants.apiFileUrl(selectedFile), {
         method: "DELETE",
+        headers: { "X-Admin-Token": adminToken.trim() },
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
@@ -197,6 +219,19 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
         Desde aquí puedes subir, renombrar o eliminar PDFs del servidor usando la
         API.
       </p>
+      <div className="admin-row">
+        <label>
+          Token administración
+          <input
+            type="password"
+            value={adminToken}
+            disabled={busy}
+            onChange={(e) => setAdminToken(e.target.value)}
+            placeholder="X-Admin-Token"
+            autoComplete="off"
+          />
+        </label>
+      </div>
 
       {message && (
         <div className={`admin-msg ${message.type === "ok" ? "ok" : "error"}`}>
@@ -222,6 +257,17 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
 
             <div className="admin-row admin-row-3">
               <label>
+                Carpeta
+                <select
+                  value={uploadFolder}
+                  disabled={busy}
+                  onChange={(e) => setUploadFolder(e.target.value)}
+                >
+                  <option value="General">General</option>
+                  <option value="Propias">Propias</option>
+                </select>
+              </label>
+              <label>
                 Grupo (opcional)
                 <input
                   type="text"
@@ -241,6 +287,9 @@ export default function AdminPanel({ songs = [], onSongsChanged, onReload }) {
                   placeholder="Back In Black"
                 />
               </label>
+            </div>
+
+            <div className="admin-row">
               <label>
                 Tipo
                 <select
