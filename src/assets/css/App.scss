@@ -365,9 +365,9 @@ $transition: all 0.25s ease-in-out;
 
 /* ====== Header menu =============================================== */
 
-.header-menu {
-  margin-top: 1rem;
-}
+// .header-menu {
+//   margin-top: 1rem;
+// }
 
 .header-menu ul {
   list-style: none;
@@ -442,6 +442,8 @@ $transition: all 0.25s ease-in-out;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
+  margin-left: 2.0rem;
+  font-size: 1.2rem;
 }
 
 .song-viewer-download-btn:hover {
@@ -621,7 +623,7 @@ $transition: all 0.25s ease-in-out;
   }
 
   #logo {
-    margin: 2px;
+    margin: 0px;
     width: 25%;
   }
 
