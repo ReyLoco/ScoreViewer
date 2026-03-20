@@ -102,3 +102,86 @@
    - Revisar que los endpoints de upload/update/delete estén protegidos (autenticación simple, token, IP allowlist, etc.) antes de exponerlos públicamente.  
    - Validar bien los nombres de archivo y parámetros para evitar problemas de path traversal o inyección.
 
+### 3. Estado actual de la sesión (Mar 2026)
+
+- **Backend desplegado y activo en servidor**
+  - Código copiado a `/var/www/scoreviewer-api` (`server/`, `scripts/`, `deploy/`).
+  - Dependencias instaladas con `npm ci` en `/var/www/scoreviewer-api/server`.
+  - Servicio `systemd` creado y habilitado: `scoreviewer-api.service`.
+  - API levantada en `127.0.0.1:4000` y `systemctl status` en estado `active (running)`.
+  - Se configuró `ADMIN_TOKEN` en el servicio.
+
+- **Seguridad de endpoints admin implementada en código**
+  - Backend (`server/index.js`) protege `POST /api/upload`, `PUT /api/files/:fileName` y `DELETE /api/files/:fileName` con cabecera `X-Admin-Token`.
+  - Frontend (`src/components/AdminPanel.js`) incluye campo "Token administración" y envía `X-Admin-Token` en operaciones admin.
+  - Se prepararon plantillas en repo:
+    - `server/.env.example`
+    - `deploy/scoreviewer-api.service.example`
+    - `deploy/nginx-scoreviewer.conf.example`
+    - `deploy/PROD_SETUP_CHECKLIST.md`
+
+- **Nginx / Certbot: punto de bloqueo actual**
+  - `nginx -t` pasa correctamente.
+  - Basic Auth para rutas admin está configurado (`/etc/nginx/.htpasswd-scoreviewer-admin`).
+  - Fallo al emitir certificado con Let’s Encrypt:
+    - `Challenge failed ... Invalid response ... 204`
+    - Ocurre tanto en `api.luismasso.es` como en `scoreviewer.luismasso.es`.
+  - Prueba manual confirma que:
+    - `curl -i http://scoreviewer.luismasso.es/.well-known/acme-challenge/test-token` devuelve `204`.
+    - `curl -i http://api.luismasso.es/.well-known/acme-challenge/test-token` devuelve `204`.
+  - Esto indica que existe otra configuración activa en Nginx que intercepta estas rutas y responde 204, impidiendo ACME.
+
+- **Próximos pasos al retomar (orden recomendado)**
+  1. Localizar el bloque que responde `204`:
+     - `nginx -T | grep -n "return 204"`
+     - `ls -la /etc/nginx/sites-enabled`
+     - Revisar también `/etc/nginx/conf.d/*.conf`.
+  2. Desactivar/conflictos (por ejemplo `default` u otro vhost que capture hostnames) y dejar activo solo el vhost correcto.
+  3. Asegurar en ambos `server` (`scoreviewer` y `api`) estas líneas:
+     - `listen 80;`
+     - `listen [::]:80;`
+     - `location ^~ /.well-known/acme-challenge/ { root /var/www/letsencrypt; ... }`
+  4. Verificar challenge manual con `curl -i` (debe devolver `200`, no `204`).
+  5. Reintentar:
+     - `certbot certonly --webroot -w /var/www/letsencrypt -d scoreviewer.luismasso.es -d api.luismasso.es`
+     - después `certbot --nginx -d scoreviewer.luismasso.es -d api.luismasso.es`
+
+### 4. Cierre de sesión (Mar 2026)
+
+- **Producción funcionando**
+  - DNS de `scoreviewer.luismasso.es` y `api.luismasso.es` corregido para apuntar al servidor de Clouding.
+  - Certificado Let's Encrypt emitido correctamente para ambos subdominios.
+  - Nginx configurado con HTTPS (redirección HTTP -> HTTPS).
+  - API en producción operativa (`https://api.luismasso.es/api/health` responde OK).
+  - Frontend desplegado en `/var/www/scoreviewer` y accesible por `https://scoreviewer.luismasso.es`.
+
+- **Admin y seguridad**
+  - Endpoints admin protegidos en backend con `X-Admin-Token` (`ADMIN_TOKEN` en `systemd`).
+  - Endpoints sensibles protegidos adicionalmente con Basic Auth en Nginx.
+  - Panel Admin movido a acceso por URL `/admin` (oculto del menú principal).
+  - El campo "Token administración" del frontend debe usar el mismo valor que `ADMIN_TOKEN` del servicio backend.
+
+- **Nota operativa importante**
+  - Tras copiar nuevos builds por `scp`, la carpeta `/var/www/scoreviewer/static` puede quedar sin permisos de lectura para `www-data`.
+  - Si reaparece error de MIME (`text/html` para `.js/.css`), aplicar:
+    - `chmod -R a+rX /var/www/scoreviewer/static`
+    - `chmod a+rX /var/www/scoreviewer`
+    - `nginx -t && systemctl reload nginx`
+
+### 5. Próximos pasos para siguiente sesión
+
+1. **Git / limpieza de PDFs**
+  - Dejar de versionar `public/pdfs` (untrack en Git y añadir regla adecuada en `.gitignore`).
+  - Eliminar esa carpeta también del repositorio remoto (origin) una vez confirmado.
+
+2. **CI/CD**
+  - Implementar y probar el workflow de GitHub Actions para despliegue a producción (frontend y, si aplica, backend/scripts).
+  - Verificar secretos y ejecución real end-to-end.
+
+3. **Mejoras UI/UX**
+  - Ajustes estéticos generales.
+  - Aumentar un poco tamaño de fuente.
+  - Estrechar el sidebar izquierdo del listado de canciones.
+  - En móvil: al abrir partitura/letra, desplazar el viewport al documento automáticamente.
+  - En móvil (y general): seleccionar por defecto la "A" en el listado.
+  - Revisar y completar otras mejoras menores en próxima sesión.

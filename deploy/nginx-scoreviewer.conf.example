@@ -6,6 +6,20 @@ server {
     root /var/www/scoreviewer;
     index index.html;
 
+    # El panel de administración vive en /admin (SPA). Protegemos esa ruta
+    # con Basic Auth para que solo el usuario de /etc/nginx/.htpasswd-* pueda verla.
+    location ^~ /admin {
+        auth_basic "Restricted Admin";
+        auth_basic_user_file /etc/nginx/.htpasswd-scoreviewer-admin;
+        try_files $uri /index.html;
+    }
+
+    location ^~ /admin/ {
+        auth_basic "Restricted Admin";
+        auth_basic_user_file /etc/nginx/.htpasswd-scoreviewer-admin;
+        try_files $uri /index.html;
+    }
+
     location / {
         try_files $uri /index.html;
     }
