@@ -4,7 +4,7 @@ export const APP_TITLE = "ScoreViewer";
 
 export const APP_E_SLOGAN = "A simple viewer for music scores and song sheets";
 export const APP_S_SLOGAN =
-  "Un visor sencillo de partituras y letras de canciones";
+  "Visor de partituras y letras de canciones";
 
 export const E_INTRODUCTION_TEXT = [
   "Welcome to ScoreViewer.",
