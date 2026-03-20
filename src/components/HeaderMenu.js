@@ -34,7 +34,7 @@ export default function HeaderMenu({
             className="header-menu-btn"
             onClick={() => handleClick(onSelectCanciones, "listado")}
           >
-            <i className="fa fa-music" aria-hidden="true" /> Canciones
+            <i className="fa fa-music" aria-hidden="true" /> Partituras
           </button>
         </li>
         <li>

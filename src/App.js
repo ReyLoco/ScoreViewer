@@ -194,7 +194,7 @@ export default class App extends Component {
                 />
               </aside>
 
-              <main className="main-content-area">
+              <main id="main-content" className="main-content-area">
                 {actualId === -1 ? (
                   <AdminPanel
                     songs={songs}
