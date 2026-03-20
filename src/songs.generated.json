@@ -5,14 +5,14 @@
   },
   {
     "id": 1,
-    "name": "4 Non Blondes - Whats Up",
+    "name": "4 Non Blondes - What's Up",
     "group": "4 Non Blondes",
-    "title": "Whats Up",
+    "title": "What's Up",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "4 Non Blondes - Whats Up - L.pdf",
+    "customLyricsFile": "4 Non Blondes - What's Up - L.pdf",
     "rawFiles": [
-      "4 Non Blondes - Whats Up - L.pdf"
+      "4 Non Blondes - What's Up - L.pdf"
     ]
   },
   {
@@ -65,14 +65,14 @@
   },
   {
     "id": 6,
-    "name": "Acdc - Hell Bells",
-    "group": "Acdc",
-    "title": "Hell Bells",
+    "name": "ACDC - Hells Bells",
+    "group": "ACDC",
+    "title": "Hells Bells",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Acdc - Hell Bells - L.pdf",
+    "customLyricsFile": "ACDC - Hells Bells - L.pdf",
     "rawFiles": [
-      "Acdc - Hell Bells - L.pdf"
+      "ACDC - Hells Bells - L.pdf"
     ]
   },
   {
@@ -153,16 +153,16 @@
   },
   {
     "id": 13,
-    "name": "Acdc - Live Wire",
-    "group": "Acdc",
-    "title": "Live Wire",
+    "name": "ACDC - Li've Wire",
+    "group": "ACDC",
+    "title": "Li've Wire",
     "hasScore": true,
     "hasLyrics": true,
-    "customScoreFile": "Acdc - Live Wire - P.pdf",
-    "customLyricsFile": "Acdc - Live Wire - L.pdf",
+    "customScoreFile": "ACDC - Li've Wire - P.pdf",
+    "customLyricsFile": "ACDC - Li've Wire - L.pdf",
     "rawFiles": [
-      "Acdc - Live Wire - L.pdf",
-      "Acdc - Live Wire - P.pdf"
+      "ACDC - Li've Wire - L.pdf",
+      "ACDC - Li've Wire - P.pdf"
     ]
   },
   {
@@ -303,14 +303,14 @@
   },
   {
     "id": 25,
-    "name": "Acdc - Touch To Much",
-    "group": "Acdc",
-    "title": "Touch To Much",
+    "name": "ACDC - Touch Too Much",
+    "group": "ACDC",
+    "title": "Touch Too Much",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Acdc - Touch To Much - L.pdf",
+    "customLyricsFile": "ACDC - Touch Too Much - L.pdf",
     "rawFiles": [
-      "Acdc - Touch To Much - L.pdf"
+      "ACDC - Touch Too Much - L.pdf"
     ]
   },
   {
@@ -329,38 +329,38 @@
   },
   {
     "id": 27,
-    "name": "Aerosmith - I Don_T Want To Miss A Thing",
+    "name": "Aerosmith - I Don't Want To Miss A Thing",
     "group": "Aerosmith",
-    "title": "I Don_T Want To Miss A Thing",
+    "title": "I Don't Want To Miss A Thing",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Aerosmith - I Don_T Want To Miss A Thing - L.pdf",
+    "customLyricsFile": "Aerosmith - I Don't Want To Miss A Thing - L.pdf",
     "rawFiles": [
-      "Aerosmith - I Don_T Want To Miss A Thing - L.pdf"
+      "Aerosmith - I Don't Want To Miss A Thing - L.pdf"
     ]
   },
   {
     "id": 28,
-    "name": "Alanis Morrisette - Ironic",
-    "group": "Alanis Morrisette",
+    "name": "Alanis Morissette - Ironic",
+    "group": "Alanis Morissette",
     "title": "Ironic",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Alanis Morrisette - Ironic - P.pdf",
+    "customScoreFile": "Alanis Morissette - Ironic - P.pdf",
     "rawFiles": [
-      "Alanis Morrisette - Ironic - P.pdf"
+      "Alanis Morissette - Ironic - P.pdf"
     ]
   },
   {
     "id": 29,
-    "name": "Alanna Miles - Black Velvet",
-    "group": "Alanna Miles",
+    "name": "Alannah Myles - Black Velvet",
+    "group": "Alannah Myles",
     "title": "Black Velvet",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Alanna Miles - Black Velvet - P.pdf",
+    "customScoreFile": "Alannah Myles - Black Velvet - P.pdf",
     "rawFiles": [
-      "Alanna Miles - Black Velvet - P.pdf"
+      "Alannah Myles - Black Velvet - P.pdf"
     ]
   },
   {
@@ -377,14 +377,14 @@
   },
   {
     "id": 31,
-    "name": "Albert King - Born Under A Bad Sing",
+    "name": "Albert King - Born Under A Bad Sign",
     "group": "Albert King",
-    "title": "Born Under A Bad Sing",
+    "title": "Born Under A Bad Sign",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Albert King - Born Under A Bad Sing - L.pdf",
+    "customLyricsFile": "Albert King - Born Under A Bad Sign - L.pdf",
     "rawFiles": [
-      "Albert King - Born Under A Bad Sing - L.pdf"
+      "Albert King - Born Under A Bad Sign - L.pdf"
     ]
   },
   {
@@ -437,14 +437,14 @@
   },
   {
     "id": 36,
-    "name": "Andres Calamaro - Flaca",
-    "group": "Andres Calamaro",
+    "name": "Andrés Calamaro - Flaca",
+    "group": "Andrés Calamaro",
     "title": "Flaca",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Andres Calamaro - Flaca - L.pdf",
+    "customLyricsFile": "Andrés Calamaro - Flaca - L.pdf",
     "rawFiles": [
-      "Andres Calamaro - Flaca - L.pdf"
+      "Andrés Calamaro - Flaca - L.pdf"
     ]
   },
   {
@@ -461,42 +461,32 @@
   },
   {
     "id": 38,
-    "name": "Antonio Flores - No Dudaria",
+    "name": "Antonio Flores - No Dudaría",
     "group": "Antonio Flores",
-    "title": "No Dudaria",
+    "title": "No Dudaría",
     "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Antonio Flores - No Dudaria - P.pdf",
+    "hasLyrics": true,
+    "customScoreFile": "Antonio Flores - No Dudaría - P.pdf",
+    "customLyricsFile": "Antonio Flores - No Dudaría - L.pdf",
     "rawFiles": [
-      "Antonio Flores - No Dudaria - P.pdf"
+      "Antonio Flores - No Dudaría - L.pdf",
+      "Antonio Flores - No Dudaría - P.pdf"
     ]
   },
   {
     "id": 39,
-    "name": "Antonio Flores - No Dudaría",
-    "group": "Antonio Flores",
-    "title": "No Dudaría",
+    "name": "Antonio Jobi'm - How Insensiti've",
+    "group": "Antonio Jobi'm",
+    "title": "How Insensiti've",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Antonio Flores - No Dudaría - L.pdf",
+    "customLyricsFile": "Antonio Jobi'm - How Insensiti've - L.pdf",
     "rawFiles": [
-      "Antonio Flores - No Dudaría - L.pdf"
+      "Antonio Jobi'm - How Insensiti've - L.pdf"
     ]
   },
   {
     "id": 40,
-    "name": "Antonio Jobim - How Insensitive",
-    "group": "Antonio Jobim",
-    "title": "How Insensitive",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "Antonio Jobim - How Insensitive - L.pdf",
-    "rawFiles": [
-      "Antonio Jobim - How Insensitive - L.pdf"
-    ]
-  },
-  {
-    "id": 41,
     "name": "Ariel Rot - Me Estás Atrapando Otra Vez",
     "group": "Ariel Rot",
     "title": "Me Estás Atrapando Otra Vez",
@@ -510,7 +500,7 @@
     ]
   },
   {
-    "id": 42,
+    "id": 41,
     "name": "Bad Company - Feel Like Making Love",
     "group": "Bad Company",
     "title": "Feel Like Making Love",
@@ -522,33 +512,7 @@
     ]
   },
   {
-    "id": 43,
-    "name": "Barrabas - Cheer Up",
-    "group": "Barrabas",
-    "title": "Cheer Up",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Barrabas - Cheer Up - P.pdf",
-    "rawFiles": [
-      "Barrabas - Cheer Up - P.pdf"
-    ]
-  },
-  {
-    "id": 44,
-    "name": "Barricada - No Hay Tregua",
-    "group": "Barricada",
-    "title": "No Hay Tregua",
-    "hasScore": true,
-    "hasLyrics": true,
-    "customScoreFile": "Barricada - No Hay Tregua - P.pdf",
-    "customLyricsFile": "Barricada - No Hay Tregua - L.pdf",
-    "rawFiles": [
-      "Barricada - No Hay Tregua - L.pdf",
-      "Barricada - No Hay Tregua - P.pdf"
-    ]
-  },
-  {
-    "id": 45,
+    "id": 42,
     "name": "Barón Rojo - Anda Suelto Satanas",
     "group": "Barón Rojo",
     "title": "Anda Suelto Satanas",
@@ -560,31 +524,21 @@
     ]
   },
   {
-    "id": 46,
-    "name": "Barón Rojo - Campo De Concentracion",
-    "group": "Barón Rojo",
-    "title": "Campo De Concentracion",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Barón Rojo - Campo De Concentracion - P.pdf",
-    "rawFiles": [
-      "Barón Rojo - Campo De Concentracion - P.pdf"
-    ]
-  },
-  {
-    "id": 47,
+    "id": 43,
     "name": "Barón Rojo - Campo De Concentración",
     "group": "Barón Rojo",
     "title": "Campo De Concentración",
-    "hasScore": false,
+    "hasScore": true,
     "hasLyrics": true,
+    "customScoreFile": "Barón Rojo - Campo De Concentración - P.pdf",
     "customLyricsFile": "Barón Rojo - Campo De Concentración - L.pdf",
     "rawFiles": [
-      "Barón Rojo - Campo De Concentración - L.pdf"
+      "Barón Rojo - Campo De Concentración - L.pdf",
+      "Barón Rojo - Campo De Concentración - P.pdf"
     ]
   },
   {
-    "id": 48,
+    "id": 44,
     "name": "Barón Rojo - Casi Me Mato",
     "group": "Barón Rojo",
     "title": "Casi Me Mato",
@@ -596,7 +550,7 @@
     ]
   },
   {
-    "id": 49,
+    "id": 45,
     "name": "Barón Rojo - Concierto Para Ellos",
     "group": "Barón Rojo",
     "title": "Concierto Para Ellos",
@@ -608,7 +562,7 @@
     ]
   },
   {
-    "id": 50,
+    "id": 46,
     "name": "Barón Rojo - El Malo",
     "group": "Barón Rojo",
     "title": "El Malo",
@@ -620,19 +574,7 @@
     ]
   },
   {
-    "id": 51,
-    "name": "Barón Rojo - Hijos De Cain",
-    "group": "Barón Rojo",
-    "title": "Hijos De Cain",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Barón Rojo - Hijos De Cain - P.pdf",
-    "rawFiles": [
-      "Barón Rojo - Hijos De Cain - P.pdf"
-    ]
-  },
-  {
-    "id": 52,
+    "id": 47,
     "name": "Barón Rojo - Hijos De Caín",
     "group": "Barón Rojo",
     "title": "Hijos De Caín",
@@ -644,7 +586,19 @@
     ]
   },
   {
-    "id": 53,
+    "id": 48,
+    "name": "Barón Rojo - Hijos De Cain",
+    "group": "Barón Rojo",
+    "title": "Hijos De Cain",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Barón Rojo - Hijos De Cain - P.pdf",
+    "rawFiles": [
+      "Barón Rojo - Hijos De Cain - P.pdf"
+    ]
+  },
+  {
+    "id": 49,
     "name": "Barón Rojo - Las Flores Del Mal",
     "group": "Barón Rojo",
     "title": "Las Flores Del Mal",
@@ -656,7 +610,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 50,
     "name": "Barón Rojo - Los Rockeros Van Al Infierno",
     "group": "Barón Rojo",
     "title": "Los Rockeros Van Al Infierno",
@@ -670,7 +624,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 51,
     "name": "Barón Rojo - Siempre Estas Alli",
     "group": "Barón Rojo",
     "title": "Siempre Estas Alli",
@@ -682,7 +636,7 @@
     ]
   },
   {
-    "id": 56,
+    "id": 52,
     "name": "Barón Rojo - Son Como Hormigas",
     "group": "Barón Rojo",
     "title": "Son Como Hormigas",
@@ -696,31 +650,47 @@
     ]
   },
   {
-    "id": 57,
+    "id": 53,
+    "name": "Barrabás - Cheer Up",
+    "group": "Barrabás",
+    "title": "Cheer Up",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Barrabás - Cheer Up - P.pdf",
+    "rawFiles": [
+      "Barrabás - Cheer Up - P.pdf"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Barricada - No Hay Tregua",
+    "group": "Barricada",
+    "title": "No Hay Tregua",
+    "hasScore": true,
+    "hasLyrics": true,
+    "customScoreFile": "Barricada - No Hay Tregua - P.pdf",
+    "customLyricsFile": "Barricada - No Hay Tregua - L.pdf",
+    "rawFiles": [
+      "Barricada - No Hay Tregua - L.pdf",
+      "Barricada - No Hay Tregua - P.pdf"
+    ]
+  },
+  {
+    "id": 55,
     "name": "Black Sabbath - Paranoid",
     "group": "Black Sabbath",
     "title": "Paranoid",
     "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Black Sabbath - Paranoid  - P.pdf",
-    "rawFiles": [
-      "Black Sabbath - Paranoid  - P.pdf"
-    ]
-  },
-  {
-    "id": 58,
-    "name": "Black Sabbath - Paranoid",
-    "group": "Black Sabbath",
-    "title": "Paranoid",
-    "hasScore": false,
     "hasLyrics": true,
+    "customScoreFile": "Black Sabbath - Paranoid - P.pdf",
     "customLyricsFile": "Black Sabbath - Paranoid - L.pdf",
     "rawFiles": [
-      "Black Sabbath - Paranoid - L.pdf"
+      "Black Sabbath - Paranoid - L.pdf",
+      "Black Sabbath - Paranoid - P.pdf"
     ]
   },
   {
-    "id": 59,
+    "id": 56,
     "name": "Blondie - Atomic",
     "group": "Blondie",
     "title": "Atomic",
@@ -732,7 +702,7 @@
     ]
   },
   {
-    "id": 60,
+    "id": 57,
     "name": "Blondie - Atomic En Re",
     "group": "Blondie",
     "title": "Atomic En Re",
@@ -744,7 +714,7 @@
     ]
   },
   {
-    "id": 61,
+    "id": 58,
     "name": "Blondie - Call Me",
     "group": "Blondie",
     "title": "Call Me",
@@ -758,7 +728,7 @@
     ]
   },
   {
-    "id": 62,
+    "id": 59,
     "name": "Blondie - Call Me En Lam",
     "group": "Blondie",
     "title": "Call Me En Lam",
@@ -770,19 +740,19 @@
     ]
   },
   {
-    "id": 63,
-    "name": "Bob Dylan - Blowind In The Wind",
+    "id": 60,
+    "name": "Bob Dylan - Blowin' In The Wind",
     "group": "Bob Dylan",
-    "title": "Blowind In The Wind",
+    "title": "Blowin' In The Wind",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Bob Dylan - Blowind In The Wind - P.pdf",
+    "customScoreFile": "Bob Dylan - Blowin' In The Wind - P.pdf",
     "rawFiles": [
-      "Bob Dylan - Blowind In The Wind - P.pdf"
+      "Bob Dylan - Blowin' In The Wind - P.pdf"
     ]
   },
   {
-    "id": 64,
+    "id": 61,
     "name": "Bob Dylan - Blowing In The Wind",
     "group": "Bob Dylan",
     "title": "Blowing In The Wind",
@@ -794,7 +764,7 @@
     ]
   },
   {
-    "id": 65,
+    "id": 62,
     "name": "Bob Dylan - My Back Pages",
     "group": "Bob Dylan",
     "title": "My Back Pages",
@@ -806,19 +776,19 @@
     ]
   },
   {
-    "id": 66,
+    "id": 63,
     "name": "Bob Dylan - She Belongs To Me",
     "group": "Bob Dylan",
     "title": "She Belongs To Me",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Bob Dylan - She Belongs To Me  - P.pdf",
+    "customScoreFile": "Bob Dylan - She Belongs To Me - P.pdf",
     "rawFiles": [
-      "Bob Dylan - She Belongs To Me  - P.pdf"
+      "Bob Dylan - She Belongs To Me - P.pdf"
     ]
   },
   {
-    "id": 67,
+    "id": 64,
     "name": "Bob Marley - I Shot The Sheriff",
     "group": "Bob Marley",
     "title": "I Shot The Sheriff",
@@ -830,7 +800,7 @@
     ]
   },
   {
-    "id": 68,
+    "id": 65,
     "name": "Bobby Hebb - Sunny",
     "group": "Bobby Hebb",
     "title": "Sunny",
@@ -842,43 +812,31 @@
     ]
   },
   {
-    "id": 69,
-    "name": "Bobby Hebb - Sunny.",
-    "group": "Bobby Hebb",
-    "title": "Sunny.",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Bobby Hebb - Sunny. - P.pdf",
-    "rawFiles": [
-      "Bobby Hebb - Sunny. - P.pdf"
-    ]
-  },
-  {
-    "id": 70,
-    "name": "Bobby Mcferrin - Dont Worry",
-    "group": "Bobby Mcferrin",
-    "title": "Dont Worry",
+    "id": 66,
+    "name": "Bobby McFerrin - Don't Worry",
+    "group": "Bobby McFerrin",
+    "title": "Don't Worry",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Bobby Mcferrin - Dont Worry - L.pdf",
+    "customLyricsFile": "Bobby McFerrin - Don't Worry - L.pdf",
     "rawFiles": [
-      "Bobby Mcferrin - Dont Worry - L.pdf"
+      "Bobby McFerrin - Don't Worry - L.pdf"
     ]
   },
   {
-    "id": 71,
-    "name": "Bon Jovi - You Give Love A Bad Name",
+    "id": 67,
+    "name": "Bon Jovi - You Gi've Love A Bad Name",
     "group": "Bon Jovi",
-    "title": "You Give Love A Bad Name",
+    "title": "You Gi've Love A Bad Name",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Bon Jovi - You Give Love A Bad Name - L.pdf",
+    "customLyricsFile": "Bon Jovi - You Gi've Love A Bad Name - L.pdf",
     "rawFiles": [
-      "Bon Jovi - You Give Love A Bad Name - L.pdf"
+      "Bon Jovi - You Gi've Love A Bad Name - L.pdf"
     ]
   },
   {
-    "id": 72,
+    "id": 68,
     "name": "Brigada Lincoln - Mi Corista Favorita",
     "group": "Brigada Lincoln",
     "title": "Mi Corista Favorita",
@@ -890,7 +848,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 69,
     "name": "Bruce Springsteen - Fire",
     "group": "Bruce Springsteen",
     "title": "Fire",
@@ -902,7 +860,7 @@
     ]
   },
   {
-    "id": 74,
+    "id": 70,
     "name": "Bruce Springsteen - Hungry Heart",
     "group": "Bruce Springsteen",
     "title": "Hungry Heart",
@@ -914,7 +872,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": 71,
     "name": "Bruce Springsteen - The River",
     "group": "Bruce Springsteen",
     "title": "The River",
@@ -928,18 +886,19 @@
     ]
   },
   {
-    "id": 76,
-    "name": "Burning -Eres Especial - P",
-    "group": null,
-    "title": "Burning -Eres Especial - P",
-    "hasScore": false,
+    "id": 72,
+    "name": "Burning - Eres Especial",
+    "group": "Burning",
+    "title": "Eres Especial",
+    "hasScore": true,
     "hasLyrics": false,
+    "customScoreFile": "Burning - Eres Especial - P.pdf",
     "rawFiles": [
-      "Burning -Eres Especial - P.pdf"
+      "Burning - Eres Especial - P.pdf"
     ]
   },
   {
-    "id": 77,
+    "id": 73,
     "name": "Calamaro - Flaca",
     "group": "Calamaro",
     "title": "Flaca",
@@ -951,7 +910,7 @@
     ]
   },
   {
-    "id": 78,
+    "id": 74,
     "name": "Camilo Sesto - Vivir Así Es Morir De Amor",
     "group": "Camilo Sesto",
     "title": "Vivir Así Es Morir De Amor",
@@ -963,7 +922,7 @@
     ]
   },
   {
-    "id": 79,
+    "id": 75,
     "name": "Canciones De Pocos Acordes - P",
     "group": null,
     "title": "Canciones De Pocos Acordes - P",
@@ -974,7 +933,7 @@
     ]
   },
   {
-    "id": 80,
+    "id": 76,
     "name": "Celtas Cortos - La Senda Del Tiempo",
     "group": "Celtas Cortos",
     "title": "La Senda Del Tiempo",
@@ -986,7 +945,7 @@
     ]
   },
   {
-    "id": 81,
+    "id": 77,
     "name": "Charly Garcia - Funky",
     "group": "Charly Garcia",
     "title": "Funky",
@@ -998,7 +957,7 @@
     ]
   },
   {
-    "id": 82,
+    "id": 78,
     "name": "Charly Garcia - Mientes",
     "group": "Charly Garcia",
     "title": "Mientes",
@@ -1010,7 +969,7 @@
     ]
   },
   {
-    "id": 83,
+    "id": 79,
     "name": "Chris Rea - Road To Hell",
     "group": "Chris Rea",
     "title": "Road To Hell",
@@ -1022,7 +981,7 @@
     ]
   },
   {
-    "id": 84,
+    "id": 80,
     "name": "Chris Rea - Road To Hell En Dom",
     "group": "Chris Rea",
     "title": "Road To Hell En Dom",
@@ -1034,7 +993,7 @@
     ]
   },
   {
-    "id": 85,
+    "id": 81,
     "name": "Christina Rosenvinge - Mil Pedazos",
     "group": "Christina Rosenvinge",
     "title": "Mil Pedazos",
@@ -1046,7 +1005,7 @@
     ]
   },
   {
-    "id": 86,
+    "id": 82,
     "name": "Christina Rosenvinge - Pulgas En El Corazón",
     "group": "Christina Rosenvinge",
     "title": "Pulgas En El Corazón",
@@ -1058,7 +1017,7 @@
     ]
   },
   {
-    "id": 87,
+    "id": 83,
     "name": "Christina Rosenvinge - Señorita",
     "group": "Christina Rosenvinge",
     "title": "Señorita",
@@ -1070,7 +1029,7 @@
     ]
   },
   {
-    "id": 88,
+    "id": 84,
     "name": "Christina Rosenvinge - Voy En Un Coche",
     "group": "Christina Rosenvinge",
     "title": "Voy En Un Coche",
@@ -1082,19 +1041,19 @@
     ]
   },
   {
-    "id": 89,
-    "name": "Chuck Berry - Johny B. Goode",
+    "id": 85,
+    "name": "Chuck Berry - Johnny B. Goode",
     "group": "Chuck Berry",
-    "title": "Johny B. Goode",
+    "title": "Johnny B. Goode",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Chuck Berry - Johny B. Goode - L.pdf",
+    "customLyricsFile": "Chuck Berry - Johnny B. Goode - L.pdf",
     "rawFiles": [
-      "Chuck Berry - Johny B. Goode - L.pdf"
+      "Chuck Berry - Johnny B. Goode - L.pdf"
     ]
   },
   {
-    "id": 90,
+    "id": 86,
     "name": "Chuck Berry - School Days",
     "group": "Chuck Berry",
     "title": "School Days",
@@ -1106,7 +1065,7 @@
     ]
   },
   {
-    "id": 91,
+    "id": 87,
     "name": "Chuck Berry - You Never Can Tell",
     "group": "Chuck Berry",
     "title": "You Never Can Tell",
@@ -1118,7 +1077,7 @@
     ]
   },
   {
-    "id": 92,
+    "id": 88,
     "name": "Cream - Desert Cities Of The Heart",
     "group": "Cream",
     "title": "Desert Cities Of The Heart",
@@ -1130,7 +1089,7 @@
     ]
   },
   {
-    "id": 93,
+    "id": 89,
     "name": "Cream - White Room",
     "group": "Cream",
     "title": "White Room",
@@ -1142,133 +1101,183 @@
     ]
   },
   {
-    "id": 94,
-    "name": "Creedence Clearwater Revivagood Golly Miss Molly - L",
-    "group": null,
-    "title": "Creedence Clearwater Revivagood Golly Miss Molly - L",
+    "id": 90,
+    "name": "Creedence Clearwater Revival - Good Golly Miss Molly",
+    "group": "Creedence Clearwater Revival",
+    "title": "Good Golly Miss Molly",
     "hasScore": false,
-    "hasLyrics": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Creedence Clearwater Revival - Good Golly Miss Molly - L.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revivagood Golly Miss Molly - L.pdf"
+      "Creedence Clearwater Revival - Good Golly Miss Molly - L.pdf"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Creedence Clearwater Revival - Have You Ever Seen The Rain",
+    "group": "Creedence Clearwater Revival",
+    "title": "Have You Ever Seen The Rain",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Creedence Clearwater Revival - Have You Ever Seen The Rain - L.pdf",
+    "rawFiles": [
+      "Creedence Clearwater Revival - Have You Ever Seen The Rain - L.pdf"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Creedence Clearwater Revival - L - Bad Moon Rising",
+    "group": "Creedence Clearwater Revival",
+    "title": "L - Bad Moon Rising",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Creedence Clearwater Revival - L - Bad Moon Rising - P.pdf",
+    "rawFiles": [
+      "Creedence Clearwater Revival - L - Bad Moon Rising - P.pdf"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Creedence Clearwater Revival - L - Before You Accuse Me",
+    "group": "Creedence Clearwater Revival",
+    "title": "L - Before You Accuse Me",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Creedence Clearwater Revival - L - Before You Accuse Me - P.pdf",
+    "rawFiles": [
+      "Creedence Clearwater Revival - L - Before You Accuse Me - P.pdf"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Creedence Clearwater Revival - L - Blue Ridge Mountain Blues",
+    "group": "Creedence Clearwater Revival",
+    "title": "L - Blue Ridge Mountain Blues",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Creedence Clearwater Revival - L - Blue Ridge Mountain Blues - P.pdf",
+    "rawFiles": [
+      "Creedence Clearwater Revival - L - Blue Ridge Mountain Blues - P.pdf"
     ]
   },
   {
     "id": 95,
-    "name": "Creedence Clearwater Revivahave You Ever Seen The Rain - L",
-    "group": null,
-    "title": "Creedence Clearwater Revivahave You Ever Seen The Rain - L",
-    "hasScore": false,
+    "name": "Creedence Clearwater Revival - L - Cotton Fields",
+    "group": "Creedence Clearwater Revival",
+    "title": "L - Cotton Fields",
+    "hasScore": true,
     "hasLyrics": false,
+    "customScoreFile": "Creedence Clearwater Revival - L - Cotton Fields - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revivahave You Ever Seen The Rain - L.pdf"
+      "Creedence Clearwater Revival - L - Cotton Fields - P.pdf"
     ]
   },
   {
     "id": 96,
-    "name": "Creedence Clearwater Revival - Bad Moon Rising",
+    "name": "Creedence Clearwater Revival - L - Don't Look Now (It Aint You Or Me)",
     "group": "Creedence Clearwater Revival",
-    "title": "Bad Moon Rising",
+    "title": "L - Don't Look Now (It Aint You Or Me)",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Bad Moon Rising - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - Don't Look Now (It Aint You Or Me) - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Bad Moon Rising - P.pdf"
+      "Creedence Clearwater Revival - L - Don't Look Now (It Aint You Or Me) - P.pdf"
     ]
   },
   {
     "id": 97,
-    "name": "Creedence Clearwater Revival - Before You Acusse Me",
+    "name": "Creedence Clearwater Revival - L - It Came Out Of The Sky",
     "group": "Creedence Clearwater Revival",
-    "title": "Before You Acusse Me",
+    "title": "L - It Came Out Of The Sky",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Before You Acusse Me - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - It Came Out Of The Sky - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Before You Acusse Me - P.pdf"
+      "Creedence Clearwater Revival - L - It Came Out Of The Sky - P.pdf"
     ]
   },
   {
     "id": 98,
-    "name": "Creedence Clearwater Revival - Blue Ridge Mountain Blues",
+    "name": "Creedence Clearwater Revival - L - Lodi",
     "group": "Creedence Clearwater Revival",
-    "title": "Blue Ridge Mountain Blues",
+    "title": "L - Lodi",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Blue Ridge Mountain Blues - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - Lodi - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Blue Ridge Mountain Blues - P.pdf"
+      "Creedence Clearwater Revival - L - Lodi - P.pdf"
     ]
   },
   {
     "id": 99,
-    "name": "Creedence Clearwater Revival - Cotton Fields",
+    "name": "Creedence Clearwater Revival - L - Long As I Can See The Light",
     "group": "Creedence Clearwater Revival",
-    "title": "Cotton Fields",
+    "title": "L - Long As I Can See The Light",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Cotton Fields - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - Long As I Can See The Light - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Cotton Fields - P.pdf"
+      "Creedence Clearwater Revival - L - Long As I Can See The Light - P.pdf"
     ]
   },
   {
     "id": 100,
-    "name": "Creedence Clearwater Revival - Dont Look Now (It Aint You Or Me)",
+    "name": "Creedence Clearwater Revival - L - My Baby Left Me",
     "group": "Creedence Clearwater Revival",
-    "title": "Dont Look Now (It Aint You Or Me)",
+    "title": "L - My Baby Left Me",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Dont Look Now (It Aint You Or Me) - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - My Baby Left Me - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Dont Look Now (It Aint You Or Me) - P.pdf"
+      "Creedence Clearwater Revival - L - My Baby Left Me - P.pdf"
     ]
   },
   {
     "id": 101,
-    "name": "Creedence Clearwater Revival - It Came Out Of The Sky",
+    "name": "Creedence Clearwater Revival - L - Proud Mary",
     "group": "Creedence Clearwater Revival",
-    "title": "It Came Out Of The Sky",
+    "title": "L - Proud Mary",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - It Came Out Of The Sky - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - Proud Mary - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - It Came Out Of The Sky - P.pdf"
+      "Creedence Clearwater Revival - L - Proud Mary - P.pdf"
     ]
   },
   {
     "id": 102,
-    "name": "Creedence Clearwater Revival - Lodi",
+    "name": "Creedence Clearwater Revival - L - Up Around The Bend",
     "group": "Creedence Clearwater Revival",
-    "title": "Lodi",
+    "title": "L - Up Around The Bend",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Lodi - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - Up Around The Bend - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Lodi - P.pdf"
+      "Creedence Clearwater Revival - L - Up Around The Bend - P.pdf"
     ]
   },
   {
     "id": 103,
-    "name": "Creedence Clearwater Revival - Long As I Can See The Light",
+    "name": "Creedence Clearwater Revival - L - Wholl Stop The Rain",
     "group": "Creedence Clearwater Revival",
-    "title": "Long As I Can See The Light",
+    "title": "L - Wholl Stop The Rain",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Long As I Can See The Light - P.pdf",
+    "customScoreFile": "Creedence Clearwater Revival - L - Wholl Stop The Rain - P.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Long As I Can See The Light - P.pdf"
+      "Creedence Clearwater Revival - L - Wholl Stop The Rain - P.pdf"
     ]
   },
   {
     "id": 104,
-    "name": "Creedence Clearwater Revival - My Baby Left Me",
+    "name": "Creedence Clearwater Revival - Midnight Special",
     "group": "Creedence Clearwater Revival",
-    "title": "My Baby Left Me",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - My Baby Left Me - P.pdf",
+    "title": "Midnight Special",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Creedence Clearwater Revival - Midnight Special - L.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - My Baby Left Me - P.pdf"
+      "Creedence Clearwater Revival - Midnight Special - L.pdf"
     ]
   },
   {
@@ -1276,23 +1285,23 @@
     "name": "Creedence Clearwater Revival - Proud Mary",
     "group": "Creedence Clearwater Revival",
     "title": "Proud Mary",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Proud Mary - P.pdf",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Creedence Clearwater Revival - Proud Mary - L.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Proud Mary - P.pdf"
+      "Creedence Clearwater Revival - Proud Mary - L.pdf"
     ]
   },
   {
     "id": 106,
-    "name": "Creedence Clearwater Revival - Up Around The Bend",
+    "name": "Creedence Clearwater Revival - Suzi Q",
     "group": "Creedence Clearwater Revival",
-    "title": "Up Around The Bend",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Up Around The Bend - P.pdf",
+    "title": "Suzi Q",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Creedence Clearwater Revival - Suzi Q - L.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Up Around The Bend - P.pdf"
+      "Creedence Clearwater Revival - Suzi Q - L.pdf"
     ]
   },
   {
@@ -1300,59 +1309,15 @@
     "name": "Creedence Clearwater Revival - Wholl Stop The Rain",
     "group": "Creedence Clearwater Revival",
     "title": "Wholl Stop The Rain",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Creedence Clearwater Revival - Wholl Stop The Rain - P.pdf",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Creedence Clearwater Revival - Wholl Stop The Rain - L.pdf",
     "rawFiles": [
-      "Creedence Clearwater Revival - Wholl Stop The Rain - P.pdf"
+      "Creedence Clearwater Revival - Wholl Stop The Rain - L.pdf"
     ]
   },
   {
     "id": 108,
-    "name": "Creedence Clearwater Revivamidnight Special - L",
-    "group": null,
-    "title": "Creedence Clearwater Revivamidnight Special - L",
-    "hasScore": false,
-    "hasLyrics": false,
-    "rawFiles": [
-      "Creedence Clearwater Revivamidnight Special - L.pdf"
-    ]
-  },
-  {
-    "id": 109,
-    "name": "Creedence Clearwater Revivaproud Mary - L",
-    "group": null,
-    "title": "Creedence Clearwater Revivaproud Mary - L",
-    "hasScore": false,
-    "hasLyrics": false,
-    "rawFiles": [
-      "Creedence Clearwater Revivaproud Mary - L.pdf"
-    ]
-  },
-  {
-    "id": 110,
-    "name": "Creedence Clearwater Revivasuzi Q - L",
-    "group": null,
-    "title": "Creedence Clearwater Revivasuzi Q - L",
-    "hasScore": false,
-    "hasLyrics": false,
-    "rawFiles": [
-      "Creedence Clearwater Revivasuzi Q - L.pdf"
-    ]
-  },
-  {
-    "id": 111,
-    "name": "Creedence Clearwater Revivawholl Stop The Rain - L",
-    "group": null,
-    "title": "Creedence Clearwater Revivawholl Stop The Rain - L",
-    "hasScore": false,
-    "hasLyrics": false,
-    "rawFiles": [
-      "Creedence Clearwater Revivawholl Stop The Rain - L.pdf"
-    ]
-  },
-  {
-    "id": 112,
     "name": "Danza Invisible - Sabor De Amor",
     "group": "Danza Invisible",
     "title": "Sabor De Amor",
@@ -1364,7 +1329,7 @@
     ]
   },
   {
-    "id": 113,
+    "id": 109,
     "name": "Daughtry - Home",
     "group": "Daughtry",
     "title": "Home",
@@ -1376,7 +1341,7 @@
     ]
   },
   {
-    "id": 114,
+    "id": 110,
     "name": "Daughtry - What About Now",
     "group": "Daughtry",
     "title": "What About Now",
@@ -1388,19 +1353,19 @@
     ]
   },
   {
-    "id": 115,
-    "name": "David Bowie - Five Years",
+    "id": 111,
+    "name": "David Bowie - Fi've Years",
     "group": "David Bowie",
-    "title": "Five Years",
+    "title": "Fi've Years",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "David Bowie - Five Years - L.pdf",
+    "customLyricsFile": "David Bowie - Fi've Years - L.pdf",
     "rawFiles": [
-      "David Bowie - Five Years - L.pdf"
+      "David Bowie - Fi've Years - L.pdf"
     ]
   },
   {
-    "id": 116,
+    "id": 112,
     "name": "David Bowie - Starman",
     "group": "David Bowie",
     "title": "Starman",
@@ -1414,7 +1379,7 @@
     ]
   },
   {
-    "id": 117,
+    "id": 113,
     "name": "David Bowie - The Man Who Sold The World En La",
     "group": "David Bowie",
     "title": "The Man Who Sold The World En La",
@@ -1426,7 +1391,7 @@
     ]
   },
   {
-    "id": 118,
+    "id": 114,
     "name": "David Bowie - The Man Who Sold The World En Si",
     "group": "David Bowie",
     "title": "The Man Who Sold The World En Si",
@@ -1438,7 +1403,7 @@
     ]
   },
   {
-    "id": 119,
+    "id": 115,
     "name": "David Bowie - Ziggy Stardust",
     "group": "David Bowie",
     "title": "Ziggy Stardust",
@@ -1452,7 +1417,7 @@
     ]
   },
   {
-    "id": 120,
+    "id": 116,
     "name": "Deep Purple - Black Night",
     "group": "Deep Purple",
     "title": "Black Night",
@@ -1464,7 +1429,7 @@
     ]
   },
   {
-    "id": 121,
+    "id": 117,
     "name": "Deep Purple - Highway Star",
     "group": "Deep Purple",
     "title": "Highway Star",
@@ -1476,7 +1441,7 @@
     ]
   },
   {
-    "id": 122,
+    "id": 118,
     "name": "Deep Purple - Smoke On The Water",
     "group": "Deep Purple",
     "title": "Smoke On The Water",
@@ -1490,7 +1455,7 @@
     ]
   },
   {
-    "id": 123,
+    "id": 119,
     "name": "Deep Purple - Strange Kind Of Woman",
     "group": "Deep Purple",
     "title": "Strange Kind Of Woman",
@@ -1502,7 +1467,7 @@
     ]
   },
   {
-    "id": 124,
+    "id": 120,
     "name": "Deltonos - Soy Un Hombre Enfermo",
     "group": "Deltonos",
     "title": "Soy Un Hombre Enfermo",
@@ -1514,7 +1479,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 121,
     "name": "Derek And The Dominos - Layla",
     "group": "Derek And The Dominos",
     "title": "Layla",
@@ -1526,7 +1491,7 @@
     ]
   },
   {
-    "id": 126,
+    "id": 122,
     "name": "Dio - Holy Diver",
     "group": "Dio",
     "title": "Holy Diver",
@@ -1538,7 +1503,7 @@
     ]
   },
   {
-    "id": 127,
+    "id": 123,
     "name": "Dio - Rainbow In The Dark",
     "group": "Dio",
     "title": "Rainbow In The Dark",
@@ -1552,7 +1517,7 @@
     ]
   },
   {
-    "id": 128,
+    "id": 124,
     "name": "Dire Straits - Sultans Of Swing",
     "group": "Dire Straits",
     "title": "Sultans Of Swing",
@@ -1564,7 +1529,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 125,
     "name": "Doctor Project Point Black - Song For V",
     "group": "Doctor Project Point Black",
     "title": "Song For V",
@@ -1576,7 +1541,7 @@
     ]
   },
   {
-    "id": 130,
+    "id": 126,
     "name": "Dover - Devil Came To Me",
     "group": "Dover",
     "title": "Devil Came To Me",
@@ -1588,7 +1553,7 @@
     ]
   },
   {
-    "id": 131,
+    "id": 127,
     "name": "Dover - Devil Come To Me",
     "group": "Dover",
     "title": "Devil Come To Me",
@@ -1600,7 +1565,7 @@
     ]
   },
   {
-    "id": 132,
+    "id": 128,
     "name": "Dover - King George",
     "group": "Dover",
     "title": "King George",
@@ -1612,7 +1577,7 @@
     ]
   },
   {
-    "id": 133,
+    "id": 129,
     "name": "Dover - Serenade",
     "group": "Dover",
     "title": "Serenade",
@@ -1624,7 +1589,7 @@
     ]
   },
   {
-    "id": 134,
+    "id": 130,
     "name": "Duo Dinamico - Resistiré",
     "group": "Duo Dinamico",
     "title": "Resistiré",
@@ -1636,7 +1601,7 @@
     ]
   },
   {
-    "id": 135,
+    "id": 131,
     "name": "Eagles - Hotel California",
     "group": "Eagles",
     "title": "Hotel California",
@@ -1648,7 +1613,7 @@
     ]
   },
   {
-    "id": 136,
+    "id": 132,
     "name": "Eddie Cochran - Cut Across Shorty",
     "group": "Eddie Cochran",
     "title": "Cut Across Shorty",
@@ -1660,19 +1625,19 @@
     ]
   },
   {
-    "id": 137,
-    "name": "Eddie Cochran - Sumertime Blues",
+    "id": 133,
+    "name": "Eddie Cochran - Summertime Blues",
     "group": "Eddie Cochran",
-    "title": "Sumertime Blues",
+    "title": "Summertime Blues",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Eddie Cochran - Sumertime Blues - P.pdf",
+    "customScoreFile": "Eddie Cochran - Summertime Blues - P.pdf",
     "rawFiles": [
-      "Eddie Cochran - Sumertime Blues - P.pdf"
+      "Eddie Cochran - Summertime Blues - P.pdf"
     ]
   },
   {
-    "id": 138,
+    "id": 134,
     "name": "El Ultimo De La Fila - A Cualquiera Puede",
     "group": "El Ultimo De La Fila",
     "title": "A Cualquiera Puede",
@@ -1684,7 +1649,7 @@
     ]
   },
   {
-    "id": 139,
+    "id": 135,
     "name": "El Ultimo De La Fila - A Cualquiera Puede Sucederle",
     "group": "El Ultimo De La Fila",
     "title": "A Cualquiera Puede Sucederle",
@@ -1696,7 +1661,7 @@
     ]
   },
   {
-    "id": 140,
+    "id": 136,
     "name": "El Ultimo De La Fila - A Veces Se Enciende",
     "group": "El Ultimo De La Fila",
     "title": "A Veces Se Enciende",
@@ -1710,7 +1675,7 @@
     ]
   },
   {
-    "id": 141,
+    "id": 137,
     "name": "El Ultimo De La Fila - El Loco De La Calle",
     "group": "El Ultimo De La Fila",
     "title": "El Loco De La Calle",
@@ -1724,7 +1689,7 @@
     ]
   },
   {
-    "id": 142,
+    "id": 138,
     "name": "El Ultimo De La Fila - En Los Arboles",
     "group": "El Ultimo De La Fila",
     "title": "En Los Arboles",
@@ -1738,7 +1703,7 @@
     ]
   },
   {
-    "id": 143,
+    "id": 139,
     "name": "El Ultimo De La Fila - Insurreccion",
     "group": "El Ultimo De La Fila",
     "title": "Insurreccion",
@@ -1752,7 +1717,7 @@
     ]
   },
   {
-    "id": 144,
+    "id": 140,
     "name": "El Ultimo De La Fila - Las Palabras Son Cansancio",
     "group": "El Ultimo De La Fila",
     "title": "Las Palabras Son Cansancio",
@@ -1766,7 +1731,7 @@
     ]
   },
   {
-    "id": 145,
+    "id": 141,
     "name": "El Ultimo De La Fila - Lejos De Las Leyes",
     "group": "El Ultimo De La Fila",
     "title": "Lejos De Las Leyes",
@@ -1778,7 +1743,7 @@
     ]
   },
   {
-    "id": 146,
+    "id": 142,
     "name": "El Ultimo De La Fila - Lejos De Las Leyes De Los Hombres",
     "group": "El Ultimo De La Fila",
     "title": "Lejos De Las Leyes De Los Hombres",
@@ -1790,7 +1755,7 @@
     ]
   },
   {
-    "id": 147,
+    "id": 143,
     "name": "El Ultimo De La Fila - Querida Milagros",
     "group": "El Ultimo De La Fila",
     "title": "Querida Milagros",
@@ -1802,7 +1767,7 @@
     ]
   },
   {
-    "id": 148,
+    "id": 144,
     "name": "El Ultimo De La Fila - Son Cuatro Dias",
     "group": "El Ultimo De La Fila",
     "title": "Son Cuatro Dias",
@@ -1814,7 +1779,7 @@
     ]
   },
   {
-    "id": 149,
+    "id": 145,
     "name": "El Ultimo De La Fila - Soy Un Accidente",
     "group": "El Ultimo De La Fila",
     "title": "Soy Un Accidente",
@@ -1828,7 +1793,7 @@
     ]
   },
   {
-    "id": 150,
+    "id": 146,
     "name": "El Ultimo De La Fila - Trabajo Duro",
     "group": "El Ultimo De La Fila",
     "title": "Trabajo Duro",
@@ -1840,7 +1805,7 @@
     ]
   },
   {
-    "id": 151,
+    "id": 147,
     "name": "El Ultimo De La Fila - Tu Me Sobrevuelas",
     "group": "El Ultimo De La Fila",
     "title": "Tu Me Sobrevuelas",
@@ -1852,7 +1817,7 @@
     ]
   },
   {
-    "id": 152,
+    "id": 148,
     "name": "El Ultimo De La Fila - Ya No Danzo Al Son De Los Tambores",
     "group": "El Ultimo De La Fila",
     "title": "Ya No Danzo Al Son De Los Tambores",
@@ -1864,7 +1829,7 @@
     ]
   },
   {
-    "id": 153,
+    "id": 149,
     "name": "Elefantes - Abre Más Ancho El Camino",
     "group": "Elefantes",
     "title": "Abre Más Ancho El Camino",
@@ -1876,19 +1841,7 @@
     ]
   },
   {
-    "id": 154,
-    "name": "Elvis Presley - Suspicious Mind",
-    "group": "Elvis Presley",
-    "title": "Suspicious Mind",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Elvis Presley -  Suspicious Mind - P.pdf",
-    "rawFiles": [
-      "Elvis Presley -  Suspicious Mind - P.pdf"
-    ]
-  },
-  {
-    "id": 155,
+    "id": 150,
     "name": "Elvis Presley - Good Luck Charm",
     "group": "Elvis Presley",
     "title": "Good Luck Charm",
@@ -1900,7 +1853,7 @@
     ]
   },
   {
-    "id": 156,
+    "id": 151,
     "name": "Elvis Presley - Heartbreak Hotel",
     "group": "Elvis Presley",
     "title": "Heartbreak Hotel",
@@ -1912,7 +1865,7 @@
     ]
   },
   {
-    "id": 157,
+    "id": 152,
     "name": "Elvis Presley - One Night",
     "group": "Elvis Presley",
     "title": "One Night",
@@ -1924,19 +1877,31 @@
     ]
   },
   {
-    "id": 158,
-    "name": "Eric Clapton - After Mignight",
-    "group": "Eric Clapton",
-    "title": "After Mignight",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "Eric Clapton - After Mignight - L.pdf",
+    "id": 153,
+    "name": "Elvis Presley - Suspicious Mind",
+    "group": "Elvis Presley",
+    "title": "Suspicious Mind",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Elvis Presley - Suspicious Mind - P.pdf",
     "rawFiles": [
-      "Eric Clapton - After Mignight - L.pdf"
+      "Elvis Presley - Suspicious Mind - P.pdf"
     ]
   },
   {
-    "id": 159,
+    "id": 154,
+    "name": "Eric Clapton - After Midnight",
+    "group": "Eric Clapton",
+    "title": "After Midnight",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Eric Clapton - After Midnight - L.pdf",
+    "rawFiles": [
+      "Eric Clapton - After Midnight - L.pdf"
+    ]
+  },
+  {
+    "id": 155,
     "name": "Eric Clapton - Bad Love",
     "group": "Eric Clapton",
     "title": "Bad Love",
@@ -1948,19 +1913,19 @@
     ]
   },
   {
-    "id": 160,
-    "name": "Eric Clapton - Before You Acusse Me",
+    "id": 156,
+    "name": "Eric Clapton - Before You Accuse Me",
     "group": "Eric Clapton",
-    "title": "Before You Acusse Me",
+    "title": "Before You Accuse Me",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Eric Clapton - Before You Acusse Me - L.pdf",
+    "customLyricsFile": "Eric Clapton - Before You Accuse Me - L.pdf",
     "rawFiles": [
-      "Eric Clapton - Before You Acusse Me - L.pdf"
+      "Eric Clapton - Before You Accuse Me - L.pdf"
     ]
   },
   {
-    "id": 161,
+    "id": 157,
     "name": "Eric Clapton - Cocaine",
     "group": "Eric Clapton",
     "title": "Cocaine",
@@ -1972,7 +1937,7 @@
     ]
   },
   {
-    "id": 162,
+    "id": 158,
     "name": "Eric Clapton - Hey Hey",
     "group": "Eric Clapton",
     "title": "Hey Hey",
@@ -1984,7 +1949,7 @@
     ]
   },
   {
-    "id": 163,
+    "id": 159,
     "name": "Eric Clapton - Layla",
     "group": "Eric Clapton",
     "title": "Layla",
@@ -1996,7 +1961,7 @@
     ]
   },
   {
-    "id": 164,
+    "id": 160,
     "name": "Eric Clapton - Nobody Knows You",
     "group": "Eric Clapton",
     "title": "Nobody Knows You",
@@ -2008,7 +1973,7 @@
     ]
   },
   {
-    "id": 165,
+    "id": 161,
     "name": "Eric Clapton - Nobody Knows You When",
     "group": "Eric Clapton",
     "title": "Nobody Knows You When",
@@ -2020,7 +1985,7 @@
     ]
   },
   {
-    "id": 166,
+    "id": 162,
     "name": "Eric Clapton - Old Love",
     "group": "Eric Clapton",
     "title": "Old Love",
@@ -2032,7 +1997,7 @@
     ]
   },
   {
-    "id": 167,
+    "id": 163,
     "name": "Eric Clapton - Outside Woman Blues",
     "group": "Eric Clapton",
     "title": "Outside Woman Blues",
@@ -2044,7 +2009,7 @@
     ]
   },
   {
-    "id": 168,
+    "id": 164,
     "name": "Eric Clapton - San Francisco Bay Blues",
     "group": "Eric Clapton",
     "title": "San Francisco Bay Blues",
@@ -2058,7 +2023,7 @@
     ]
   },
   {
-    "id": 169,
+    "id": 165,
     "name": "Eric Clapton - Sunshine Of Your Love",
     "group": "Eric Clapton",
     "title": "Sunshine Of Your Love",
@@ -2070,7 +2035,7 @@
     ]
   },
   {
-    "id": 170,
+    "id": 166,
     "name": "Eric Clapton - Tulsa Time",
     "group": "Eric Clapton",
     "title": "Tulsa Time",
@@ -2082,7 +2047,7 @@
     ]
   },
   {
-    "id": 171,
+    "id": 167,
     "name": "Eric Clapton - White Room",
     "group": "Eric Clapton",
     "title": "White Room",
@@ -2094,7 +2059,7 @@
     ]
   },
   {
-    "id": 172,
+    "id": 168,
     "name": "Eric Clapton - Why Does Love Got To Be So Sad",
     "group": "Eric Clapton",
     "title": "Why Does Love Got To Be So Sad",
@@ -2106,7 +2071,7 @@
     ]
   },
   {
-    "id": 173,
+    "id": 169,
     "name": "Eric Clapton - Wonderful Tonight",
     "group": "Eric Clapton",
     "title": "Wonderful Tonight",
@@ -2118,7 +2083,7 @@
     ]
   },
   {
-    "id": 174,
+    "id": 170,
     "name": "Extremoduro - Ama, Ama, Ama Y Ensancha El Alma",
     "group": "Extremoduro",
     "title": "Ama, Ama, Ama Y Ensancha El Alma",
@@ -2130,7 +2095,7 @@
     ]
   },
   {
-    "id": 175,
+    "id": 171,
     "name": "Eye Of The Tiger - Survivor",
     "group": "Eye Of The Tiger",
     "title": "Survivor",
@@ -2144,19 +2109,19 @@
     ]
   },
   {
-    "id": 176,
-    "name": "Fairground Atrattion - Perfect",
-    "group": "Fairground Atrattion",
+    "id": 172,
+    "name": "Fairground Atraction - Perfect",
+    "group": "Fairground Atraction",
     "title": "Perfect",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Fairground Atrattion - Perfect - P.pdf",
+    "customScoreFile": "Fairground Atraction - Perfect - P.pdf",
     "rawFiles": [
-      "Fairground Atrattion - Perfect - P.pdf"
+      "Fairground Atraction - Perfect - P.pdf"
     ]
   },
   {
-    "id": 177,
+    "id": 173,
     "name": "Fairground Attraction - Perfect",
     "group": "Fairground Attraction",
     "title": "Perfect",
@@ -2168,7 +2133,7 @@
     ]
   },
   {
-    "id": 178,
+    "id": 174,
     "name": "Fito - Acabo De Llegar",
     "group": "Fito",
     "title": "Acabo De Llegar",
@@ -2182,7 +2147,7 @@
     ]
   },
   {
-    "id": 179,
+    "id": 175,
     "name": "Fito - El Funeral",
     "group": "Fito",
     "title": "El Funeral",
@@ -2194,7 +2159,7 @@
     ]
   },
   {
-    "id": 180,
+    "id": 176,
     "name": "Fito - Me Acordé De Ti",
     "group": "Fito",
     "title": "Me Acordé De Ti",
@@ -2206,7 +2171,7 @@
     ]
   },
   {
-    "id": 181,
+    "id": 177,
     "name": "Fito - Soldadito Marinero",
     "group": "Fito",
     "title": "Soldadito Marinero",
@@ -2218,7 +2183,7 @@
     ]
   },
   {
-    "id": 182,
+    "id": 178,
     "name": "Fito - Un Buen Castigo",
     "group": "Fito",
     "title": "Un Buen Castigo",
@@ -2230,7 +2195,7 @@
     ]
   },
   {
-    "id": 183,
+    "id": 179,
     "name": "Fito - Whisky Barato",
     "group": "Fito",
     "title": "Whisky Barato",
@@ -2244,7 +2209,7 @@
     ]
   },
   {
-    "id": 184,
+    "id": 180,
     "name": "Fito Y Fitipaldis - El Funeral",
     "group": "Fito Y Fitipaldis",
     "title": "El Funeral",
@@ -2256,7 +2221,7 @@
     ]
   },
   {
-    "id": 185,
+    "id": 181,
     "name": "Fito Y Fitipaldis - Me Acordé De Ti",
     "group": "Fito Y Fitipaldis",
     "title": "Me Acordé De Ti",
@@ -2268,7 +2233,7 @@
     ]
   },
   {
-    "id": 186,
+    "id": 182,
     "name": "Foo Fighters - For All The Cows",
     "group": "Foo Fighters",
     "title": "For All The Cows",
@@ -2280,7 +2245,7 @@
     ]
   },
   {
-    "id": 187,
+    "id": 183,
     "name": "Franco Battiato - Centro Di Gravita Permanente",
     "group": "Franco Battiato",
     "title": "Centro Di Gravita Permanente",
@@ -2292,31 +2257,31 @@
     ]
   },
   {
-    "id": 188,
-    "name": "Gabinente Caligari - Camino Soria",
-    "group": "Gabinente Caligari",
+    "id": 184,
+    "name": "Gabinete Caligari - Camino Soria",
+    "group": "Gabinete Caligari",
     "title": "Camino Soria",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Gabinente Caligari - Camino Soria - L.pdf",
+    "customLyricsFile": "Gabinete Caligari - Camino Soria - L.pdf",
     "rawFiles": [
-      "Gabinente Caligari - Camino Soria - L.pdf"
+      "Gabinete Caligari - Camino Soria - L.pdf"
     ]
   },
   {
-    "id": 189,
-    "name": "Gabinente Caligari - Tocala Uli",
-    "group": "Gabinente Caligari",
+    "id": 185,
+    "name": "Gabinete Caligari - Tocala Uli",
+    "group": "Gabinete Caligari",
     "title": "Tocala Uli",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Gabinente Caligari - Tocala Uli - L.pdf",
+    "customLyricsFile": "Gabinete Caligari - Tocala Uli - L.pdf",
     "rawFiles": [
-      "Gabinente Caligari - Tocala Uli - L.pdf"
+      "Gabinete Caligari - Tocala Uli - L.pdf"
     ]
   },
   {
-    "id": 190,
+    "id": 186,
     "name": "Gary Moore - The Loner",
     "group": "Gary Moore",
     "title": "The Loner",
@@ -2328,7 +2293,7 @@
     ]
   },
   {
-    "id": 191,
+    "id": 187,
     "name": "George Benson - On Broadway",
     "group": "George Benson",
     "title": "On Broadway",
@@ -2340,7 +2305,7 @@
     ]
   },
   {
-    "id": 192,
+    "id": 188,
     "name": "George Harrison - All Those Years Ago",
     "group": "George Harrison",
     "title": "All Those Years Ago",
@@ -2352,7 +2317,7 @@
     ]
   },
   {
-    "id": 193,
+    "id": 189,
     "name": "George Harrison - My Sweet Lord",
     "group": "George Harrison",
     "title": "My Sweet Lord",
@@ -2364,7 +2329,7 @@
     ]
   },
   {
-    "id": 194,
+    "id": 190,
     "name": "Golpes Bajos - Cena Recalentada",
     "group": "Golpes Bajos",
     "title": "Cena Recalentada",
@@ -2378,7 +2343,7 @@
     ]
   },
   {
-    "id": 195,
+    "id": 191,
     "name": "Golpes Bajos - Come Prima",
     "group": "Golpes Bajos",
     "title": "Come Prima",
@@ -2390,7 +2355,7 @@
     ]
   },
   {
-    "id": 196,
+    "id": 192,
     "name": "Goodnight Moon - Shivaree",
     "group": "Goodnight Moon",
     "title": "Shivaree",
@@ -2402,7 +2367,7 @@
     ]
   },
   {
-    "id": 197,
+    "id": 193,
     "name": "Green Day - Basket Case",
     "group": "Green Day",
     "title": "Basket Case",
@@ -2414,69 +2379,69 @@
     ]
   },
   {
-    "id": 198,
-    "name": "Guns And Roses - Patience",
-    "group": "Guns And Roses",
+    "id": 194,
+    "name": "Guns N' Roses - Patience",
+    "group": "Guns N' Roses",
     "title": "Patience",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Guns And Roses - Patience - P.pdf",
+    "customScoreFile": "Guns N' Roses - Patience - P.pdf",
     "rawFiles": [
-      "Guns And Roses - Patience - P.pdf"
+      "Guns N' Roses - Patience - P.pdf"
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Guns N' Roses - Sweet Child 'O Mine",
+    "group": "Guns N' Roses",
+    "title": "Sweet Child 'O Mine",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "Guns N' Roses - Sweet Child 'O Mine - L.pdf",
+    "rawFiles": [
+      "Guns N' Roses - Sweet Child 'O Mine - L.pdf"
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Guns N' Roses - Sweet Child O Mine",
+    "group": "Guns N' Roses",
+    "title": "Sweet Child O Mine",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Guns N' Roses - Sweet Child O Mine - P.pdf",
+    "rawFiles": [
+      "Guns N' Roses - Sweet Child O Mine - P.pdf"
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Guns N' Roses - Used To Love Her",
+    "group": "Guns N' Roses",
+    "title": "Used To Love Her",
+    "hasScore": true,
+    "hasLyrics": true,
+    "customScoreFile": "Guns N' Roses - Used To Love Her - P.pdf",
+    "customLyricsFile": "Guns N' Roses - Used To Love Her - L.pdf",
+    "rawFiles": [
+      "Guns N' Roses - Used To Love Her - L.pdf",
+      "Guns N' Roses - Used To Love Her - P.pdf"
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Guns N' Roses - You Aint The First",
+    "group": "Guns N' Roses",
+    "title": "You Aint The First",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Guns N' Roses - You Aint The First - P.pdf",
+    "rawFiles": [
+      "Guns N' Roses - You Aint The First - P.pdf"
     ]
   },
   {
     "id": 199,
-    "name": "Guns And Roses - Sweet Child O Mine",
-    "group": "Guns And Roses",
-    "title": "Sweet Child O Mine",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Guns And Roses - Sweet Child O Mine - P.pdf",
-    "rawFiles": [
-      "Guns And Roses - Sweet Child O Mine - P.pdf"
-    ]
-  },
-  {
-    "id": 200,
-    "name": "Guns And Roses - Sweet Child _O Mine",
-    "group": "Guns And Roses",
-    "title": "Sweet Child _O Mine",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "Guns And Roses - Sweet Child _O Mine - L.pdf",
-    "rawFiles": [
-      "Guns And Roses - Sweet Child _O Mine - L.pdf"
-    ]
-  },
-  {
-    "id": 201,
-    "name": "Guns And Roses - Used To Love Her",
-    "group": "Guns And Roses",
-    "title": "Used To Love Her",
-    "hasScore": true,
-    "hasLyrics": true,
-    "customScoreFile": "Guns And Roses - Used To Love Her - P.pdf",
-    "customLyricsFile": "Guns And Roses - Used To Love Her - L.pdf",
-    "rawFiles": [
-      "Guns And Roses - Used To Love Her - L.pdf",
-      "Guns And Roses - Used To Love Her - P.pdf"
-    ]
-  },
-  {
-    "id": 202,
-    "name": "Guns And Roses - You Aint The First",
-    "group": "Guns And Roses",
-    "title": "You Aint The First",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Guns And Roses - You Aint The First - P.pdf",
-    "rawFiles": [
-      "Guns And Roses - You Aint The First - P.pdf"
-    ]
-  },
-  {
-    "id": 203,
     "name": "Horace Silver - Song For My Father",
     "group": "Horace Silver",
     "title": "Song For My Father",
@@ -2488,7 +2453,7 @@
     ]
   },
   {
-    "id": 204,
+    "id": 200,
     "name": "Iggy Pocandy - P",
     "group": null,
     "title": "Iggy Pocandy - P",
@@ -2499,7 +2464,7 @@
     ]
   },
   {
-    "id": 205,
+    "id": 201,
     "name": "Ilegales - Agotados De Esperar El Fin",
     "group": "Ilegales",
     "title": "Agotados De Esperar El Fin",
@@ -2511,7 +2476,7 @@
     ]
   },
   {
-    "id": 206,
+    "id": 202,
     "name": "Ilegales - El Norte Está Lleno De Frio",
     "group": "Ilegales",
     "title": "El Norte Está Lleno De Frio",
@@ -2523,7 +2488,7 @@
     ]
   },
   {
-    "id": 207,
+    "id": 203,
     "name": "Ilegales - Enamorados De Varsovia",
     "group": "Ilegales",
     "title": "Enamorados De Varsovia",
@@ -2535,7 +2500,7 @@
     ]
   },
   {
-    "id": 208,
+    "id": 204,
     "name": "Ilegales - La Chica Del Club De Golf",
     "group": "Ilegales",
     "title": "La Chica Del Club De Golf",
@@ -2547,7 +2512,7 @@
     ]
   },
   {
-    "id": 209,
+    "id": 205,
     "name": "Ilegales - Problema Sexual",
     "group": "Ilegales",
     "title": "Problema Sexual",
@@ -2559,7 +2524,7 @@
     ]
   },
   {
-    "id": 210,
+    "id": 206,
     "name": "Ilegales - Quiero Ser Millonario",
     "group": "Ilegales",
     "title": "Quiero Ser Millonario",
@@ -2571,7 +2536,7 @@
     ]
   },
   {
-    "id": 211,
+    "id": 207,
     "name": "Izzy Stradlin And The Ju Ju Hounds - Somebody Knockin",
     "group": "Izzy Stradlin And The Ju Ju Hounds",
     "title": "Somebody Knockin",
@@ -2583,7 +2548,7 @@
     ]
   },
   {
-    "id": 212,
+    "id": 208,
     "name": "Jaime Urrutia - Donde Estas",
     "group": "Jaime Urrutia",
     "title": "Donde Estas",
@@ -2595,7 +2560,7 @@
     ]
   },
   {
-    "id": 213,
+    "id": 209,
     "name": "James Taylor - Johnnie Comes Back",
     "group": "James Taylor",
     "title": "Johnnie Comes Back",
@@ -2607,7 +2572,7 @@
     ]
   },
   {
-    "id": 214,
+    "id": 210,
     "name": "James Taylor - Music",
     "group": "James Taylor",
     "title": "Music",
@@ -2619,7 +2584,7 @@
     ]
   },
   {
-    "id": 215,
+    "id": 211,
     "name": "James Taylor - Riding On A Railroad",
     "group": "James Taylor",
     "title": "Riding On A Railroad",
@@ -2631,7 +2596,7 @@
     ]
   },
   {
-    "id": 216,
+    "id": 212,
     "name": "James Taylor - Sweet Baby James",
     "group": "James Taylor",
     "title": "Sweet Baby James",
@@ -2643,7 +2608,7 @@
     ]
   },
   {
-    "id": 217,
+    "id": 213,
     "name": "James Taylor - There We Are",
     "group": "James Taylor",
     "title": "There We Are",
@@ -2655,33 +2620,33 @@
     ]
   },
   {
-    "id": 218,
-    "name": "James Taylor - You_Ve Got A Friend",
+    "id": 214,
+    "name": "James Taylor - You've Got A Friend",
     "group": "James Taylor",
-    "title": "You_Ve Got A Friend",
+    "title": "You've Got A Friend",
     "hasScore": true,
     "hasLyrics": true,
-    "customScoreFile": "James Taylor - You_Ve Got A Friend - P.pdf",
-    "customLyricsFile": "James Taylor - You_Ve Got A Friend - L.pdf",
+    "customScoreFile": "James Taylor - You've Got A Friend - P.pdf",
+    "customLyricsFile": "James Taylor - You've Got A Friend - L.pdf",
     "rawFiles": [
-      "James Taylor - You_Ve Got A Friend - L.pdf",
-      "James Taylor - You_Ve Got A Friend - P.pdf"
+      "James Taylor - You've Got A Friend - L.pdf",
+      "James Taylor - You've Got A Friend - P.pdf"
     ]
   },
   {
-    "id": 219,
+    "id": 215,
     "name": "Janis Joplin - Down On Me",
     "group": "Janis Joplin",
     "title": "Down On Me",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Janis Joplin - Down On Me  - P.pdf",
+    "customScoreFile": "Janis Joplin - Down On Me - P.pdf",
     "rawFiles": [
-      "Janis Joplin - Down On Me  - P.pdf"
+      "Janis Joplin - Down On Me - P.pdf"
     ]
   },
   {
-    "id": 220,
+    "id": 216,
     "name": "Janis Joplin - Me And Bobby Mcgee",
     "group": "Janis Joplin",
     "title": "Me And Bobby Mcgee",
@@ -2695,7 +2660,7 @@
     ]
   },
   {
-    "id": 221,
+    "id": 217,
     "name": "Janis Joplin - Mercedes Benz",
     "group": "Janis Joplin",
     "title": "Mercedes Benz",
@@ -2707,7 +2672,7 @@
     ]
   },
   {
-    "id": 222,
+    "id": 218,
     "name": "Jarabe De Palo - Agua",
     "group": "Jarabe De Palo",
     "title": "Agua",
@@ -2721,7 +2686,7 @@
     ]
   },
   {
-    "id": 223,
+    "id": 219,
     "name": "Jarabe De Palo - La Flaca",
     "group": "Jarabe De Palo",
     "title": "La Flaca",
@@ -2733,7 +2698,7 @@
     ]
   },
   {
-    "id": 224,
+    "id": 220,
     "name": "Jimi Hendrix - Bold As Love",
     "group": "Jimi Hendrix",
     "title": "Bold As Love",
@@ -2745,7 +2710,7 @@
     ]
   },
   {
-    "id": 225,
+    "id": 221,
     "name": "Jimi Hendrix - Fire",
     "group": "Jimi Hendrix",
     "title": "Fire",
@@ -2757,7 +2722,7 @@
     ]
   },
   {
-    "id": 226,
+    "id": 222,
     "name": "Jimi Hendrix - Hey Joe",
     "group": "Jimi Hendrix",
     "title": "Hey Joe",
@@ -2769,7 +2734,7 @@
     ]
   },
   {
-    "id": 227,
+    "id": 223,
     "name": "Jimi Hendrix - Little Wing",
     "group": "Jimi Hendrix",
     "title": "Little Wing",
@@ -2781,7 +2746,7 @@
     ]
   },
   {
-    "id": 228,
+    "id": 224,
     "name": "Jimi Hendrix - Purple Haze",
     "group": "Jimi Hendrix",
     "title": "Purple Haze",
@@ -2793,7 +2758,7 @@
     ]
   },
   {
-    "id": 229,
+    "id": 225,
     "name": "Joan Manuel Serrat - Aquellas Pequeñas Cosas",
     "group": "Joan Manuel Serrat",
     "title": "Aquellas Pequeñas Cosas",
@@ -2805,7 +2770,7 @@
     ]
   },
   {
-    "id": 230,
+    "id": 226,
     "name": "Joan Manuel Serrat - Cantares",
     "group": "Joan Manuel Serrat",
     "title": "Cantares",
@@ -2817,43 +2782,7 @@
     ]
   },
   {
-    "id": 231,
-    "name": "Joaquin Sabina - Gulliver",
-    "group": "Joaquin Sabina",
-    "title": "Gulliver",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Joaquin Sabina - Gulliver - P.pdf",
-    "rawFiles": [
-      "Joaquin Sabina - Gulliver - P.pdf"
-    ]
-  },
-  {
-    "id": 232,
-    "name": "Joaquin Sabina - Manual Para Heroes Y Canallas",
-    "group": "Joaquin Sabina",
-    "title": "Manual Para Heroes Y Canallas",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Joaquin Sabina - Manual Para Heroes Y Canallas - P.pdf",
-    "rawFiles": [
-      "Joaquin Sabina - Manual Para Heroes Y Canallas - P.pdf"
-    ]
-  },
-  {
-    "id": 233,
-    "name": "Joaquin Sabina - Pasandolo Bien",
-    "group": "Joaquin Sabina",
-    "title": "Pasandolo Bien",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Joaquin Sabina - Pasandolo Bien - P.pdf",
-    "rawFiles": [
-      "Joaquin Sabina - Pasandolo Bien - P.pdf"
-    ]
-  },
-  {
-    "id": 234,
+    "id": 227,
     "name": "Joaquín Sabina - Calle Melancolía",
     "group": "Joaquín Sabina",
     "title": "Calle Melancolía",
@@ -2865,7 +2794,7 @@
     ]
   },
   {
-    "id": 235,
+    "id": 228,
     "name": "Joaquín Sabina - Gulliver",
     "group": "Joaquín Sabina",
     "title": "Gulliver",
@@ -2877,7 +2806,19 @@
     ]
   },
   {
-    "id": 236,
+    "id": 229,
+    "name": "Joaquin Sabina - Gulliver",
+    "group": "Joaquin Sabina",
+    "title": "Gulliver",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Joaquin Sabina - Gulliver - P.pdf",
+    "rawFiles": [
+      "Joaquin Sabina - Gulliver - P.pdf"
+    ]
+  },
+  {
+    "id": 230,
     "name": "Joaquín Sabina - Manual Para Heroes Y Canallas",
     "group": "Joaquín Sabina",
     "title": "Manual Para Heroes Y Canallas",
@@ -2889,7 +2830,19 @@
     ]
   },
   {
-    "id": 237,
+    "id": 231,
+    "name": "Joaquin Sabina - Manual Para Heroes Y Canallas",
+    "group": "Joaquin Sabina",
+    "title": "Manual Para Heroes Y Canallas",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Joaquin Sabina - Manual Para Heroes Y Canallas - P.pdf",
+    "rawFiles": [
+      "Joaquin Sabina - Manual Para Heroes Y Canallas - P.pdf"
+    ]
+  },
+  {
+    "id": 232,
     "name": "Joaquín Sabina - Negra Noche",
     "group": "Joaquín Sabina",
     "title": "Negra Noche",
@@ -2901,7 +2854,7 @@
     ]
   },
   {
-    "id": 238,
+    "id": 233,
     "name": "Joaquín Sabina - Pasándolo Bien",
     "group": "Joaquín Sabina",
     "title": "Pasándolo Bien",
@@ -2913,7 +2866,19 @@
     ]
   },
   {
-    "id": 239,
+    "id": 234,
+    "name": "Joaquin Sabina - Pasandolo Bien",
+    "group": "Joaquin Sabina",
+    "title": "Pasandolo Bien",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Joaquin Sabina - Pasandolo Bien - P.pdf",
+    "rawFiles": [
+      "Joaquin Sabina - Pasandolo Bien - P.pdf"
+    ]
+  },
+  {
+    "id": 235,
     "name": "Joaquín Sabina - Pongamos Que Hablo De Madrid",
     "group": "Joaquín Sabina",
     "title": "Pongamos Que Hablo De Madrid",
@@ -2925,7 +2890,7 @@
     ]
   },
   {
-    "id": 240,
+    "id": 236,
     "name": "John Fogerty - Big Train From Memphis",
     "group": "John Fogerty",
     "title": "Big Train From Memphis",
@@ -2937,31 +2902,31 @@
     ]
   },
   {
-    "id": 241,
-    "name": "John Fogerty - I Saw Him On Tv",
+    "id": 237,
+    "name": "John Fogerty - I Saw Hi'm On Tv",
     "group": "John Fogerty",
-    "title": "I Saw Him On Tv",
+    "title": "I Saw Hi'm On Tv",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "John Fogerty - I Saw Him On Tv - P.pdf",
+    "customScoreFile": "John Fogerty - I Saw Hi'm On Tv - P.pdf",
     "rawFiles": [
-      "John Fogerty - I Saw Him On Tv - P.pdf"
+      "John Fogerty - I Saw Hi'm On Tv - P.pdf"
     ]
   },
   {
-    "id": 242,
-    "name": "John Fogerty - Please Help Me, Im Falling",
+    "id": 238,
+    "name": "John Fogerty - Please Help Me, I'm Falling",
     "group": "John Fogerty",
-    "title": "Please Help Me, Im Falling",
+    "title": "Please Help Me, I'm Falling",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "John Fogerty - Please Help Me, Im Falling - P.pdf",
+    "customScoreFile": "John Fogerty - Please Help Me, I'm Falling - P.pdf",
     "rawFiles": [
-      "John Fogerty - Please Help Me, Im Falling - P.pdf"
+      "John Fogerty - Please Help Me, I'm Falling - P.pdf"
     ]
   },
   {
-    "id": 243,
+    "id": 239,
     "name": "John Fogerty - Rock And Roll Girls",
     "group": "John Fogerty",
     "title": "Rock And Roll Girls",
@@ -2973,7 +2938,7 @@
     ]
   },
   {
-    "id": 244,
+    "id": 240,
     "name": "John Fogerty - Rocking All Over The World",
     "group": "John Fogerty",
     "title": "Rocking All Over The World",
@@ -2985,7 +2950,7 @@
     ]
   },
   {
-    "id": 245,
+    "id": 241,
     "name": "John Lennon - Imagine",
     "group": "John Lennon",
     "title": "Imagine",
@@ -2997,7 +2962,7 @@
     ]
   },
   {
-    "id": 246,
+    "id": 242,
     "name": "Jorge Drexler - Todo Se Transforma",
     "group": "Jorge Drexler",
     "title": "Todo Se Transforma",
@@ -3009,7 +2974,7 @@
     ]
   },
   {
-    "id": 247,
+    "id": 243,
     "name": "Judas Priest - Breaking The Law",
     "group": "Judas Priest",
     "title": "Breaking The Law",
@@ -3021,7 +2986,7 @@
     ]
   },
   {
-    "id": 248,
+    "id": 244,
     "name": "Judas Priest - Breaking The Law",
     "group": "Judas Priest",
     "title": "Breaking The Law",
@@ -3035,7 +3000,7 @@
     ]
   },
   {
-    "id": 249,
+    "id": 245,
     "name": "Judas Priest - Diamonds And Rust",
     "group": "Judas Priest",
     "title": "Diamonds And Rust",
@@ -3049,7 +3014,7 @@
     ]
   },
   {
-    "id": 250,
+    "id": 246,
     "name": "Judas Priest - Grinder",
     "group": "Judas Priest",
     "title": "Grinder",
@@ -3061,7 +3026,7 @@
     ]
   },
   {
-    "id": 251,
+    "id": 247,
     "name": "Kansas - Dust In The Wind",
     "group": "Kansas",
     "title": "Dust In The Wind",
@@ -3073,7 +3038,7 @@
     ]
   },
   {
-    "id": 252,
+    "id": 248,
     "name": "Kiss - Lick It Up",
     "group": "Kiss",
     "title": "Lick It Up",
@@ -3085,7 +3050,7 @@
     ]
   },
   {
-    "id": 253,
+    "id": 249,
     "name": "Kiss - Rock And Roll All Nite",
     "group": "Kiss",
     "title": "Rock And Roll All Nite",
@@ -3097,7 +3062,7 @@
     ]
   },
   {
-    "id": 254,
+    "id": 250,
     "name": "La Guardia - Mil Calles Llevan Hacia Ti",
     "group": "La Guardia",
     "title": "Mil Calles Llevan Hacia Ti",
@@ -3106,6 +3071,54 @@
     "customScoreFile": "La Guardia - Mil Calles Llevan Hacia Ti - P.pdf",
     "rawFiles": [
       "La Guardia - Mil Calles Llevan Hacia Ti - P.pdf"
+    ]
+  },
+  {
+    "id": 251,
+    "name": "La Mandrágora - Adivina Adivinanza",
+    "group": "La Mandrágora",
+    "title": "Adivina Adivinanza",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "La Mandrágora - Adivina Adivinanza - L.pdf",
+    "rawFiles": [
+      "La Mandrágora - Adivina Adivinanza - L.pdf"
+    ]
+  },
+  {
+    "id": 252,
+    "name": "La Mandrágora - Circulos Viciosos",
+    "group": "La Mandrágora",
+    "title": "Circulos Viciosos",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "La Mandrágora - Circulos Viciosos - L.pdf",
+    "rawFiles": [
+      "La Mandrágora - Circulos Viciosos - L.pdf"
+    ]
+  },
+  {
+    "id": 253,
+    "name": "La Mandrágora - La Hoguera",
+    "group": "La Mandrágora",
+    "title": "La Hoguera",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "La Mandrágora - La Hoguera - L.pdf",
+    "rawFiles": [
+      "La Mandrágora - La Hoguera - L.pdf"
+    ]
+  },
+  {
+    "id": 254,
+    "name": "La Mandrágora - La Ovejita Lucera",
+    "group": "La Mandrágora",
+    "title": "La Ovejita Lucera",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "La Mandrágora - La Ovejita Lucera - L.pdf",
+    "rawFiles": [
+      "La Mandrágora - La Ovejita Lucera - L.pdf"
     ]
   },
   {
@@ -3134,66 +3147,6 @@
   },
   {
     "id": 257,
-    "name": "La Mandragora - Un Santo Varón",
-    "group": "La Mandragora",
-    "title": "Un Santo Varón",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "La Mandragora - Un Santo Varón - L.pdf",
-    "rawFiles": [
-      "La Mandragora - Un Santo Varón - L.pdf"
-    ]
-  },
-  {
-    "id": 258,
-    "name": "La Mandrágora - Adivina Adivinanza",
-    "group": "La Mandrágora",
-    "title": "Adivina Adivinanza",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "La Mandrágora - Adivina Adivinanza - L.pdf",
-    "rawFiles": [
-      "La Mandrágora - Adivina Adivinanza - L.pdf"
-    ]
-  },
-  {
-    "id": 259,
-    "name": "La Mandrágora - Circulos Viciosos",
-    "group": "La Mandrágora",
-    "title": "Circulos Viciosos",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "La Mandrágora - Circulos Viciosos - L.pdf",
-    "rawFiles": [
-      "La Mandrágora - Circulos Viciosos - L.pdf"
-    ]
-  },
-  {
-    "id": 260,
-    "name": "La Mandrágora - La Hoguera",
-    "group": "La Mandrágora",
-    "title": "La Hoguera",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "La Mandrágora - La Hoguera - L.pdf",
-    "rawFiles": [
-      "La Mandrágora - La Hoguera - L.pdf"
-    ]
-  },
-  {
-    "id": 261,
-    "name": "La Mandrágora - La Ovejita Lucera",
-    "group": "La Mandrágora",
-    "title": "La Ovejita Lucera",
-    "hasScore": false,
-    "hasLyrics": true,
-    "customLyricsFile": "La Mandrágora - La Ovejita Lucera - L.pdf",
-    "rawFiles": [
-      "La Mandrágora - La Ovejita Lucera - L.pdf"
-    ]
-  },
-  {
-    "id": 262,
     "name": "La Mandrágora - Un Burdo Rumor",
     "group": "La Mandrágora",
     "title": "Un Burdo Rumor",
@@ -3205,7 +3158,19 @@
     ]
   },
   {
-    "id": 263,
+    "id": 258,
+    "name": "La Mandragora - Un Santo Varón",
+    "group": "La Mandragora",
+    "title": "Un Santo Varón",
+    "hasScore": false,
+    "hasLyrics": true,
+    "customLyricsFile": "La Mandragora - Un Santo Varón - L.pdf",
+    "rawFiles": [
+      "La Mandragora - Un Santo Varón - L.pdf"
+    ]
+  },
+  {
+    "id": 259,
     "name": "La Renga - Balada Del Diablo Y La Muerte",
     "group": "La Renga",
     "title": "Balada Del Diablo Y La Muerte",
@@ -3217,7 +3182,7 @@
     ]
   },
   {
-    "id": 264,
+    "id": 260,
     "name": "Led Zeppelin - Living Loving Maid",
     "group": "Led Zeppelin",
     "title": "Living Loving Maid",
@@ -3231,7 +3196,7 @@
     ]
   },
   {
-    "id": 265,
+    "id": 261,
     "name": "Lenny Kravitz - Mr Cab Driver",
     "group": "Lenny Kravitz",
     "title": "Mr Cab Driver",
@@ -3245,7 +3210,7 @@
     ]
   },
   {
-    "id": 266,
+    "id": 262,
     "name": "Leño - El Tren",
     "group": "Leño",
     "title": "El Tren",
@@ -3257,7 +3222,7 @@
     ]
   },
   {
-    "id": 267,
+    "id": 263,
     "name": "Leño - Entre Las Cejas",
     "group": "Leño",
     "title": "Entre Las Cejas",
@@ -3269,7 +3234,7 @@
     ]
   },
   {
-    "id": 268,
+    "id": 264,
     "name": "Leño - Este Madrid",
     "group": "Leño",
     "title": "Este Madrid",
@@ -3281,7 +3246,7 @@
     ]
   },
   {
-    "id": 269,
+    "id": 265,
     "name": "Leño - Insisto",
     "group": "Leño",
     "title": "Insisto",
@@ -3293,7 +3258,7 @@
     ]
   },
   {
-    "id": 270,
+    "id": 266,
     "name": "Leño - Maneras De Vivir",
     "group": "Leño",
     "title": "Maneras De Vivir",
@@ -3305,7 +3270,7 @@
     ]
   },
   {
-    "id": 271,
+    "id": 267,
     "name": "Leño - Que Desilusion",
     "group": "Leño",
     "title": "Que Desilusion",
@@ -3317,7 +3282,7 @@
     ]
   },
   {
-    "id": 272,
+    "id": 268,
     "name": "Leño - Que Desilusión",
     "group": "Leño",
     "title": "Que Desilusión",
@@ -3329,7 +3294,7 @@
     ]
   },
   {
-    "id": 273,
+    "id": 269,
     "name": "Leño - Sin Solucion",
     "group": "Leño",
     "title": "Sin Solucion",
@@ -3341,7 +3306,7 @@
     ]
   },
   {
-    "id": 274,
+    "id": 270,
     "name": "Leño - Todo Es Mas Sencillo",
     "group": "Leño",
     "title": "Todo Es Mas Sencillo",
@@ -3353,7 +3318,7 @@
     ]
   },
   {
-    "id": 275,
+    "id": 271,
     "name": "Loquillo - Carne Para Linda",
     "group": "Loquillo",
     "title": "Carne Para Linda",
@@ -3365,7 +3330,7 @@
     ]
   },
   {
-    "id": 276,
+    "id": 272,
     "name": "Loquillo - El Ritmo Del Garaje",
     "group": "Loquillo",
     "title": "El Ritmo Del Garaje",
@@ -3377,7 +3342,7 @@
     ]
   },
   {
-    "id": 277,
+    "id": 273,
     "name": "Loquillo - Feo, Fuerte Y Formal",
     "group": "Loquillo",
     "title": "Feo, Fuerte Y Formal",
@@ -3389,7 +3354,7 @@
     ]
   },
   {
-    "id": 278,
+    "id": 274,
     "name": "Loquillo - Ritmo Del Garaje",
     "group": "Loquillo",
     "title": "Ritmo Del Garaje",
@@ -3401,7 +3366,7 @@
     ]
   },
   {
-    "id": 279,
+    "id": 275,
     "name": "Loquillo Y Los Trogloditas - Cadillac Solitario",
     "group": "Loquillo Y Los Trogloditas",
     "title": "Cadillac Solitario",
@@ -3413,7 +3378,7 @@
     ]
   },
   {
-    "id": 280,
+    "id": 276,
     "name": "Los Burros - Portugal",
     "group": "Los Burros",
     "title": "Portugal",
@@ -3425,7 +3390,7 @@
     ]
   },
   {
-    "id": 281,
+    "id": 277,
     "name": "Los Enemigos - Desde El Jergon",
     "group": "Los Enemigos",
     "title": "Desde El Jergon",
@@ -3437,7 +3402,7 @@
     ]
   },
   {
-    "id": 282,
+    "id": 278,
     "name": "Los Enemigos - La Cuenta Atrás",
     "group": "Los Enemigos",
     "title": "La Cuenta Atrás",
@@ -3449,7 +3414,7 @@
     ]
   },
   {
-    "id": 283,
+    "id": 279,
     "name": "Los Enemigos - Resucitao",
     "group": "Los Enemigos",
     "title": "Resucitao",
@@ -3461,7 +3426,7 @@
     ]
   },
   {
-    "id": 284,
+    "id": 280,
     "name": "Los Enemigos - Septiembre",
     "group": "Los Enemigos",
     "title": "Septiembre",
@@ -3473,7 +3438,7 @@
     ]
   },
   {
-    "id": 285,
+    "id": 281,
     "name": "Los Macana - Caveland",
     "group": "Los Macana",
     "title": "Caveland",
@@ -3485,7 +3450,7 @@
     ]
   },
   {
-    "id": 286,
+    "id": 282,
     "name": "Los Piratas - Años 80",
     "group": "Los Piratas",
     "title": "Años 80",
@@ -3497,19 +3462,19 @@
     ]
   },
   {
-    "id": 287,
-    "name": "Los Ramones - I Wanna Live",
+    "id": 283,
+    "name": "Los Ramones - I Wanna Li've",
     "group": "Los Ramones",
-    "title": "I Wanna Live",
+    "title": "I Wanna Li've",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Los Ramones - I Wanna Live - P.pdf",
+    "customScoreFile": "Los Ramones - I Wanna Li've - P.pdf",
     "rawFiles": [
-      "Los Ramones - I Wanna Live - P.pdf"
+      "Los Ramones - I Wanna Li've - P.pdf"
     ]
   },
   {
-    "id": 288,
+    "id": 284,
     "name": "Los Ronaldos - Guardalo",
     "group": "Los Ronaldos",
     "title": "Guardalo",
@@ -3523,7 +3488,7 @@
     ]
   },
   {
-    "id": 289,
+    "id": 285,
     "name": "Los Ronaldos - No Puedo Vivir Sin Ti",
     "group": "Los Ronaldos",
     "title": "No Puedo Vivir Sin Ti",
@@ -3535,7 +3500,7 @@
     ]
   },
   {
-    "id": 290,
+    "id": 286,
     "name": "Los Ronaldos - Por Las Noches",
     "group": "Los Ronaldos",
     "title": "Por Las Noches",
@@ -3549,7 +3514,7 @@
     ]
   },
   {
-    "id": 291,
+    "id": 287,
     "name": "Los Ronaldos - Que Vamos A Hacer",
     "group": "Los Ronaldos",
     "title": "Que Vamos A Hacer",
@@ -3561,7 +3526,7 @@
     ]
   },
   {
-    "id": 292,
+    "id": 288,
     "name": "Los Ronaldos - Se Donde Estas",
     "group": "Los Ronaldos",
     "title": "Se Donde Estas",
@@ -3573,7 +3538,7 @@
     ]
   },
   {
-    "id": 293,
+    "id": 289,
     "name": "Los Ronaldos - Senti Llamar",
     "group": "Los Ronaldos",
     "title": "Senti Llamar",
@@ -3585,7 +3550,7 @@
     ]
   },
   {
-    "id": 294,
+    "id": 290,
     "name": "Los Suaves - Dolores Se Llamaba Lola",
     "group": "Los Suaves",
     "title": "Dolores Se Llamaba Lola",
@@ -3599,7 +3564,7 @@
     ]
   },
   {
-    "id": 295,
+    "id": 291,
     "name": "Los Suaves - No Puedo Dejar El Rock",
     "group": "Los Suaves",
     "title": "No Puedo Dejar El Rock",
@@ -3613,7 +3578,7 @@
     ]
   },
   {
-    "id": 296,
+    "id": 292,
     "name": "Lou Reed - Sweet Jane",
     "group": "Lou Reed",
     "title": "Sweet Jane",
@@ -3625,7 +3590,7 @@
     ]
   },
   {
-    "id": 297,
+    "id": 293,
     "name": "Luz Casal - Hechizado",
     "group": "Luz Casal",
     "title": "Hechizado",
@@ -3639,7 +3604,7 @@
     ]
   },
   {
-    "id": 298,
+    "id": 294,
     "name": "Luz Casal - Rufino",
     "group": "Luz Casal",
     "title": "Rufino",
@@ -3651,7 +3616,7 @@
     ]
   },
   {
-    "id": 299,
+    "id": 295,
     "name": "Luz Casal - Te Deje Marchar",
     "group": "Luz Casal",
     "title": "Te Deje Marchar",
@@ -3663,7 +3628,7 @@
     ]
   },
   {
-    "id": 300,
+    "id": 296,
     "name": "Luz Casarufino - L",
     "group": null,
     "title": "Luz Casarufino - L",
@@ -3674,7 +3639,7 @@
     ]
   },
   {
-    "id": 301,
+    "id": 297,
     "name": "Luz Casate Deje Marchar - L",
     "group": null,
     "title": "Luz Casate Deje Marchar - L",
@@ -3685,7 +3650,7 @@
     ]
   },
   {
-    "id": 302,
+    "id": 298,
     "name": "Luz Casaun Pedazo De Cielo - L",
     "group": null,
     "title": "Luz Casaun Pedazo De Cielo - L",
@@ -3696,7 +3661,7 @@
     ]
   },
   {
-    "id": 303,
+    "id": 299,
     "name": "Luz Casavoy A Por Ti - L",
     "group": null,
     "title": "Luz Casavoy A Por Ti - L",
@@ -3707,7 +3672,7 @@
     ]
   },
   {
-    "id": 304,
+    "id": 300,
     "name": "Lynyrd Skynyrd - Sweet Home Alabama",
     "group": "Lynyrd Skynyrd",
     "title": "Sweet Home Alabama",
@@ -3719,19 +3684,19 @@
     ]
   },
   {
-    "id": 305,
-    "name": "Michael Bubble - Home",
-    "group": "Michael Bubble",
+    "id": 301,
+    "name": "Michael Bublé - Home",
+    "group": "Michael Bublé",
     "title": "Home",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Michael Bubble - Home - P.pdf",
+    "customScoreFile": "Michael Bublé - Home - P.pdf",
     "rawFiles": [
-      "Michael Bubble - Home - P.pdf"
+      "Michael Bublé - Home - P.pdf"
     ]
   },
   {
-    "id": 306,
+    "id": 302,
     "name": "Miguel Rios - El Río",
     "group": "Miguel Rios",
     "title": "El Río",
@@ -3743,7 +3708,7 @@
     ]
   },
   {
-    "id": 307,
+    "id": 303,
     "name": "Miguel Rios - Santa Lucía - Fa",
     "group": "Miguel Rios",
     "title": "Santa Lucía - Fa",
@@ -3755,7 +3720,7 @@
     ]
   },
   {
-    "id": 308,
+    "id": 304,
     "name": "Miguel Rios - Santa Lucía",
     "group": "Miguel Rios",
     "title": "Santa Lucía",
@@ -3769,7 +3734,7 @@
     ]
   },
   {
-    "id": 309,
+    "id": 305,
     "name": "Mike Oldfield - Moonlight Shadow",
     "group": "Mike Oldfield",
     "title": "Moonlight Shadow",
@@ -3783,7 +3748,7 @@
     ]
   },
   {
-    "id": 310,
+    "id": 306,
     "name": "Mikel Erentxum - A Un Minuto De Ti",
     "group": "Mikel Erentxum",
     "title": "A Un Minuto De Ti",
@@ -3797,31 +3762,31 @@
     ]
   },
   {
-    "id": 311,
-    "name": "Mojinos Escocios - Caga Ya",
-    "group": "Mojinos Escocios",
+    "id": 307,
+    "name": "Mojinos Escozíos - Caga Ya",
+    "group": "Mojinos Escozíos",
     "title": "Caga Ya",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Mojinos Escocios - Caga Ya - L.pdf",
+    "customLyricsFile": "Mojinos Escozíos - Caga Ya - L.pdf",
     "rawFiles": [
-      "Mojinos Escocios - Caga Ya - L.pdf"
+      "Mojinos Escozíos - Caga Ya - L.pdf"
     ]
   },
   {
-    "id": 312,
-    "name": "Mojinos Escocíos - Mucho Gay L",
-    "group": "Mojinos Escocíos",
+    "id": 308,
+    "name": "Mojinos Escozíos - Mucho Gay L",
+    "group": "Mojinos Escozíos",
     "title": "Mucho Gay L",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Mojinos Escocíos - Mucho Gay L - L.pdf",
+    "customLyricsFile": "Mojinos Escozíos - Mucho Gay L - L.pdf",
     "rawFiles": [
-      "Mojinos Escocíos - Mucho Gay L - L.pdf"
+      "Mojinos Escozíos - Mucho Gay L - L.pdf"
     ]
   },
   {
-    "id": 313,
+    "id": 309,
     "name": "Morgan - Home",
     "group": "Morgan",
     "title": "Home",
@@ -3833,7 +3798,7 @@
     ]
   },
   {
-    "id": 314,
+    "id": 310,
     "name": "Motorhead - Ace Of Spades",
     "group": "Motorhead",
     "title": "Ace Of Spades",
@@ -3845,7 +3810,7 @@
     ]
   },
   {
-    "id": 315,
+    "id": 311,
     "name": "Motorhead - Aces Of Spades",
     "group": "Motorhead",
     "title": "Aces Of Spades",
@@ -3857,7 +3822,7 @@
     ]
   },
   {
-    "id": 316,
+    "id": 312,
     "name": "Motorhead - Killed By Death",
     "group": "Motorhead",
     "title": "Killed By Death",
@@ -3871,19 +3836,7 @@
     ]
   },
   {
-    "id": 317,
-    "name": "Nacha Pop - La Chica De Ayer (Fam)",
-    "group": "Nacha Pop",
-    "title": "La Chica De Ayer (Fam)",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Nacha Pop - La Chica De Ayer (Fam) - P.pdf",
-    "rawFiles": [
-      "Nacha Pop - La Chica De Ayer (Fam) - P.pdf"
-    ]
-  },
-  {
-    "id": 318,
+    "id": 313,
     "name": "Nacha Pop - La Chica De Ayer",
     "group": "Nacha Pop",
     "title": "La Chica De Ayer",
@@ -3895,7 +3848,19 @@
     ]
   },
   {
-    "id": 319,
+    "id": 314,
+    "name": "Nacha Pop - La Chica De Ayer (Fam)",
+    "group": "Nacha Pop",
+    "title": "La Chica De Ayer (Fam)",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Nacha Pop - La Chica De Ayer (Fam) - P.pdf",
+    "rawFiles": [
+      "Nacha Pop - La Chica De Ayer (Fam) - P.pdf"
+    ]
+  },
+  {
+    "id": 315,
     "name": "Nancy Sinatra - These Boots Are Made For Walking",
     "group": "Nancy Sinatra",
     "title": "These Boots Are Made For Walking",
@@ -3907,7 +3872,7 @@
     ]
   },
   {
-    "id": 320,
+    "id": 316,
     "name": "Natalie Imbruglia - Torn",
     "group": "Natalie Imbruglia",
     "title": "Torn",
@@ -3919,7 +3884,7 @@
     ]
   },
   {
-    "id": 321,
+    "id": 317,
     "name": "Neil Young - Cinnamon Girl",
     "group": "Neil Young",
     "title": "Cinnamon Girl",
@@ -3931,7 +3896,7 @@
     ]
   },
   {
-    "id": 322,
+    "id": 318,
     "name": "Neil Young - Rocking In The Free World",
     "group": "Neil Young",
     "title": "Rocking In The Free World",
@@ -3943,19 +3908,19 @@
     ]
   },
   {
-    "id": 323,
-    "name": "Nirvana - Loung Act",
+    "id": 319,
+    "name": "Nirvana - Lounge Act",
     "group": "Nirvana",
-    "title": "Loung Act",
+    "title": "Lounge Act",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Nirvana - Loung Act - P.pdf",
+    "customScoreFile": "Nirvana - Lounge Act - P.pdf",
     "rawFiles": [
-      "Nirvana - Loung Act - P.pdf"
+      "Nirvana - Lounge Act - P.pdf"
     ]
   },
   {
-    "id": 324,
+    "id": 320,
     "name": "Nirvana - On A Plain",
     "group": "Nirvana",
     "title": "On A Plain",
@@ -3967,7 +3932,7 @@
     ]
   },
   {
-    "id": 325,
+    "id": 321,
     "name": "Nirvana - Polly",
     "group": "Nirvana",
     "title": "Polly",
@@ -3979,33 +3944,21 @@
     ]
   },
   {
-    "id": 326,
-    "name": "No Doubt - Don_T Speak",
+    "id": 322,
+    "name": "No Doubt - Don't Speak",
     "group": "No Doubt",
-    "title": "Don_T Speak",
+    "title": "Don't Speak",
     "hasScore": true,
     "hasLyrics": true,
-    "customScoreFile": "No Doubt - Don_T Speak - P.pdf",
-    "customLyricsFile": "No Doubt - Don_T Speak - L.pdf",
+    "customScoreFile": "No Doubt - Don't Speak - P.pdf",
+    "customLyricsFile": "No Doubt - Don't Speak - L.pdf",
     "rawFiles": [
-      "No Doubt - Don_T Speak - L.pdf",
-      "No Doubt - Don_T Speak - P.pdf"
+      "No Doubt - Don't Speak - L.pdf",
+      "No Doubt - Don't Speak - P.pdf"
     ]
   },
   {
-    "id": 327,
-    "name": "Obus - Yo Solo Lo Hago En Mi Moto",
-    "group": "Obus",
-    "title": "Yo Solo Lo Hago En Mi Moto",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Obus - Yo Solo Lo Hago En Mi Moto - P.pdf",
-    "rawFiles": [
-      "Obus - Yo Solo Lo Hago En Mi Moto - P.pdf"
-    ]
-  },
-  {
-    "id": 328,
+    "id": 323,
     "name": "Obús - Dinero, Dinero",
     "group": "Obús",
     "title": "Dinero, Dinero",
@@ -4017,7 +3970,7 @@
     ]
   },
   {
-    "id": 329,
+    "id": 324,
     "name": "Obús - Te Visitará La Muerte",
     "group": "Obús",
     "title": "Te Visitará La Muerte",
@@ -4031,7 +3984,7 @@
     ]
   },
   {
-    "id": 330,
+    "id": 325,
     "name": "Obús - Vamos Muy Bien",
     "group": "Obús",
     "title": "Vamos Muy Bien",
@@ -4043,7 +3996,19 @@
     ]
   },
   {
-    "id": 331,
+    "id": 326,
+    "name": "Obús - Yo Solo Lo Hago En Mi Moto",
+    "group": "Obús",
+    "title": "Yo Solo Lo Hago En Mi Moto",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Obús - Yo Solo Lo Hago En Mi Moto - P.pdf",
+    "rawFiles": [
+      "Obús - Yo Solo Lo Hago En Mi Moto - P.pdf"
+    ]
+  },
+  {
+    "id": 327,
     "name": "Orquesta Mondragón - Caperucita Feroz",
     "group": "Orquesta Mondragón",
     "title": "Caperucita Feroz",
@@ -4055,7 +4020,7 @@
     ]
   },
   {
-    "id": 332,
+    "id": 328,
     "name": "Orquesta Mondragón - Caperucito Feroz",
     "group": "Orquesta Mondragón",
     "title": "Caperucito Feroz",
@@ -4067,55 +4032,55 @@
     ]
   },
   {
-    "id": 333,
-    "name": "Ottis Reading - Tramp",
-    "group": "Ottis Reading",
-    "title": "Tramp",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Ottis Reading - Tramp - P.pdf",
-    "rawFiles": [
-      "Ottis Reading - Tramp - P.pdf"
-    ]
-  },
-  {
-    "id": 334,
-    "name": "Ottis Redding - Sitting On The Dock",
-    "group": "Ottis Redding",
+    "id": 329,
+    "name": "Otis Redding - Sitting On The Dock",
+    "group": "Otis Redding",
     "title": "Sitting On The Dock",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Ottis Redding - Sitting On The Dock - L.pdf",
+    "customLyricsFile": "Otis Redding - Sitting On The Dock - L.pdf",
     "rawFiles": [
-      "Ottis Redding - Sitting On The Dock - L.pdf"
+      "Otis Redding - Sitting On The Dock - L.pdf"
     ]
   },
   {
-    "id": 335,
-    "name": "Ozzy Osborne - Mr Crowley",
-    "group": "Ozzy Osborne",
+    "id": 330,
+    "name": "Otis Redding - Tramp",
+    "group": "Otis Redding",
+    "title": "Tramp",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Otis Redding - Tramp - P.pdf",
+    "rawFiles": [
+      "Otis Redding - Tramp - P.pdf"
+    ]
+  },
+  {
+    "id": 331,
+    "name": "Ozzy Osbourne - Mr Crowley",
+    "group": "Ozzy Osbourne",
     "title": "Mr Crowley",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Ozzy Osborne - Mr Crowley - L.pdf",
+    "customLyricsFile": "Ozzy Osbourne - Mr Crowley - L.pdf",
     "rawFiles": [
-      "Ozzy Osborne - Mr Crowley - L.pdf"
+      "Ozzy Osbourne - Mr Crowley - L.pdf"
     ]
   },
   {
-    "id": 336,
-    "name": "Ozzy Osborne - No More Tears",
-    "group": "Ozzy Osborne",
+    "id": 332,
+    "name": "Ozzy Osbourne - No More Tears",
+    "group": "Ozzy Osbourne",
     "title": "No More Tears",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Ozzy Osborne - No More Tears - L.pdf",
+    "customLyricsFile": "Ozzy Osbourne - No More Tears - L.pdf",
     "rawFiles": [
-      "Ozzy Osborne - No More Tears - L.pdf"
+      "Ozzy Osbourne - No More Tears - L.pdf"
     ]
   },
   {
-    "id": 337,
+    "id": 333,
     "name": "Paint In Black - The Rolling Stones",
     "group": "Paint In Black",
     "title": "The Rolling Stones",
@@ -4127,7 +4092,7 @@
     ]
   },
   {
-    "id": 338,
+    "id": 334,
     "name": "Panzer - Toca Madera",
     "group": "Panzer",
     "title": "Toca Madera",
@@ -4139,7 +4104,7 @@
     ]
   },
   {
-    "id": 339,
+    "id": 335,
     "name": "Parchis - Cumpleaños Feliz",
     "group": "Parchis",
     "title": "Cumpleaños Feliz",
@@ -4151,7 +4116,7 @@
     ]
   },
   {
-    "id": 340,
+    "id": 336,
     "name": "Patti Smith - Because The Night",
     "group": "Patti Smith",
     "title": "Because The Night",
@@ -4163,7 +4128,7 @@
     ]
   },
   {
-    "id": 341,
+    "id": 337,
     "name": "Patti Smith - People Have The Power",
     "group": "Patti Smith",
     "title": "People Have The Power",
@@ -4177,7 +4142,7 @@
     ]
   },
   {
-    "id": 342,
+    "id": 338,
     "name": "Paul Mccartney - Another Day",
     "group": "Paul Mccartney",
     "title": "Another Day",
@@ -4189,7 +4154,7 @@
     ]
   },
   {
-    "id": 343,
+    "id": 339,
     "name": "Paul Mccartney - Oh Woman, Oh Why",
     "group": "Paul Mccartney",
     "title": "Oh Woman, Oh Why",
@@ -4201,7 +4166,7 @@
     ]
   },
   {
-    "id": 344,
+    "id": 340,
     "name": "Peter Gabriel - On The Air",
     "group": "Peter Gabriel",
     "title": "On The Air",
@@ -4213,7 +4178,7 @@
     ]
   },
   {
-    "id": 345,
+    "id": 341,
     "name": "Pink Floyd - Brain Damage",
     "group": "Pink Floyd",
     "title": "Brain Damage",
@@ -4225,7 +4190,7 @@
     ]
   },
   {
-    "id": 346,
+    "id": 342,
     "name": "Pink Floyd - Eclipse",
     "group": "Pink Floyd",
     "title": "Eclipse",
@@ -4237,7 +4202,7 @@
     ]
   },
   {
-    "id": 347,
+    "id": 343,
     "name": "Pink Floyd - The Wall",
     "group": "Pink Floyd",
     "title": "The Wall",
@@ -4249,31 +4214,31 @@
     ]
   },
   {
-    "id": 348,
-    "name": "Pink Floyd - Wish You Were Here",
+    "id": 344,
+    "name": "Pink Floyd - Wish You We're Here",
     "group": "Pink Floyd",
-    "title": "Wish You Were Here",
+    "title": "Wish You We're Here",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Pink Floyd - Wish You Were Here - P.pdf",
+    "customScoreFile": "Pink Floyd - Wish You We're Here - P.pdf",
     "rawFiles": [
-      "Pink Floyd - Wish You Were Here - P.pdf"
+      "Pink Floyd - Wish You We're Here - P.pdf"
     ]
   },
   {
-    "id": 349,
-    "name": "Pretenders - Don_T Get Me Wrong",
+    "id": 345,
+    "name": "Pretenders - Don't Get Me Wrong",
     "group": "Pretenders",
-    "title": "Don_T Get Me Wrong",
+    "title": "Don't Get Me Wrong",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Pretenders - Don_T Get Me Wrong - L.pdf",
+    "customLyricsFile": "Pretenders - Don't Get Me Wrong - L.pdf",
     "rawFiles": [
-      "Pretenders - Don_T Get Me Wrong - L.pdf"
+      "Pretenders - Don't Get Me Wrong - L.pdf"
     ]
   },
   {
-    "id": 350,
+    "id": 346,
     "name": "Pretenders - Hymn To Her",
     "group": "Pretenders",
     "title": "Hymn To Her",
@@ -4285,7 +4250,7 @@
     ]
   },
   {
-    "id": 351,
+    "id": 347,
     "name": "Pretenders - Kid",
     "group": "Pretenders",
     "title": "Kid",
@@ -4297,7 +4262,7 @@
     ]
   },
   {
-    "id": 352,
+    "id": 348,
     "name": "Prince - Purple Rain",
     "group": "Prince",
     "title": "Purple Rain",
@@ -4309,7 +4274,7 @@
     ]
   },
   {
-    "id": 353,
+    "id": 349,
     "name": "Radio Futura - Annabel Lee",
     "group": "Radio Futura",
     "title": "Annabel Lee",
@@ -4323,7 +4288,7 @@
     ]
   },
   {
-    "id": 354,
+    "id": 350,
     "name": "Radio Futura - Corazon De Tiza",
     "group": "Radio Futura",
     "title": "Corazon De Tiza",
@@ -4335,7 +4300,7 @@
     ]
   },
   {
-    "id": 355,
+    "id": 351,
     "name": "Radio Futura - Divina",
     "group": "Radio Futura",
     "title": "Divina",
@@ -4349,7 +4314,7 @@
     ]
   },
   {
-    "id": 356,
+    "id": 352,
     "name": "Radio Futura - El Nadador",
     "group": "Radio Futura",
     "title": "El Nadador",
@@ -4361,7 +4326,7 @@
     ]
   },
   {
-    "id": 357,
+    "id": 353,
     "name": "Radio Futura - El Tonto Simón",
     "group": "Radio Futura",
     "title": "El Tonto Simón",
@@ -4373,7 +4338,7 @@
     ]
   },
   {
-    "id": 358,
+    "id": 354,
     "name": "Radio Futura - En Un Baile De Perros",
     "group": "Radio Futura",
     "title": "En Un Baile De Perros",
@@ -4387,7 +4352,7 @@
     ]
   },
   {
-    "id": 359,
+    "id": 355,
     "name": "Radio Futura - Enamorado De La Moda Juvenil",
     "group": "Radio Futura",
     "title": "Enamorado De La Moda Juvenil",
@@ -4399,7 +4364,7 @@
     ]
   },
   {
-    "id": 360,
+    "id": 356,
     "name": "Radio Futura - Han Caido Los Dos",
     "group": "Radio Futura",
     "title": "Han Caido Los Dos",
@@ -4411,7 +4376,7 @@
     ]
   },
   {
-    "id": 361,
+    "id": 357,
     "name": "Radio Futura - Ivonne",
     "group": "Radio Futura",
     "title": "Ivonne",
@@ -4423,19 +4388,7 @@
     ]
   },
   {
-    "id": 362,
-    "name": "Radio Futura - La Escuela De Calor (Clase)",
-    "group": "Radio Futura",
-    "title": "La Escuela De Calor (Clase)",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Radio Futura - La Escuela De Calor (Clase) - P.pdf",
-    "rawFiles": [
-      "Radio Futura - La Escuela De Calor (Clase) - P.pdf"
-    ]
-  },
-  {
-    "id": 363,
+    "id": 358,
     "name": "Radio Futura - La Escuela De Calor",
     "group": "Radio Futura",
     "title": "La Escuela De Calor",
@@ -4447,7 +4400,19 @@
     ]
   },
   {
-    "id": 364,
+    "id": 359,
+    "name": "Radio Futura - La Escuela De Calor (Clase)",
+    "group": "Radio Futura",
+    "title": "La Escuela De Calor (Clase)",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "Radio Futura - La Escuela De Calor (Clase) - P.pdf",
+    "rawFiles": [
+      "Radio Futura - La Escuela De Calor (Clase) - P.pdf"
+    ]
+  },
+  {
+    "id": 360,
     "name": "Radio Futura - La Estatua Del Jardin Botanico",
     "group": "Radio Futura",
     "title": "La Estatua Del Jardin Botanico",
@@ -4461,7 +4426,7 @@
     ]
   },
   {
-    "id": 365,
+    "id": 361,
     "name": "Radio Futura - La Secta Del Mar",
     "group": "Radio Futura",
     "title": "La Secta Del Mar",
@@ -4473,7 +4438,7 @@
     ]
   },
   {
-    "id": 366,
+    "id": 362,
     "name": "Radio Futura - Semilla Negra",
     "group": "Radio Futura",
     "title": "Semilla Negra",
@@ -4485,7 +4450,7 @@
     ]
   },
   {
-    "id": 367,
+    "id": 363,
     "name": "Radio Futura - Veneno En La Piel",
     "group": "Radio Futura",
     "title": "Veneno En La Piel",
@@ -4497,7 +4462,7 @@
     ]
   },
   {
-    "id": 368,
+    "id": 364,
     "name": "Radio Futura - Zombie",
     "group": "Radio Futura",
     "title": "Zombie",
@@ -4509,7 +4474,7 @@
     ]
   },
   {
-    "id": 369,
+    "id": 365,
     "name": "Radiohead - Creep",
     "group": "Radiohead",
     "title": "Creep",
@@ -4521,7 +4486,7 @@
     ]
   },
   {
-    "id": 370,
+    "id": 366,
     "name": "Raimundo Amador - Que Maravilla",
     "group": "Raimundo Amador",
     "title": "Que Maravilla",
@@ -4533,7 +4498,7 @@
     ]
   },
   {
-    "id": 371,
+    "id": 367,
     "name": "Raimundo Amador - Tu Te Lo Pierdes",
     "group": "Raimundo Amador",
     "title": "Tu Te Lo Pierdes",
@@ -4547,7 +4512,7 @@
     ]
   },
   {
-    "id": 372,
+    "id": 368,
     "name": "Rainbow - I Surrender",
     "group": "Rainbow",
     "title": "I Surrender",
@@ -4561,19 +4526,19 @@
     ]
   },
   {
-    "id": 373,
-    "name": "Rainbow - Long Live Rock And Roll",
+    "id": 369,
+    "name": "Rainbow - Long Li've Rock And Roll",
     "group": "Rainbow",
-    "title": "Long Live Rock And Roll",
+    "title": "Long Li've Rock And Roll",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Rainbow - Long Live Rock And Roll - L.pdf",
+    "customLyricsFile": "Rainbow - Long Li've Rock And Roll - L.pdf",
     "rawFiles": [
-      "Rainbow - Long Live Rock And Roll - L.pdf"
+      "Rainbow - Long Li've Rock And Roll - L.pdf"
     ]
   },
   {
-    "id": 374,
+    "id": 370,
     "name": "Ramoncin - Estamos Desesperados",
     "group": "Ramoncin",
     "title": "Estamos Desesperados",
@@ -4585,7 +4550,7 @@
     ]
   },
   {
-    "id": 375,
+    "id": 371,
     "name": "Ramoncin - Putney Bridge",
     "group": "Ramoncin",
     "title": "Putney Bridge",
@@ -4597,7 +4562,7 @@
     ]
   },
   {
-    "id": 376,
+    "id": 372,
     "name": "Raphael - Como Yo Te Amo",
     "group": "Raphael",
     "title": "Como Yo Te Amo",
@@ -4609,7 +4574,7 @@
     ]
   },
   {
-    "id": 377,
+    "id": 373,
     "name": "Ray Charles - Shake Your Tailfeather",
     "group": "Ray Charles",
     "title": "Shake Your Tailfeather",
@@ -4621,7 +4586,7 @@
     ]
   },
   {
-    "id": 378,
+    "id": 374,
     "name": "Redonditos - Ñam Fi Fru Fi",
     "group": "Redonditos",
     "title": "Ñam Fi Fru Fi",
@@ -4633,7 +4598,7 @@
     ]
   },
   {
-    "id": 379,
+    "id": 375,
     "name": "Roberta Flack - Killing Me Softly",
     "group": "Roberta Flack",
     "title": "Killing Me Softly",
@@ -4645,7 +4610,7 @@
     ]
   },
   {
-    "id": 380,
+    "id": 376,
     "name": "Roberto Carlos - Amigo",
     "group": "Roberto Carlos",
     "title": "Amigo",
@@ -4657,7 +4622,7 @@
     ]
   },
   {
-    "id": 381,
+    "id": 377,
     "name": "Roberto Carlos - Insensatez",
     "group": "Roberto Carlos",
     "title": "Insensatez",
@@ -4669,7 +4634,7 @@
     ]
   },
   {
-    "id": 382,
+    "id": 378,
     "name": "Rory Gallagher - Tattoo Lady",
     "group": "Rory Gallagher",
     "title": "Tattoo Lady",
@@ -4683,7 +4648,7 @@
     ]
   },
   {
-    "id": 383,
+    "id": 379,
     "name": "Rosendo - A La Sombra De Una Mentira",
     "group": "Rosendo",
     "title": "A La Sombra De Una Mentira",
@@ -4697,7 +4662,7 @@
     ]
   },
   {
-    "id": 384,
+    "id": 380,
     "name": "Rosendo - Agradecido",
     "group": "Rosendo",
     "title": "Agradecido",
@@ -4709,7 +4674,7 @@
     ]
   },
   {
-    "id": 385,
+    "id": 381,
     "name": "Rosendo - Flojos De Pantalón",
     "group": "Rosendo",
     "title": "Flojos De Pantalón",
@@ -4721,7 +4686,7 @@
     ]
   },
   {
-    "id": 386,
+    "id": 382,
     "name": "Rosendo - Hasta De Perfil",
     "group": "Rosendo",
     "title": "Hasta De Perfil",
@@ -4735,7 +4700,7 @@
     ]
   },
   {
-    "id": 387,
+    "id": 383,
     "name": "Rosendo - Nada Especial",
     "group": "Rosendo",
     "title": "Nada Especial",
@@ -4747,7 +4712,7 @@
     ]
   },
   {
-    "id": 388,
+    "id": 384,
     "name": "Rosendo - Y Dale",
     "group": "Rosendo",
     "title": "Y Dale",
@@ -4759,7 +4724,7 @@
     ]
   },
   {
-    "id": 389,
+    "id": 385,
     "name": "Sade - Your Love Is King",
     "group": "Sade",
     "title": "Your Love Is King",
@@ -4773,7 +4738,7 @@
     ]
   },
   {
-    "id": 390,
+    "id": 386,
     "name": "Sam And Dave - Soul Man",
     "group": "Sam And Dave",
     "title": "Soul Man",
@@ -4785,7 +4750,7 @@
     ]
   },
   {
-    "id": 391,
+    "id": 387,
     "name": "Santana - Black Magic Woman",
     "group": "Santana",
     "title": "Black Magic Woman",
@@ -4799,7 +4764,7 @@
     ]
   },
   {
-    "id": 392,
+    "id": 388,
     "name": "Santana - Samba Pa Ti",
     "group": "Santana",
     "title": "Samba Pa Ti",
@@ -4811,7 +4776,7 @@
     ]
   },
   {
-    "id": 393,
+    "id": 389,
     "name": "Saxon - 747 Strangers In The Night",
     "group": "Saxon",
     "title": "747 Strangers In The Night",
@@ -4823,19 +4788,19 @@
     ]
   },
   {
-    "id": 394,
-    "name": "Saxon - Denim And Leather",
+    "id": 390,
+    "name": "Saxon - Deni'm And Leather",
     "group": "Saxon",
-    "title": "Denim And Leather",
+    "title": "Deni'm And Leather",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Saxon - Denim And Leather - L.pdf",
+    "customLyricsFile": "Saxon - Deni'm And Leather - L.pdf",
     "rawFiles": [
-      "Saxon - Denim And Leather - L.pdf"
+      "Saxon - Deni'm And Leather - L.pdf"
     ]
   },
   {
-    "id": 395,
+    "id": 391,
     "name": "Saxon - Strong Arm Of The Law",
     "group": "Saxon",
     "title": "Strong Arm Of The Law",
@@ -4847,7 +4812,7 @@
     ]
   },
   {
-    "id": 396,
+    "id": 392,
     "name": "Saxon - Wheels Of Steel",
     "group": "Saxon",
     "title": "Wheels Of Steel",
@@ -4859,7 +4824,7 @@
     ]
   },
   {
-    "id": 397,
+    "id": 393,
     "name": "Scorpions - Big City Nights",
     "group": "Scorpions",
     "title": "Big City Nights",
@@ -4873,7 +4838,7 @@
     ]
   },
   {
-    "id": 398,
+    "id": 394,
     "name": "Scorpions - No One Like You",
     "group": "Scorpions",
     "title": "No One Like You",
@@ -4885,7 +4850,7 @@
     ]
   },
   {
-    "id": 399,
+    "id": 395,
     "name": "Scorpions - Rock You Like A Hurricane",
     "group": "Scorpions",
     "title": "Rock You Like A Hurricane",
@@ -4897,7 +4862,7 @@
     ]
   },
   {
-    "id": 400,
+    "id": 396,
     "name": "Scorpions - The Future Never Dies",
     "group": "Scorpions",
     "title": "The Future Never Dies",
@@ -4909,7 +4874,7 @@
     ]
   },
   {
-    "id": 401,
+    "id": 397,
     "name": "Scorpions - Wind Of Change",
     "group": "Scorpions",
     "title": "Wind Of Change",
@@ -4923,7 +4888,7 @@
     ]
   },
   {
-    "id": 402,
+    "id": 398,
     "name": "Scott Mckenzie - San Francisco",
     "group": "Scott Mckenzie",
     "title": "San Francisco",
@@ -4935,7 +4900,7 @@
     ]
   },
   {
-    "id": 403,
+    "id": 399,
     "name": "Sex Museum - Where I Belong",
     "group": "Sex Museum",
     "title": "Where I Belong",
@@ -4947,7 +4912,7 @@
     ]
   },
   {
-    "id": 404,
+    "id": 400,
     "name": "Sex Pistols - God Save The Queen",
     "group": "Sex Pistols",
     "title": "God Save The Queen",
@@ -4959,7 +4924,7 @@
     ]
   },
   {
-    "id": 405,
+    "id": 401,
     "name": "Sex Pistols - Seventeen",
     "group": "Sex Pistols",
     "title": "Seventeen",
@@ -4971,7 +4936,7 @@
     ]
   },
   {
-    "id": 406,
+    "id": 402,
     "name": "Shania Twain - Men, I Feel Like A Woman",
     "group": "Shania Twain",
     "title": "Men, I Feel Like A Woman",
@@ -4983,7 +4948,7 @@
     ]
   },
   {
-    "id": 407,
+    "id": 403,
     "name": "Sheryl Crow - If It Makes You Happy",
     "group": "Sheryl Crow",
     "title": "If It Makes You Happy",
@@ -4997,7 +4962,7 @@
     ]
   },
   {
-    "id": 408,
+    "id": 404,
     "name": "Shivaree - Goodnight Moon",
     "group": "Shivaree",
     "title": "Goodnight Moon",
@@ -5009,7 +4974,7 @@
     ]
   },
   {
-    "id": 409,
+    "id": 405,
     "name": "Shuarma - Rafaga De Luz",
     "group": "Shuarma",
     "title": "Rafaga De Luz",
@@ -5021,7 +4986,7 @@
     ]
   },
   {
-    "id": 410,
+    "id": 406,
     "name": "Simon & Garfunkel - America",
     "group": "Simon & Garfunkel",
     "title": "America",
@@ -5033,7 +4998,7 @@
     ]
   },
   {
-    "id": 411,
+    "id": 407,
     "name": "Snow Patrol - Chasing Cars",
     "group": "Snow Patrol",
     "title": "Chasing Cars",
@@ -5045,7 +5010,7 @@
     ]
   },
   {
-    "id": 412,
+    "id": 408,
     "name": "Solomon Burke - Everybody Needs Somebody",
     "group": "Solomon Burke",
     "title": "Everybody Needs Somebody",
@@ -5057,7 +5022,7 @@
     ]
   },
   {
-    "id": 413,
+    "id": 409,
     "name": "Status Quo - Little White Lies",
     "group": "Status Quo",
     "title": "Little White Lies",
@@ -5071,7 +5036,7 @@
     ]
   },
   {
-    "id": 414,
+    "id": 410,
     "name": "Status Quo- Paper Plane - P",
     "group": null,
     "title": "Status Quo- Paper Plane - P",
@@ -5082,7 +5047,7 @@
     ]
   },
   {
-    "id": 415,
+    "id": 411,
     "name": "Stealers Wheel - Stuck In The Middle With You",
     "group": "Stealers Wheel",
     "title": "Stuck In The Middle With You",
@@ -5094,7 +5059,7 @@
     ]
   },
   {
-    "id": 416,
+    "id": 412,
     "name": "Stealers Wheestuck In The Middle - L",
     "group": null,
     "title": "Stealers Wheestuck In The Middle - L",
@@ -5105,7 +5070,7 @@
     ]
   },
   {
-    "id": 417,
+    "id": 413,
     "name": "Steppenwolf - Born To Be Wild",
     "group": "Steppenwolf",
     "title": "Born To Be Wild",
@@ -5117,7 +5082,7 @@
     ]
   },
   {
-    "id": 418,
+    "id": 414,
     "name": "Stevie Ray Vaughan - Mary Had A Little Lamb",
     "group": "Stevie Ray Vaughan",
     "title": "Mary Had A Little Lamb",
@@ -5129,7 +5094,7 @@
     ]
   },
   {
-    "id": 419,
+    "id": 415,
     "name": "Stevie Ray Vaughan - The House Is Rocking",
     "group": "Stevie Ray Vaughan",
     "title": "The House Is Rocking",
@@ -5141,7 +5106,7 @@
     ]
   },
   {
-    "id": 420,
+    "id": 416,
     "name": "Stevie Wonder - Superstition",
     "group": "Stevie Wonder",
     "title": "Superstition",
@@ -5153,19 +5118,7 @@
     ]
   },
   {
-    "id": 421,
-    "name": "Sunny - Bobby Hebb",
-    "group": "Sunny",
-    "title": "Bobby Hebb",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Sunny - Bobby Hebb - P.pdf",
-    "rawFiles": [
-      "Sunny - Bobby Hebb - P.pdf"
-    ]
-  },
-  {
-    "id": 422,
+    "id": 417,
     "name": "Supersubmarina - Chas Y Aparezco",
     "group": "Supersubmarina",
     "title": "Chas Y Aparezco",
@@ -5177,7 +5130,7 @@
     ]
   },
   {
-    "id": 423,
+    "id": 418,
     "name": "Tahures Zurdos - Romper",
     "group": "Tahures Zurdos",
     "title": "Romper",
@@ -5189,7 +5142,7 @@
     ]
   },
   {
-    "id": 424,
+    "id": 419,
     "name": "Tahures Zurdos - Tocaré",
     "group": "Tahures Zurdos",
     "title": "Tocaré",
@@ -5203,19 +5156,19 @@
     ]
   },
   {
-    "id": 425,
+    "id": 420,
     "name": "Tahures Zurdos - Una Noche De Amor",
     "group": "Tahures Zurdos",
     "title": "Una Noche De Amor",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "Tahures Zurdos - Una Noche De Amor  - P.pdf",
+    "customScoreFile": "Tahures Zurdos - Una Noche De Amor - P.pdf",
     "rawFiles": [
-      "Tahures Zurdos - Una Noche De Amor  - P.pdf"
+      "Tahures Zurdos - Una Noche De Amor - P.pdf"
     ]
   },
   {
-    "id": 426,
+    "id": 421,
     "name": "Ted Nugent - Cat Scratch Fever",
     "group": "Ted Nugent",
     "title": "Cat Scratch Fever",
@@ -5227,7 +5180,7 @@
     ]
   },
   {
-    "id": 427,
+    "id": 422,
     "name": "Tequila - Matricula De Honor",
     "group": "Tequila",
     "title": "Matricula De Honor",
@@ -5239,7 +5192,7 @@
     ]
   },
   {
-    "id": 428,
+    "id": 423,
     "name": "Tequila - Me Vuelvo Loco",
     "group": "Tequila",
     "title": "Me Vuelvo Loco",
@@ -5251,7 +5204,7 @@
     ]
   },
   {
-    "id": 429,
+    "id": 424,
     "name": "Tequila - Necesito Un Trago",
     "group": "Tequila",
     "title": "Necesito Un Trago",
@@ -5263,7 +5216,7 @@
     ]
   },
   {
-    "id": 430,
+    "id": 425,
     "name": "Tequila - Quiero Besarte",
     "group": "Tequila",
     "title": "Quiero Besarte",
@@ -5277,7 +5230,7 @@
     ]
   },
   {
-    "id": 431,
+    "id": 426,
     "name": "Tequila - Rock And Roll",
     "group": "Tequila",
     "title": "Rock And Roll",
@@ -5289,7 +5242,7 @@
     ]
   },
   {
-    "id": 432,
+    "id": 427,
     "name": "Texas - So In Love With You",
     "group": "Texas",
     "title": "So In Love With You",
@@ -5301,7 +5254,7 @@
     ]
   },
   {
-    "id": 433,
+    "id": 428,
     "name": "The Alarm - Presence Of Love",
     "group": "The Alarm",
     "title": "Presence Of Love",
@@ -5313,7 +5266,7 @@
     ]
   },
   {
-    "id": 434,
+    "id": 429,
     "name": "The Beatles - A Hard Days Night",
     "group": "The Beatles",
     "title": "A Hard Days Night",
@@ -5325,7 +5278,7 @@
     ]
   },
   {
-    "id": 435,
+    "id": 430,
     "name": "The Beatles - Act Naturally",
     "group": "The Beatles",
     "title": "Act Naturally",
@@ -5337,7 +5290,7 @@
     ]
   },
   {
-    "id": 436,
+    "id": 431,
     "name": "The Beatles - And I Love Her",
     "group": "The Beatles",
     "title": "And I Love Her",
@@ -5351,7 +5304,7 @@
     ]
   },
   {
-    "id": 437,
+    "id": 432,
     "name": "The Beatles - Baby Its You",
     "group": "The Beatles",
     "title": "Baby Its You",
@@ -5363,7 +5316,7 @@
     ]
   },
   {
-    "id": 438,
+    "id": 433,
     "name": "The Beatles - Blackbird",
     "group": "The Beatles",
     "title": "Blackbird",
@@ -5375,7 +5328,7 @@
     ]
   },
   {
-    "id": 439,
+    "id": 434,
     "name": "The Beatles - Cant Buy Me Love",
     "group": "The Beatles",
     "title": "Cant Buy Me Love",
@@ -5387,7 +5340,7 @@
     ]
   },
   {
-    "id": 440,
+    "id": 435,
     "name": "The Beatles - Come Together",
     "group": "The Beatles",
     "title": "Come Together",
@@ -5401,7 +5354,7 @@
     ]
   },
   {
-    "id": 441,
+    "id": 436,
     "name": "The Beatles - Day Tripper",
     "group": "The Beatles",
     "title": "Day Tripper",
@@ -5413,7 +5366,7 @@
     ]
   },
   {
-    "id": 442,
+    "id": 437,
     "name": "The Beatles - Help",
     "group": "The Beatles",
     "title": "Help",
@@ -5427,7 +5380,7 @@
     ]
   },
   {
-    "id": 443,
+    "id": 438,
     "name": "The Beatles - Here, There And Everywhere",
     "group": "The Beatles",
     "title": "Here, There And Everywhere",
@@ -5439,7 +5392,7 @@
     ]
   },
   {
-    "id": 444,
+    "id": 439,
     "name": "The Beatles - Hey Jude",
     "group": "The Beatles",
     "title": "Hey Jude",
@@ -5451,7 +5404,7 @@
     ]
   },
   {
-    "id": 445,
+    "id": 440,
     "name": "The Beatles - Hey, Jude",
     "group": "The Beatles",
     "title": "Hey, Jude",
@@ -5463,7 +5416,7 @@
     ]
   },
   {
-    "id": 446,
+    "id": 441,
     "name": "The Beatles - I Saw Her Standing There",
     "group": "The Beatles",
     "title": "I Saw Her Standing There",
@@ -5475,7 +5428,7 @@
     ]
   },
   {
-    "id": 447,
+    "id": 442,
     "name": "The Beatles - I Should Have Known Better",
     "group": "The Beatles",
     "title": "I Should Have Known Better",
@@ -5487,7 +5440,7 @@
     ]
   },
   {
-    "id": 448,
+    "id": 443,
     "name": "The Beatles - I Want To Hold Your Hand",
     "group": "The Beatles",
     "title": "I Want To Hold Your Hand",
@@ -5499,7 +5452,19 @@
     ]
   },
   {
-    "id": 449,
+    "id": 444,
+    "name": "The Beatles - I'm Happy Just To Dance With You",
+    "group": "The Beatles",
+    "title": "I'm Happy Just To Dance With You",
+    "hasScore": true,
+    "hasLyrics": false,
+    "customScoreFile": "The Beatles - I'm Happy Just To Dance With You - P.pdf",
+    "rawFiles": [
+      "The Beatles - I'm Happy Just To Dance With You - P.pdf"
+    ]
+  },
+  {
+    "id": 445,
     "name": "The Beatles - If I Feel",
     "group": "The Beatles",
     "title": "If I Feel",
@@ -5511,7 +5476,7 @@
     ]
   },
   {
-    "id": 450,
+    "id": 446,
     "name": "The Beatles - If I Fell",
     "group": "The Beatles",
     "title": "If I Fell",
@@ -5523,7 +5488,7 @@
     ]
   },
   {
-    "id": 451,
+    "id": 447,
     "name": "The Beatles - Ill Get You",
     "group": "The Beatles",
     "title": "Ill Get You",
@@ -5535,19 +5500,7 @@
     ]
   },
   {
-    "id": 452,
-    "name": "The Beatles - Im Happy Just To Dance With You",
-    "group": "The Beatles",
-    "title": "Im Happy Just To Dance With You",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "The Beatles - Im Happy Just To Dance With You - P.pdf",
-    "rawFiles": [
-      "The Beatles - Im Happy Just To Dance With You - P.pdf"
-    ]
-  },
-  {
-    "id": 453,
+    "id": 448,
     "name": "The Beatles - Imagine",
     "group": "The Beatles",
     "title": "Imagine",
@@ -5559,7 +5512,7 @@
     ]
   },
   {
-    "id": 454,
+    "id": 449,
     "name": "The Beatles - Let It Be",
     "group": "The Beatles",
     "title": "Let It Be",
@@ -5571,7 +5524,7 @@
     ]
   },
   {
-    "id": 455,
+    "id": 450,
     "name": "The Beatles - Love Me Do",
     "group": "The Beatles",
     "title": "Love Me Do",
@@ -5583,7 +5536,7 @@
     ]
   },
   {
-    "id": 456,
+    "id": 451,
     "name": "The Beatles - Lucy In The Sky With Diamonds",
     "group": "The Beatles",
     "title": "Lucy In The Sky With Diamonds",
@@ -5595,7 +5548,7 @@
     ]
   },
   {
-    "id": 457,
+    "id": 452,
     "name": "The Beatles - Money",
     "group": "The Beatles",
     "title": "Money",
@@ -5607,7 +5560,7 @@
     ]
   },
   {
-    "id": 458,
+    "id": 453,
     "name": "The Beatles - Nowhere Man",
     "group": "The Beatles",
     "title": "Nowhere Man",
@@ -5619,7 +5572,7 @@
     ]
   },
   {
-    "id": 459,
+    "id": 454,
     "name": "The Beatles - Please, Mr Postman",
     "group": "The Beatles",
     "title": "Please, Mr Postman",
@@ -5631,7 +5584,7 @@
     ]
   },
   {
-    "id": 460,
+    "id": 455,
     "name": "The Beatles - She Loves You",
     "group": "The Beatles",
     "title": "She Loves You",
@@ -5643,7 +5596,7 @@
     ]
   },
   {
-    "id": 461,
+    "id": 456,
     "name": "The Beatles - Taxman",
     "group": "The Beatles",
     "title": "Taxman",
@@ -5655,19 +5608,19 @@
     ]
   },
   {
-    "id": 462,
-    "name": "The Beatles - The  Ballad Of John And Yoko",
+    "id": 457,
+    "name": "The Beatles - The Ballad Of John And Yoko",
     "group": "The Beatles",
-    "title": "The  Ballad Of John And Yoko",
+    "title": "The Ballad Of John And Yoko",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "The Beatles - The  Ballad Of John And Yoko - P.pdf",
+    "customScoreFile": "The Beatles - The Ballad Of John And Yoko - P.pdf",
     "rawFiles": [
-      "The Beatles - The  Ballad Of John And Yoko - P.pdf"
+      "The Beatles - The Ballad Of John And Yoko - P.pdf"
     ]
   },
   {
-    "id": 463,
+    "id": 458,
     "name": "The Beatles - The Night Before",
     "group": "The Beatles",
     "title": "The Night Before",
@@ -5679,7 +5632,7 @@
     ]
   },
   {
-    "id": 464,
+    "id": 459,
     "name": "The Beatles - Till There Was You",
     "group": "The Beatles",
     "title": "Till There Was You",
@@ -5691,7 +5644,7 @@
     ]
   },
   {
-    "id": 465,
+    "id": 460,
     "name": "The Beatles - Twist And Shout",
     "group": "The Beatles",
     "title": "Twist And Shout",
@@ -5703,7 +5656,7 @@
     ]
   },
   {
-    "id": 466,
+    "id": 461,
     "name": "The Beatles - When I Get Home",
     "group": "The Beatles",
     "title": "When I Get Home",
@@ -5715,7 +5668,7 @@
     ]
   },
   {
-    "id": 467,
+    "id": 462,
     "name": "The Beatles - While My Guitar Gently Weeps",
     "group": "The Beatles",
     "title": "While My Guitar Gently Weeps",
@@ -5729,7 +5682,7 @@
     ]
   },
   {
-    "id": 468,
+    "id": 463,
     "name": "The Beatles - With A Little Help From My Friends",
     "group": "The Beatles",
     "title": "With A Little Help From My Friends",
@@ -5741,7 +5694,7 @@
     ]
   },
   {
-    "id": 469,
+    "id": 464,
     "name": "The Beatles - Yesterday",
     "group": "The Beatles",
     "title": "Yesterday",
@@ -5755,7 +5708,7 @@
     ]
   },
   {
-    "id": 470,
+    "id": 465,
     "name": "The Bee Gees - To Love Somebody",
     "group": "The Bee Gees",
     "title": "To Love Somebody",
@@ -5767,7 +5720,7 @@
     ]
   },
   {
-    "id": 471,
+    "id": 466,
     "name": "The Black Keys - Lonely Boy",
     "group": "The Black Keys",
     "title": "Lonely Boy",
@@ -5779,7 +5732,7 @@
     ]
   },
   {
-    "id": 472,
+    "id": 467,
     "name": "The Clash - London Calling",
     "group": "The Clash",
     "title": "London Calling",
@@ -5791,7 +5744,7 @@
     ]
   },
   {
-    "id": 473,
+    "id": 468,
     "name": "The Cranberries - Zombie",
     "group": "The Cranberries",
     "title": "Zombie",
@@ -5805,7 +5758,7 @@
     ]
   },
   {
-    "id": 474,
+    "id": 469,
     "name": "The Creeps - City Of People",
     "group": "The Creeps",
     "title": "City Of People",
@@ -5817,7 +5770,7 @@
     ]
   },
   {
-    "id": 475,
+    "id": 470,
     "name": "The Creeps - Hi Hi Pretty Girl",
     "group": "The Creeps",
     "title": "Hi Hi Pretty Girl",
@@ -5829,7 +5782,7 @@
     ]
   },
   {
-    "id": 476,
+    "id": 471,
     "name": "The Cult - Wild Flower",
     "group": "The Cult",
     "title": "Wild Flower",
@@ -5841,19 +5794,19 @@
     ]
   },
   {
-    "id": 477,
-    "name": "The Cure - Boys Dont Cry",
+    "id": 472,
+    "name": "The Cure - Boys Don't Cry",
     "group": "The Cure",
-    "title": "Boys Dont Cry",
+    "title": "Boys Don't Cry",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "The Cure - Boys Dont Cry - P.pdf",
+    "customScoreFile": "The Cure - Boys Don't Cry - P.pdf",
     "rawFiles": [
-      "The Cure - Boys Dont Cry - P.pdf"
+      "The Cure - Boys Don't Cry - P.pdf"
     ]
   },
   {
-    "id": 478,
+    "id": 473,
     "name": "The Doors - Cars Hiss By My Window",
     "group": "The Doors",
     "title": "Cars Hiss By My Window",
@@ -5865,7 +5818,7 @@
     ]
   },
   {
-    "id": 479,
+    "id": 474,
     "name": "The Doors - Light My Fire",
     "group": "The Doors",
     "title": "Light My Fire",
@@ -5877,7 +5830,7 @@
     ]
   },
   {
-    "id": 480,
+    "id": 475,
     "name": "The Doors - The Cristal Ship",
     "group": "The Doors",
     "title": "The Cristal Ship",
@@ -5889,7 +5842,7 @@
     ]
   },
   {
-    "id": 481,
+    "id": 476,
     "name": "The Eagles - Hotel California",
     "group": "The Eagles",
     "title": "Hotel California",
@@ -5901,19 +5854,19 @@
     ]
   },
   {
-    "id": 482,
-    "name": "The Eagles - Victim Of Love",
+    "id": 477,
+    "name": "The Eagles - Victi'm Of Love",
     "group": "The Eagles",
-    "title": "Victim Of Love",
+    "title": "Victi'm Of Love",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "The Eagles - Victim Of Love - P.pdf",
+    "customScoreFile": "The Eagles - Victi'm Of Love - P.pdf",
     "rawFiles": [
-      "The Eagles - Victim Of Love - P.pdf"
+      "The Eagles - Victi'm Of Love - P.pdf"
     ]
   },
   {
-    "id": 483,
+    "id": 478,
     "name": "The Fuzztones - 1-2-5",
     "group": "The Fuzztones",
     "title": "1-2-5",
@@ -5925,7 +5878,7 @@
     ]
   },
   {
-    "id": 484,
+    "id": 479,
     "name": "The Kinks - You Really Got Me",
     "group": "The Kinks",
     "title": "You Really Got Me",
@@ -5937,7 +5890,7 @@
     ]
   },
   {
-    "id": 485,
+    "id": 480,
     "name": "The Kinks - You Really Got Me En Sol",
     "group": "The Kinks",
     "title": "You Really Got Me En Sol",
@@ -5949,7 +5902,7 @@
     ]
   },
   {
-    "id": 486,
+    "id": 481,
     "name": "The Police - Every Breath You Take",
     "group": "The Police",
     "title": "Every Breath You Take",
@@ -5961,7 +5914,7 @@
     ]
   },
   {
-    "id": 487,
+    "id": 482,
     "name": "The Police - Roxanne",
     "group": "The Police",
     "title": "Roxanne",
@@ -5975,7 +5928,7 @@
     ]
   },
   {
-    "id": 488,
+    "id": 483,
     "name": "The Police - So Lonely",
     "group": "The Police",
     "title": "So Lonely",
@@ -5987,7 +5940,7 @@
     ]
   },
   {
-    "id": 489,
+    "id": 484,
     "name": "The Police - Walking On The Moon",
     "group": "The Police",
     "title": "Walking On The Moon",
@@ -5999,19 +5952,19 @@
     ]
   },
   {
-    "id": 490,
+    "id": 485,
     "name": "The Pretenders - Back On The Chain Gang",
     "group": "The Pretenders",
     "title": "Back On The Chain Gang",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "The Pretenders  - Back On The Chain Gang - P.pdf",
+    "customScoreFile": "The Pretenders - Back On The Chain Gang - P.pdf",
     "rawFiles": [
-      "The Pretenders  - Back On The Chain Gang - P.pdf"
+      "The Pretenders - Back On The Chain Gang - P.pdf"
     ]
   },
   {
-    "id": 491,
+    "id": 486,
     "name": "The Pretenders - Brass In Pocket",
     "group": "The Pretenders",
     "title": "Brass In Pocket",
@@ -6023,7 +5976,7 @@
     ]
   },
   {
-    "id": 492,
+    "id": 487,
     "name": "The Pretenders - Hymn To Her",
     "group": "The Pretenders",
     "title": "Hymn To Her",
@@ -6035,7 +5988,7 @@
     ]
   },
   {
-    "id": 493,
+    "id": 488,
     "name": "The Pretenders - Kid",
     "group": "The Pretenders",
     "title": "Kid",
@@ -6047,19 +6000,7 @@
     ]
   },
   {
-    "id": 494,
-    "name": "The Rolling Stones - Satisfaction",
-    "group": "The Rolling Stones",
-    "title": "Satisfaction",
-    "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "The Rolling Stones -  Satisfaction - P.pdf",
-    "rawFiles": [
-      "The Rolling Stones -  Satisfaction - P.pdf"
-    ]
-  },
-  {
-    "id": 495,
+    "id": 489,
     "name": "The Rolling Stones - Brown Sugar",
     "group": "The Rolling Stones",
     "title": "Brown Sugar",
@@ -6071,7 +6012,7 @@
     ]
   },
   {
-    "id": 496,
+    "id": 490,
     "name": "The Rolling Stones - Heart Of Stone",
     "group": "The Rolling Stones",
     "title": "Heart Of Stone",
@@ -6083,7 +6024,7 @@
     ]
   },
   {
-    "id": 497,
+    "id": 491,
     "name": "The Rolling Stones - Honky Tonk Women",
     "group": "The Rolling Stones",
     "title": "Honky Tonk Women",
@@ -6095,7 +6036,7 @@
     ]
   },
   {
-    "id": 498,
+    "id": 492,
     "name": "The Rolling Stones - Jumpin Jack Flash",
     "group": "The Rolling Stones",
     "title": "Jumpin Jack Flash",
@@ -6107,7 +6048,7 @@
     ]
   },
   {
-    "id": 499,
+    "id": 493,
     "name": "The Rolling Stones - Like A Rolling Stone",
     "group": "The Rolling Stones",
     "title": "Like A Rolling Stone",
@@ -6119,7 +6060,7 @@
     ]
   },
   {
-    "id": 500,
+    "id": 494,
     "name": "The Rolling Stones - Mercy, Mercy",
     "group": "The Rolling Stones",
     "title": "Mercy, Mercy",
@@ -6131,7 +6072,7 @@
     ]
   },
   {
-    "id": 501,
+    "id": 495,
     "name": "The Rolling Stones - Pain In My Heart",
     "group": "The Rolling Stones",
     "title": "Pain In My Heart",
@@ -6143,19 +6084,21 @@
     ]
   },
   {
-    "id": 502,
+    "id": 496,
     "name": "The Rolling Stones - Satisfaction",
     "group": "The Rolling Stones",
     "title": "Satisfaction",
-    "hasScore": false,
+    "hasScore": true,
     "hasLyrics": true,
+    "customScoreFile": "The Rolling Stones - Satisfaction - P.pdf",
     "customLyricsFile": "The Rolling Stones - Satisfaction - L.pdf",
     "rawFiles": [
-      "The Rolling Stones - Satisfaction - L.pdf"
+      "The Rolling Stones - Satisfaction - L.pdf",
+      "The Rolling Stones - Satisfaction - P.pdf"
     ]
   },
   {
-    "id": 503,
+    "id": 497,
     "name": "The Rolling Stones - Stupid Girl",
     "group": "The Rolling Stones",
     "title": "Stupid Girl",
@@ -6167,7 +6110,7 @@
     ]
   },
   {
-    "id": 504,
+    "id": 498,
     "name": "The Rolling Stones - Wild Horses",
     "group": "The Rolling Stones",
     "title": "Wild Horses",
@@ -6181,7 +6124,7 @@
     ]
   },
   {
-    "id": 505,
+    "id": 499,
     "name": "The Shocking Blue - Hot Sand",
     "group": "The Shocking Blue",
     "title": "Hot Sand",
@@ -6195,7 +6138,7 @@
     ]
   },
   {
-    "id": 506,
+    "id": 500,
     "name": "The Shocking Blue - Never Marry A Railroad Man",
     "group": "The Shocking Blue",
     "title": "Never Marry A Railroad Man",
@@ -6207,7 +6150,7 @@
     ]
   },
   {
-    "id": 507,
+    "id": 501,
     "name": "The Shocking Blue - Venus",
     "group": "The Shocking Blue",
     "title": "Venus",
@@ -6221,7 +6164,7 @@
     ]
   },
   {
-    "id": 508,
+    "id": 502,
     "name": "The Temptations - Aint To Proud To Beg",
     "group": "The Temptations",
     "title": "Aint To Proud To Beg",
@@ -6233,7 +6176,7 @@
     ]
   },
   {
-    "id": 509,
+    "id": 503,
     "name": "The Temptations - My Girl",
     "group": "The Temptations",
     "title": "My Girl",
@@ -6245,7 +6188,7 @@
     ]
   },
   {
-    "id": 510,
+    "id": 504,
     "name": "The Troggs - Wild Thing",
     "group": "The Troggs",
     "title": "Wild Thing",
@@ -6259,7 +6202,7 @@
     ]
   },
   {
-    "id": 511,
+    "id": 505,
     "name": "The Velvet Underground - Femme Fatale",
     "group": "The Velvet Underground",
     "title": "Femme Fatale",
@@ -6271,7 +6214,7 @@
     ]
   },
   {
-    "id": 512,
+    "id": 506,
     "name": "The Who - Behind Blue Eyes",
     "group": "The Who",
     "title": "Behind Blue Eyes",
@@ -6283,19 +6226,19 @@
     ]
   },
   {
-    "id": 513,
-    "name": "The Who - Im Free",
+    "id": 507,
+    "name": "The Who - I'm Free",
     "group": "The Who",
-    "title": "Im Free",
+    "title": "I'm Free",
     "hasScore": true,
     "hasLyrics": false,
-    "customScoreFile": "The Who - Im Free - P.pdf",
+    "customScoreFile": "The Who - I'm Free - P.pdf",
     "rawFiles": [
-      "The Who - Im Free - P.pdf"
+      "The Who - I'm Free - P.pdf"
     ]
   },
   {
-    "id": 514,
+    "id": 508,
     "name": "The Who - My Generation",
     "group": "The Who",
     "title": "My Generation",
@@ -6307,7 +6250,7 @@
     ]
   },
   {
-    "id": 515,
+    "id": 509,
     "name": "The Who - Obertura De Tommy",
     "group": "The Who",
     "title": "Obertura De Tommy",
@@ -6319,7 +6262,7 @@
     ]
   },
   {
-    "id": 516,
+    "id": 510,
     "name": "The Who - Pictures Of Lily",
     "group": "The Who",
     "title": "Pictures Of Lily",
@@ -6331,7 +6274,7 @@
     ]
   },
   {
-    "id": 517,
+    "id": 511,
     "name": "The Who - Pinball Wizard",
     "group": "The Who",
     "title": "Pinball Wizard",
@@ -6343,7 +6286,7 @@
     ]
   },
   {
-    "id": 518,
+    "id": 512,
     "name": "The Who - The Kids Are All Right",
     "group": "The Who",
     "title": "The Kids Are All Right",
@@ -6355,7 +6298,7 @@
     ]
   },
   {
-    "id": 519,
+    "id": 513,
     "name": "Thin Lizzy - Jailbreak",
     "group": "Thin Lizzy",
     "title": "Jailbreak",
@@ -6367,7 +6310,7 @@
     ]
   },
   {
-    "id": 520,
+    "id": 514,
     "name": "Tierra Santa - La Cancion Del Pirata",
     "group": "Tierra Santa",
     "title": "La Cancion Del Pirata",
@@ -6379,7 +6322,7 @@
     ]
   },
   {
-    "id": 521,
+    "id": 515,
     "name": "Tierra Santa - La Canción Del Pirata I",
     "group": "Tierra Santa",
     "title": "La Canción Del Pirata I",
@@ -6391,7 +6334,7 @@
     ]
   },
   {
-    "id": 522,
+    "id": 516,
     "name": "Tina Turner - My Baby",
     "group": "Tina Turner",
     "title": "My Baby",
@@ -6403,7 +6346,7 @@
     ]
   },
   {
-    "id": 523,
+    "id": 517,
     "name": "Topo - Mis Amigos Donde Estaran",
     "group": "Topo",
     "title": "Mis Amigos Donde Estaran",
@@ -6415,7 +6358,7 @@
     ]
   },
   {
-    "id": 524,
+    "id": 518,
     "name": "Tracy Chapman - Gimme One Reason",
     "group": "Tracy Chapman",
     "title": "Gimme One Reason",
@@ -6427,7 +6370,7 @@
     ]
   },
   {
-    "id": 525,
+    "id": 519,
     "name": "Traveling Wilburys - Handle With Care",
     "group": "Traveling Wilburys",
     "title": "Handle With Care",
@@ -6439,31 +6382,21 @@
     ]
   },
   {
-    "id": 526,
-    "name": "Twisted Sister - Were Not Gonna Take It",
+    "id": 520,
+    "name": "Twisted Sister - We're Not Gonna Take It",
     "group": "Twisted Sister",
-    "title": "Were Not Gonna Take It",
+    "title": "We're Not Gonna Take It",
     "hasScore": true,
-    "hasLyrics": false,
-    "customScoreFile": "Twisted Sister - Were Not Gonna Take It - P.pdf",
-    "rawFiles": [
-      "Twisted Sister - Were Not Gonna Take It - P.pdf"
-    ]
-  },
-  {
-    "id": 527,
-    "name": "Twisted Sister - We_Re Not Gonna Take It",
-    "group": "Twisted Sister",
-    "title": "We_Re Not Gonna Take It",
-    "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Twisted Sister - We_Re Not Gonna Take It - L.pdf",
+    "customScoreFile": "Twisted Sister - We're Not Gonna Take It - P.pdf",
+    "customLyricsFile": "Twisted Sister - We're Not Gonna Take It - L.pdf",
     "rawFiles": [
-      "Twisted Sister - We_Re Not Gonna Take It - L.pdf"
+      "Twisted Sister - We're Not Gonna Take It - L.pdf",
+      "Twisted Sister - We're Not Gonna Take It - P.pdf"
     ]
   },
   {
-    "id": 528,
+    "id": 521,
     "name": "U2 - Desire",
     "group": "U2",
     "title": "Desire",
@@ -6475,19 +6408,19 @@
     ]
   },
   {
-    "id": 529,
-    "name": "U2 - I Still Haven_T Found",
+    "id": 522,
+    "name": "U2 - I Still Haven'T Found",
     "group": "U2",
-    "title": "I Still Haven_T Found",
+    "title": "I Still Haven'T Found",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "U2 - I Still Haven_T Found - L.pdf",
+    "customLyricsFile": "U2 - I Still Haven'T Found - L.pdf",
     "rawFiles": [
-      "U2 - I Still Haven_T Found - L.pdf"
+      "U2 - I Still Haven'T Found - L.pdf"
     ]
   },
   {
-    "id": 530,
+    "id": 523,
     "name": "U2 - With Or Without You",
     "group": "U2",
     "title": "With Or Without You",
@@ -6499,7 +6432,7 @@
     ]
   },
   {
-    "id": 531,
+    "id": 524,
     "name": "Ufo - Doctor, Doctor",
     "group": "Ufo",
     "title": "Doctor, Doctor",
@@ -6511,7 +6444,7 @@
     ]
   },
   {
-    "id": 532,
+    "id": 525,
     "name": "Ufo - Doctor, Doctor, Please",
     "group": "Ufo",
     "title": "Doctor, Doctor, Please",
@@ -6523,7 +6456,7 @@
     ]
   },
   {
-    "id": 533,
+    "id": 526,
     "name": "Varias Soul - P",
     "group": null,
     "title": "Varias Soul - P",
@@ -6534,7 +6467,7 @@
     ]
   },
   {
-    "id": 534,
+    "id": 527,
     "name": "Whitesnake - Fool For Your Loving",
     "group": "Whitesnake",
     "title": "Fool For Your Loving",
@@ -6548,7 +6481,7 @@
     ]
   },
   {
-    "id": 535,
+    "id": 528,
     "name": "Wilson Pickett - Midnight Hour",
     "group": "Wilson Pickett",
     "title": "Midnight Hour",
@@ -6560,7 +6493,7 @@
     ]
   },
   {
-    "id": 536,
+    "id": 529,
     "name": "Wolfmother - Woman",
     "group": "Wolfmother",
     "title": "Woman",
@@ -6572,38 +6505,29 @@
     ]
   },
   {
-    "id": 537,
-    "name": "Zz Top - Gimme All Your Loving",
-    "group": "Zz Top",
+    "id": 530,
+    "name": "ZZ Top - Gimme All Your Loving",
+    "group": "ZZ Top",
     "title": "Gimme All Your Loving",
     "hasScore": false,
     "hasLyrics": true,
-    "customLyricsFile": "Zz Top - Gimme All Your Loving - L.pdf",
+    "customLyricsFile": "ZZ Top - Gimme All Your Loving - L.pdf",
     "rawFiles": [
-      "Zz Top - Gimme All Your Loving - L.pdf"
+      "ZZ Top - Gimme All Your Loving - L.pdf"
     ]
   },
   {
-    "id": 538,
-    "name": "Zz Top - Sharp Dressed Man",
-    "group": "Zz Top",
+    "id": 531,
+    "name": "ZZ Top - Sharp Dressed Man",
+    "group": "ZZ Top",
     "title": "Sharp Dressed Man",
-    "hasScore": false,
+    "hasScore": true,
     "hasLyrics": true,
-    "customLyricsFile": "Zz Top - Sharp Dressed Man - L.pdf",
+    "customScoreFile": "ZZ Top - Sharp Dressed Man - P.pdf",
+    "customLyricsFile": "ZZ Top - Sharp Dressed Man - L.pdf",
     "rawFiles": [
-      "Zz Top - Sharp Dressed Man - L.pdf"
-    ]
-  },
-  {
-    "id": 539,
-    "name": "Zz Tosharp Dressed Man - P",
-    "group": null,
-    "title": "Zz Tosharp Dressed Man - P",
-    "hasScore": false,
-    "hasLyrics": false,
-    "rawFiles": [
-      "Zz Tosharp Dressed Man - P.pdf"
+      "ZZ Top - Sharp Dressed Man - L.pdf",
+      "ZZ Top - Sharp Dressed Man - P.pdf"
     ]
   }
 ]

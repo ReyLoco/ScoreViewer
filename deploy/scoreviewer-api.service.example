@@ -1,0 +1,22 @@
+[Unit]
+Description=ScoreViewer API
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+Group=www-data
+WorkingDirectory=/var/www/scoreviewer-api/server
+Environment=NODE_ENV=production
+Environment=PORT=4000
+Environment=PDF_DIR=/srv/scoreviewer/partituras
+Environment=ALLOWED_ORIGIN=https://scoreviewer.luismasso.es
+Environment=ADMIN_TOKEN=CAMBIA_ESTE_TOKEN_POR_UNO_LARGO_Y_UNICO
+ExecStart=/usr/bin/node /var/www/scoreviewer-api/server/index.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

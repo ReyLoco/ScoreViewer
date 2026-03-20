@@ -428,6 +428,100 @@ $transition: all 0.25s ease-in-out;
   margin-bottom: 0.75rem;
 }
 
+.admin-panel {
+  text-align: left;
+}
+
+.admin-hint {
+  color: rgba(15, 35, 95, 0.75);
+  font-size: 0.95rem;
+}
+
+.admin-msg {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(15, 35, 95, 0.06);
+}
+
+.admin-msg.ok {
+  background: rgba(46, 204, 113, 0.14);
+  border: 1px solid rgba(46, 204, 113, 0.35);
+}
+
+.admin-msg.error {
+  background: rgba(231, 76, 60, 0.12);
+  border: 1px solid rgba(231, 76, 60, 0.32);
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.admin-card {
+  border: 1px solid rgba(15, 35, 95, 0.12);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  background: #fff;
+}
+
+.admin-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.admin-row {
+  margin-bottom: 0.75rem;
+}
+
+.admin-row label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.admin-row input,
+.admin-row select {
+  border-radius: 10px;
+  border: 1px solid rgba(15, 35, 95, 0.18);
+  padding: 0.5rem 0.6rem;
+}
+
+.admin-row-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.admin-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(15, 35, 95, 0.18);
+  background: rgba(15, 35, 95, 0.06);
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+}
+
+.admin-btn:hover {
+  background: rgba(15, 35, 95, 0.1);
+}
+
+.admin-btn.danger {
+  border: 1px solid rgba(231, 76, 60, 0.32);
+  background: rgba(231, 76, 60, 0.12);
+}
+
+.admin-btn.danger:hover {
+  background: rgba(231, 76, 60, 0.18);
+}
+
 .selected-song .listado-song-btn {
   background-color: rgba(18, 62, 122, 0.12);
   font-weight: 600;
@@ -446,6 +540,17 @@ $transition: all 0.25s ease-in-out;
 
   .main-content-area {
     order: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .admin-row-3 {
+    grid-template-columns: 1fr 1fr 140px;
+    align-items: end;
   }
 }
 

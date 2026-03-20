@@ -1,0 +1,23 @@
+{
+  "name": "scoreviewer-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API para gestionar PDFs y listado de canciones de ScoreViewer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

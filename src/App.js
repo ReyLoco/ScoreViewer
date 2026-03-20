@@ -10,30 +10,82 @@ import Listado from "./components/Listado";
 import Introduction from "./components/Introduction";
 import Footer from "./components/Footer";
 import SongViewer from "./components/SongViewer";
+import AdminPanel from "./components/AdminPanel";
 
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
+    const isAdminRoute = () => {
+      if (typeof window === "undefined") return false;
+      const p = window.location.pathname || "/";
+      // Normalizamos "/admin" y "/admin/" al mismo caso
+      const normalized = p.replace(/\/+$/, "");
+      return normalized === "/admin";
+    };
+
+    const initialActualId = isAdminRoute() ? -1 : 0;
+
     this.state = {
-      actualId: 0,
-      actualSongObj: Constants.SONGS[0],
+      songs: [],
+      actualId: initialActualId,
+      actualSongObj: initialActualId === -1 ? null : null,
       // Filtro del listado: "all" | "score" | "lyrics"
       listFilter: "all",
+      loadingSongs: true,
+      loadError: null,
     };
 
     this.clickHandler = this.clickHandler.bind(this);
     this.setListFilter = this.setListFilter.bind(this);
     this.goHome = this.goHome.bind(this);
+    this.goAdmin = this.goAdmin.bind(this);
+    this.loadSongs = this.loadSongs.bind(this);
   } // end Constructor
+
+  componentDidMount() {
+    this.loadSongs();
+  }
+
+  loadSongs() {
+    this.setState({ loadingSongs: true, loadError: null });
+
+    return fetch(Constants.SONGS_API_URL)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Error HTTP ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((songs) => {
+        this.setState((prev) => {
+          const keepAdmin = prev.actualId === -1;
+          return {
+            songs,
+            loadingSongs: false,
+            actualId: keepAdmin ? -1 : 0,
+            actualSongObj: keepAdmin ? null : songs[0] || null,
+          };
+        });
+      })
+      .catch((err) => {
+        console.error("Error cargando canciones:", err);
+        this.setState({
+          loadingSongs: false,
+          loadError: "No se pudo cargar el listado de canciones.",
+        });
+      });
+  }
 
   // Function to change page, updating the selected song
   clickHandler(id) {
+    const { songs } = this.state;
+
     if (id > 0) {
       this.setState({
         actualId: id,
-        actualSongObj: Constants.SONGS.find((s) => s.id === id),
+        actualSongObj: songs.find((s) => s.id === id),
       });
     } else {
       this.setState({
@@ -49,15 +101,36 @@ export default class App extends Component {
   }
 
   goHome() {
+    if (typeof window !== "undefined") {
+      window.location.assign("/");
+      return;
+    }
+
+    const { songs } = this.state;
     this.setState({
       actualId: 0,
-      actualSongObj: Constants.SONGS[0],
+      actualSongObj: songs[0] || null,
       listFilter: "all",
     });
   }
 
+  goAdmin() {
+    // La ruta /admin se protegerá en Nginx con Basic Auth.
+    if (typeof window !== "undefined") {
+      window.location.assign("/admin");
+      return;
+    }
+  }
+
   render() {
-    const { listFilter, actualId, actualSongObj } = this.state;
+    const {
+      songs,
+      listFilter,
+      actualId,
+      actualSongObj,
+      loadingSongs,
+      loadError,
+    } = this.state;
 
     return (
       <div className="App container-fluid text-center">
@@ -72,34 +145,48 @@ export default class App extends Component {
             onSelectInicio={this.goHome}
             onSelectCanciones={() => this.setListFilter("score")}
             onSelectLetras={() => this.setListFilter("lyrics")}
+            onSelectAdmin={this.goAdmin}
           />
         </section>
 
         <section className="main-layout">
-          <aside className="main-sidebar">
-            <Listado
-              songs={Constants.SONGS}
-              filter={listFilter}
-              clickHandler={this.clickHandler}
-              selectedSongId={actualId}
-            />
-          </aside>
+          {loadingSongs ? (
+            <p>Cargando canciones...</p>
+          ) : loadError ? (
+            <p>{loadError}</p>
+          ) : (
+            <>
+              <aside className="main-sidebar">
+                <Listado
+                  songs={songs}
+                  filter={listFilter}
+                  clickHandler={this.clickHandler}
+                  selectedSongId={actualId}
+                />
+              </aside>
 
-          <main className="main-content-area">
-            {/* En esta sección pintamos según el valor de actualId */}
-            {actualId === 0 ? (
-              <Introduction
-                introductionText={
-                  Constants.S_INTRODUCTION_TEXT
-                }
-              />
-            ) : (
-              <SongViewer
-                song={actualSongObj}
-                folder={Constants.SONGS_FOLDER}
-              />
-            )}
-          </main>
+              <main className="main-content-area">
+                {actualId === -1 ? (
+                  <AdminPanel
+                    songs={songs}
+                    onSongsChanged={(nextSongs) =>
+                      this.setState({ songs: nextSongs })
+                    }
+                    onReload={this.loadSongs}
+                  />
+                ) : actualId === 0 ? (
+                  <Introduction
+                    introductionText={Constants.S_INTRODUCTION_TEXT}
+                  />
+                ) : (
+                  <SongViewer
+                    song={actualSongObj}
+                    folder={Constants.SONGS_FOLDER}
+                  />
+                )}
+              </main>
+            </>
+          )}
         </section>
 
         <section className="section-footer">

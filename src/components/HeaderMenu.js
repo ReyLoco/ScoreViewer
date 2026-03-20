@@ -4,6 +4,7 @@ export default function HeaderMenu({
   onSelectInicio,
   onSelectCanciones,
   onSelectLetras,
+  onSelectAdmin,
 }) {
   const handleClick = (cb, targetId) => {
     if (cb) cb();
