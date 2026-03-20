@@ -46,15 +46,6 @@ export default function HeaderMenu({
             <i className="fa fa-file-text-o" aria-hidden="true" /> Letras
           </button>
         </li>
-        <li>
-          <button
-            type="button"
-            className="header-menu-btn"
-            onClick={() => handleClick(onSelectAdmin, "main-content")}
-          >
-            <i className="fa fa-cog" aria-hidden="true" /> Admin
-          </button>
-        </li>
       </ul>
     </nav>
   );

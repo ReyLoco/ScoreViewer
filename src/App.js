@@ -17,10 +17,20 @@ export default class App extends Component {
   constructor(props) {
     super(props);
 
+    const isAdminRoute = () => {
+      if (typeof window === "undefined") return false;
+      const p = window.location.pathname || "/";
+      // Normalizamos "/admin" y "/admin/" al mismo caso
+      const normalized = p.replace(/\/+$/, "");
+      return normalized === "/admin";
+    };
+
+    const initialActualId = isAdminRoute() ? -1 : 0;
+
     this.state = {
       songs: [],
-      actualId: 0,
-      actualSongObj: null,
+      actualId: initialActualId,
+      actualSongObj: initialActualId === -1 ? null : null,
       // Filtro del listado: "all" | "score" | "lyrics"
       listFilter: "all",
       loadingSongs: true,
@@ -91,8 +101,12 @@ export default class App extends Component {
   }
 
   goHome() {
-    const { songs } = this.state;
+    if (typeof window !== "undefined") {
+      window.location.assign("/");
+      return;
+    }
 
+    const { songs } = this.state;
     this.setState({
       actualId: 0,
       actualSongObj: songs[0] || null,
@@ -101,10 +115,11 @@ export default class App extends Component {
   }
 
   goAdmin() {
-    this.setState({
-      actualId: -1,
-      actualSongObj: null,
-    });
+    // La ruta /admin se protegerá en Nginx con Basic Auth.
+    if (typeof window !== "undefined") {
+      window.location.assign("/admin");
+      return;
+    }
   }
 
   render() {
