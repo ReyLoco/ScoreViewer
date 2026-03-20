@@ -429,6 +429,25 @@ $transition: all 0.25s ease-in-out;
   margin-bottom: 0.75rem;
 }
 
+.song-viewer-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(173, 216, 230, 0.7);
+  background-color: rgba(173, 216, 230, 0.35);
+  color: rgba(11, 61, 145, 0.95);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.song-viewer-download-btn:hover {
+  background-color: rgba(173, 216, 230, 0.6);
+}
+
 .admin-panel {
   text-align: left;
 }
@@ -541,6 +560,22 @@ $transition: all 0.25s ease-in-out;
 
   .main-content-area {
     order: 1;
+    padding: 0;
+  }
+
+  /* En móvil: descargar acompaña a Letra/Partitura en la misma fila */
+  #song-viewer .song-viewer-toggle {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  #song-viewer .song-viewer-toggle button {
+    flex: 1 1 0;
+  }
+
+  #song-viewer .song-viewer-download-btn {
+    flex: 1 1 0;
   }
 }
 

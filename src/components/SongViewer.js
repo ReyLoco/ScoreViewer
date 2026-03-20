@@ -64,6 +64,9 @@ export default class SongViewer extends Component {
       Constants.PDF_BASE_URL || `${process.env.PUBLIC_URL || ""}/${folder}`;
     // encodeURI mantiene los "/" de subcarpetas y codifica espacios, acentos, etc.
     const pdfUrl = currentFile ? `${basePath}${encodeURI(currentFile)}` : null;
+    const downloadFileName = currentFile
+      ? decodeURIComponent(String(currentFile).split("/").pop())
+      : null;
 
     const description = song.descriptionEs;
 
@@ -93,6 +96,17 @@ export default class SongViewer extends Component {
           >
             Partitura
           </button>
+
+          {pdfUrl && (
+            <a
+              className="song-viewer-download-btn"
+              href={pdfUrl}
+              aria-label="Descargar PDF"
+              download={downloadFileName || true}
+            >
+              <i className="fa fa-cloud-download" aria-hidden="true" /> Descargar
+            </a>
+          )}
         </div>
 
         {!pdfUrl ? (
