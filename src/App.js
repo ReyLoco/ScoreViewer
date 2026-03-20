@@ -42,10 +42,39 @@ export default class App extends Component {
     this.goHome = this.goHome.bind(this);
     this.goAdmin = this.goAdmin.bind(this);
     this.loadSongs = this.loadSongs.bind(this);
+    this.scrollToSongViewerIfMobile =
+      this.scrollToSongViewerIfMobile.bind(this);
   } // end Constructor
 
   componentDidMount() {
     this.loadSongs();
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    // Al seleccionar una canción desde el listado en móvil,
+    // forzamos el scroll hasta el visor para evitar que sea confuso.
+    if (prevState.actualId !== this.state.actualId) {
+      this.scrollToSongViewerIfMobile(this.state.actualId);
+    }
+  }
+
+  scrollToSongViewerIfMobile(actualId) {
+    if (typeof window === "undefined") return;
+    if (!actualId || actualId <= 0) return;
+
+    const isMobile = window.matchMedia
+      ? window.matchMedia("(max-width: 800px)").matches
+      : window.innerWidth <= 800;
+
+    if (!isMobile) return;
+
+    // Esperamos a que el DOM refleje el cambio de estado.
+    window.requestAnimationFrame(() => {
+      const el = document.getElementById("song-viewer");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   }
 
   loadSongs() {
