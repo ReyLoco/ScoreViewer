@@ -6,7 +6,7 @@ export default class Footer extends Component {
     super(props);
 
     this.state = {
-      text: ["Created By Luis Massó ~ 2021"],
+      text: ["Created By Luis Massó ~ 2026"],
     };
   } // end constructor
 

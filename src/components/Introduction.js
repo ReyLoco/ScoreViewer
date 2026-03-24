@@ -5,7 +5,7 @@ export default class Introduction extends Component {
     const mainImage = this.ExtractImage();
 
     return (
-      <section id="main-content" className="container text-center">
+      <section id="main-content" className="container-fluid text-center">
         <h3>
           <i className="fa fa-home"></i> Introduction
         </h3>

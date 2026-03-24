@@ -116,10 +116,10 @@ export default class SongViewer extends Component {
         ) : (
           <div className="song-viewer-frame">
             <object
+              className="song-viewer-pdf"
               data={pdfUrl}
               type="application/pdf"
               width="100%"
-              height="600px"
             >
               <p>
                 Tu navegador no puede mostrar el PDF. Puedes abrirlo en una nueva pestaña:{" "}
