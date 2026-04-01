@@ -1,13 +1,15 @@
 import React, { useState, useCallback, useRef, useEffect } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL || ""}/pdf.worker.min.mjs`;
-
 export default function PdfScoreViewer({ fileUrl, documentTitle }) {
   const [numPages, setNumPages] = useState(null);
-  const [pageWidth, setPageWidth] = useState(800);
+  const [pageWidth, setPageWidth] = useState(() =>
+    typeof window !== "undefined"
+      ? Math.min(Math.max(window.innerWidth - 48, 280), 1400)
+      : 800
+  );
   const [loadError, setLoadError] = useState(null);
   const containerRef = useRef(null);
 
@@ -53,13 +55,24 @@ export default function PdfScoreViewer({ fileUrl, documentTitle }) {
 
   if (loadError) {
     return (
-      <div className="song-viewer-frame song-viewer-pdf-error">
-        <p>
-          No se pudo cargar el PDF en la página. Puedes abrirlo aparte:{" "}
-          <a href={fileUrl} target="_blank" rel="noopener noreferrer">
-            Abrir PDF
-          </a>
+      <div className="song-viewer-frame">
+        <p className="song-viewer-pdf-error-msg">
+          El visor integrado no pudo cargar el PDF. Mostrando el visor del navegador si está disponible.
         </p>
+        <div className="song-viewer-pdf-pages song-viewer-pdf-pages--native">
+          <object
+            className="song-viewer-pdf-native"
+            data={fileUrl}
+            type="application/pdf"
+            title={documentTitle || "Partitura PDF"}
+          >
+            <p className="song-viewer-pdf-error">
+              <a href={fileUrl} target="_blank" rel="noopener noreferrer">
+                Abrir PDF
+              </a>
+            </p>
+          </object>
+        </div>
       </div>
     );
   }
@@ -76,16 +89,13 @@ export default function PdfScoreViewer({ fileUrl, documentTitle }) {
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={onDocumentLoadError}
           loading={<div className="song-viewer-pdf-loading">Cargando PDF…</div>}
-          options={{
-            withCredentials: false,
-          }}
         >
-          {numPages
+          {numPages != null && numPages > 0
             ? Array.from({ length: numPages }, (_, i) => (
                 <Page
                   key={`page_${i + 1}`}
                   pageNumber={i + 1}
-                  width={pageWidth}
+                  width={Math.max(pageWidth, 240)}
                   renderTextLayer={false}
                   className="song-viewer-pdf-page"
                 />

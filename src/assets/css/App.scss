@@ -515,6 +515,25 @@ $transition: all 0.25s ease-in-out;
   text-align: left;
 }
 
+.song-viewer-pdf-error-msg {
+  font-size: 0.9rem;
+  color: rgba(15, 35, 95, 0.85);
+  margin: 0 0 0.5rem;
+  text-align: left;
+}
+
+.song-viewer-pdf-pages--native {
+  padding: 0;
+  background: #f0f0f0;
+}
+
+.song-viewer-pdf-native {
+  display: block;
+  width: 100%;
+  min-height: 75vh;
+  border: none;
+}
+
 .admin-panel {
   text-align: left;
 }
