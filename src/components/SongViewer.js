@@ -1,32 +1,6 @@
 import React, { Component } from "react";
 import * as Constants from "../Constants";
-
-/**
- * Acceso directo / PWA o entornos sin visor PDF integrado: el <object> suele
- * mostrar solo el fallback. Ofrecemos iframe + enlace explícito al PDF.
- */
-function needsPdfEmbeddedFallbackUi() {
-  if (typeof window === "undefined") return false;
-  if (typeof navigator !== "undefined" && navigator.standalone === true) {
-    return true;
-  }
-  if (
-    typeof navigator !== "undefined" &&
-    typeof navigator.pdfViewerEnabled === "boolean" &&
-    !navigator.pdfViewerEnabled
-  ) {
-    return true;
-  }
-  try {
-    return (
-      window.matchMedia("(display-mode: standalone)").matches ||
-      window.matchMedia("(display-mode: fullscreen)").matches ||
-      window.matchMedia("(display-mode: minimal-ui)").matches
-    );
-  } catch {
-    return false;
-  }
-}
+import PdfScoreViewer from "./PdfScoreViewer";
 
 export default class SongViewer extends Component {
   constructor(props) {
@@ -40,7 +14,6 @@ export default class SongViewer extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    // Si cambiamos de canción, reseteamos la vista por defecto
     if (
       prevProps.song &&
       this.props.song &&
@@ -69,9 +42,7 @@ export default class SongViewer extends Component {
     if (!song || (!song.group && !song.title)) {
       return (
         <section id="song-viewer" className="container-fluid">
-          <h3>
-            Selecciona una canción en el menú
-          </h3>
+          <h3>Selecciona una canción en el menú</h3>
         </section>
       );
     }
@@ -85,18 +56,14 @@ export default class SongViewer extends Component {
     const currentFile =
       this.state.view === "lyrics" ? lyricsFile || scoreFile : scoreFile || lyricsFile;
 
-    // En este proyecto los PDFs se sirven desde el backend (GET /pdfs/<file>)
-    // Así no dependemos de que existan en el build estático.
     const basePath =
       Constants.PDF_BASE_URL || `${process.env.PUBLIC_URL || ""}/${folder}`;
-    // encodeURI mantiene los "/" de subcarpetas y codifica espacios, acentos, etc.
     const pdfUrl = currentFile ? `${basePath}${encodeURI(currentFile)}` : null;
     const downloadFileName = currentFile
       ? decodeURIComponent(String(currentFile).split("/").pop())
       : null;
 
     const description = song.descriptionEs;
-    const pdfFallbackUi = needsPdfEmbeddedFallbackUi();
 
     return (
       <section id="song-viewer" className="container-fluid">
@@ -138,48 +105,11 @@ export default class SongViewer extends Component {
         </div>
 
         {!pdfUrl ? (
-          <p>
-            No hay PDF disponible para esta canción.
-          </p>
-        ) : pdfFallbackUi ? (
-          <div className="song-viewer-frame song-viewer-frame--embedded-fallback">
-            <p className="song-viewer-embedded-fallback-hint">
-              Desde el acceso directo o este modo de pantalla, el PDF a veces no se puede
-              incrustar. Usa el botón para abrirlo en el navegador o en el visor del sistema.
-            </p>
-            <a
-              className="song-viewer-open-pdf-btn"
-              href={pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Abrir partitura
-            </a>
-            <iframe
-              className="song-viewer-pdf"
-              title={`Partitura: ${song.name}`}
-              src={pdfUrl}
-            />
-          </div>
+          <p>No hay PDF disponible para esta canción.</p>
         ) : (
-          <div className="song-viewer-frame">
-            <object
-              className="song-viewer-pdf"
-              data={pdfUrl}
-              type="application/pdf"
-              width="100%"
-            >
-              <p>
-                Tu navegador no puede mostrar el PDF. Puedes abrirlo en una nueva pestaña:{" "}
-                <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-                  Abrir PDF
-                </a>
-              </p>
-            </object>
-          </div>
+          <PdfScoreViewer fileUrl={pdfUrl} documentTitle={song.name} />
         )}
       </section>
     );
   }
 }
-
