@@ -63,8 +63,8 @@ export default class App extends Component {
     if (!actualId || actualId <= 0) return;
 
     const isMobile = window.matchMedia
-      ? window.matchMedia("(max-width: 800px)").matches
-      : window.innerWidth <= 800;
+      ? window.matchMedia("(max-width: 900px)").matches
+      : window.innerWidth <= 900;
 
     if (!isMobile) return;
 
