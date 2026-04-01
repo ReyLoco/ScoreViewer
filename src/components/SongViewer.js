@@ -1,6 +1,33 @@
 import React, { Component } from "react";
 import * as Constants from "../Constants";
 
+/**
+ * Acceso directo / PWA o entornos sin visor PDF integrado: el <object> suele
+ * mostrar solo el fallback. Ofrecemos iframe + enlace explícito al PDF.
+ */
+function needsPdfEmbeddedFallbackUi() {
+  if (typeof window === "undefined") return false;
+  if (typeof navigator !== "undefined" && navigator.standalone === true) {
+    return true;
+  }
+  if (
+    typeof navigator !== "undefined" &&
+    typeof navigator.pdfViewerEnabled === "boolean" &&
+    !navigator.pdfViewerEnabled
+  ) {
+    return true;
+  }
+  try {
+    return (
+      window.matchMedia("(display-mode: standalone)").matches ||
+      window.matchMedia("(display-mode: fullscreen)").matches ||
+      window.matchMedia("(display-mode: minimal-ui)").matches
+    );
+  } catch {
+    return false;
+  }
+}
+
 export default class SongViewer extends Component {
   constructor(props) {
     super(props);
@@ -69,6 +96,7 @@ export default class SongViewer extends Component {
       : null;
 
     const description = song.descriptionEs;
+    const pdfFallbackUi = needsPdfEmbeddedFallbackUi();
 
     return (
       <section id="song-viewer" className="container-fluid">
@@ -113,6 +141,26 @@ export default class SongViewer extends Component {
           <p>
             No hay PDF disponible para esta canción.
           </p>
+        ) : pdfFallbackUi ? (
+          <div className="song-viewer-frame song-viewer-frame--embedded-fallback">
+            <p className="song-viewer-embedded-fallback-hint">
+              Desde el acceso directo o este modo de pantalla, el PDF a veces no se puede
+              incrustar. Usa el botón para abrirlo en el navegador o en el visor del sistema.
+            </p>
+            <a
+              className="song-viewer-open-pdf-btn"
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir partitura
+            </a>
+            <iframe
+              className="song-viewer-pdf"
+              title={`Partitura: ${song.name}`}
+              src={pdfUrl}
+            />
+          </div>
         ) : (
           <div className="song-viewer-frame">
             <object
