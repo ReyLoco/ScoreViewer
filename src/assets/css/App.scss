@@ -633,8 +633,8 @@ $transition: all 0.25s ease-in-out;
   font-weight: 600;
 }
 
-/* Responsive: stack sidebar/content on small screens / tablet */
-@media (max-width: 900px) {
+/* Por debajo de 900px: una columna, listado abajo; desde 900px: dos columnas y visor grande */
+@media (max-width: 899px) {
   .main-layout {
     grid-template-columns: 1fr;
     padding: 1rem 0.75rem 2rem;
@@ -679,11 +679,7 @@ $transition: all 0.25s ease-in-out;
     grid-template-columns: 1fr 1fr 140px;
     align-items: end;
   }
-}
 
-
-/* BIG SIZE If the screen size is 901px or more *********************/
-@media (min-width: 901px) {
   body {
     font-size: 1rem;
   }
@@ -699,10 +695,10 @@ $transition: all 0.25s ease-in-out;
   }
 }
 
-/* end media  BIG SIZE ********************************************/
+/* end media  min-width 900px (admin + header grande) **************/
 
-/* MEDIUM SIZE If the screen size is between 400px and 900px *******/
-@media (min-width: 400px) and (max-width: 900px) {
+/* MEDIUM SIZE: entre 400px y 899px (tablet / móvil ancho) ***********/
+@media (min-width: 400px) and (max-width: 899px) {
   body {
     font-size: 0.9rem;
   }
