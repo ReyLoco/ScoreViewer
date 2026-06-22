@@ -1,5 +1,36 @@
 # ScoreViewer - Checklist de produccion
 
+## 0) Preparar secretos y permisos para GitHub Actions
+
+- Secrets esperados por `.github/workflows/deploy-prod.yml`:
+  - `REACT_APP_SW_SONGS_API_URL`
+  - `REACT_APP_SW_API_BASE_URL`
+  - `REACT_APP_SW_PDF_BASE_URL`
+  - `SSH_SW_HOST`
+  - `SSH_SW_PORT`
+  - `SSH_SW_USER`
+  - `SSH_KEY_SW`
+  - `DEPLOY_PATH_SW`
+  - `DEPLOY_API_PATH_SW`
+- Valores habituales:
+  - `DEPLOY_PATH_SW=/var/www/scoreviewer`
+  - `DEPLOY_API_PATH_SW=/var/www/scoreviewer-api`
+- El usuario SSH de despliegue debe poder:
+  - escribir en `/var/www/scoreviewer`
+  - escribir en `/var/www/scoreviewer-api`
+  - ejecutar `sudo systemctl restart scoreviewer-api` sin password
+  - ejecutar `sudo systemctl is-active scoreviewer-api` sin password
+
+Ejemplo de `sudoers` para el usuario `deploy`:
+
+```bash
+sudo visudo -f /etc/sudoers.d/scoreviewer-deploy
+```
+
+```text
+deploy ALL=NOPASSWD: /bin/systemctl restart scoreviewer-api, /bin/systemctl is-active scoreviewer-api
+```
+
 ## 1) Copiar codigo al servidor
 
 - Copia `server/` y `scripts/` a `/var/www/scoreviewer-api/`.
@@ -65,3 +96,8 @@ sudo certbot --nginx -d scoreviewer.luismasso.es -d api.luismasso.es
 - `POST /api/upload`, `PUT/DELETE /api/files/*`:
   - Piden usuario/clave (si activaste Basic Auth).
   - Requieren `X-Admin-Token` correcto.
+- Un `push` a `main` ejecuta el workflow y:
+  - actualiza `/var/www/scoreviewer`
+  - actualiza `/var/www/scoreviewer-api/{server,scripts,deploy}`
+  - ejecuta `npm ci --omit=dev` en backend
+  - reinicia `scoreviewer-api`
