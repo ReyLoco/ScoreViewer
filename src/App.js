@@ -47,7 +47,31 @@ export default class App extends Component {
   } // end Constructor
 
   componentDidMount() {
+    if (this.shouldForceHttps()) {
+      this.forceHttps();
+      return;
+    }
+
     this.loadSongs();
+  }
+
+  shouldForceHttps() {
+    if (typeof window === "undefined") return false;
+
+    const { protocol, hostname } = window.location;
+    if (protocol !== "http:") return false;
+
+    return (
+      hostname === "scoreviewer.luismasso.es" ||
+      hostname === "api.luismasso.es"
+    );
+  }
+
+  forceHttps() {
+    if (typeof window === "undefined") return;
+
+    const nextUrl = `https://${window.location.host}${window.location.pathname}${window.location.search}${window.location.hash}`;
+    window.location.replace(nextUrl);
   }
 
   componentDidUpdate(prevProps, prevState) {

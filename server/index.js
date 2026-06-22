@@ -19,13 +19,33 @@ if (!fs.existsSync(pdfDir)) {
   fs.mkdirSync(pdfDir, { recursive: true });
 }
 
+function parseAllowedOrigins() {
+  const rawValues = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    process.env.ALLOWED_ORIGIN,
+    process.env.ALLOWED_ORIGINS,
+  ].filter(Boolean);
+
+  return [...new Set(
+    rawValues
+      .flatMap((value) => String(value).split(","))
+      .map((value) => value.trim())
+      .filter(Boolean)
+  )];
+}
+
+const allowedOrigins = parseAllowedOrigins();
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "http://127.0.0.1:3000",
-      process.env.ALLOWED_ORIGIN,
-    ].filter(Boolean),
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error(`Origin no permitido por CORS: ${origin}`));
+    },
   })
 );
 
@@ -266,4 +286,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`ScoreViewer API escuchando en http://localhost:${PORT}`);
 });
-

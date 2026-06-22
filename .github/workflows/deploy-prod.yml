@@ -1,4 +1,4 @@
-name: Deploy frontend to Prod
+name: Deploy prod
 
 on:
   push:
@@ -48,7 +48,7 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST" >> ~/.ssh/known_hosts
 
-      - name: Deploy build/ to server
+      - name: Deploy frontend
         env:
           SSH_HOST: ${{ secrets.SSH_SW_HOST }}
           SSH_PORT: ${{ secrets.SSH_SW_PORT }}
@@ -60,4 +60,43 @@ jobs:
             -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ed25519" \
             build/ \
             "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH%/}/"
+
+      - name: Deploy backend files
+        env:
+          SSH_HOST: ${{ secrets.SSH_SW_HOST }}
+          SSH_PORT: ${{ secrets.SSH_SW_PORT }}
+          SSH_USER: ${{ secrets.SSH_SW_USER }}
+          DEPLOY_API_PATH: ${{ secrets.DEPLOY_API_PATH_SW }}
+        run: |
+          test -d server
+          test -d scripts
+          ssh -p "${SSH_PORT:-22}" -i ~/.ssh/id_ed25519 "${SSH_USER}@${SSH_HOST}" \
+            "mkdir -p '${DEPLOY_API_PATH%/}/server' '${DEPLOY_API_PATH%/}/scripts' '${DEPLOY_API_PATH%/}/deploy'"
+          rsync -az --delete \
+            -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ed25519" \
+            server/ \
+            "${SSH_USER}@${SSH_HOST}:${DEPLOY_API_PATH%/}/server/"
+          rsync -az --delete \
+            -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ed25519" \
+            scripts/ \
+            "${SSH_USER}@${SSH_HOST}:${DEPLOY_API_PATH%/}/scripts/"
+          rsync -az --delete \
+            -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ed25519" \
+            deploy/ \
+            "${SSH_USER}@${SSH_HOST}:${DEPLOY_API_PATH%/}/deploy/"
+
+      - name: Install backend deps and restart service
+        env:
+          SSH_HOST: ${{ secrets.SSH_SW_HOST }}
+          SSH_PORT: ${{ secrets.SSH_SW_PORT }}
+          SSH_USER: ${{ secrets.SSH_SW_USER }}
+          DEPLOY_API_PATH: ${{ secrets.DEPLOY_API_PATH_SW }}
+        run: |
+          ssh -p "${SSH_PORT:-22}" -i ~/.ssh/id_ed25519 "${SSH_USER}@${SSH_HOST}" "
+            set -e
+            cd '${DEPLOY_API_PATH%/}/server'
+            npm ci --omit=dev
+            sudo systemctl restart scoreviewer-api
+            sudo systemctl is-active --quiet scoreviewer-api
+          "
 
