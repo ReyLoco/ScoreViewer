@@ -90,6 +90,38 @@ sudo apt-get install -y certbot python3-certbot-nginx
 sudo certbot --nginx -d scoreviewer.luismasso.es -d api.luismasso.es
 ```
 
+### Recarga automatica de Nginx tras renovar certificado
+
+Para evitar que Nginx siga sirviendo un certificado antiguo despues de una renovacion,
+crea un hook de deploy de Certbot:
+
+```bash
+sudo mkdir -p /etc/letsencrypt/renewal-hooks/deploy
+sudo nano /etc/letsencrypt/renewal-hooks/deploy/reload-nginx.sh
+```
+
+Contenido:
+
+```bash
+#!/bin/sh
+set -e
+systemctl reload nginx
+```
+
+Permisos:
+
+```bash
+sudo chmod +x /etc/letsencrypt/renewal-hooks/deploy/reload-nginx.sh
+```
+
+Verificacion:
+
+```bash
+sudo certbot renew --dry-run
+```
+
+Si el hook esta bien, tras una renovacion real o simulada Nginx recargara el certificado automaticamente.
+
 ## 6) Prueba funcional final
 
 - Frontend abre canciones y PDFs correctamente.
