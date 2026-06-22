@@ -55,6 +55,7 @@ jobs:
           SSH_USER: ${{ secrets.SSH_SW_USER }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH_SW }}
         run: |
+          test -n "${DEPLOY_PATH}" || { echo "Missing secret: DEPLOY_PATH_SW"; exit 1; }
           test -d build
           rsync -az --delete \
             -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ed25519" \
@@ -68,6 +69,7 @@ jobs:
           SSH_USER: ${{ secrets.SSH_SW_USER }}
           DEPLOY_API_PATH: ${{ secrets.DEPLOY_API_PATH_SW }}
         run: |
+          test -n "${DEPLOY_API_PATH}" || { echo "Missing secret: DEPLOY_API_PATH_SW"; exit 1; }
           test -d server
           test -d scripts
           ssh -p "${SSH_PORT:-22}" -i ~/.ssh/id_ed25519 "${SSH_USER}@${SSH_HOST}" \
@@ -92,11 +94,12 @@ jobs:
           SSH_USER: ${{ secrets.SSH_SW_USER }}
           DEPLOY_API_PATH: ${{ secrets.DEPLOY_API_PATH_SW }}
         run: |
+          test -n "${DEPLOY_API_PATH}" || { echo "Missing secret: DEPLOY_API_PATH_SW"; exit 1; }
           ssh -p "${SSH_PORT:-22}" -i ~/.ssh/id_ed25519 "${SSH_USER}@${SSH_HOST}" "
             set -e
             cd '${DEPLOY_API_PATH%/}/server'
             npm ci --omit=dev
-            sudo systemctl restart scoreviewer-api
-            sudo systemctl is-active --quiet scoreviewer-api
+            sudo -n systemctl restart scoreviewer-api
+            sudo -n systemctl is-active --quiet scoreviewer-api
           "
 
